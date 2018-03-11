@@ -123,6 +123,249 @@ Pacman/fast:
 	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/build
 .PHONY : Pacman/fast
 
+AbstractFactory.o: AbstractFactory.cpp.o
+
+.PHONY : AbstractFactory.o
+
+# target to build an object file
+AbstractFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/AbstractFactory.cpp.o
+.PHONY : AbstractFactory.cpp.o
+
+AbstractFactory.i: AbstractFactory.cpp.i
+
+.PHONY : AbstractFactory.i
+
+# target to preprocess a source file
+AbstractFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/AbstractFactory.cpp.i
+.PHONY : AbstractFactory.cpp.i
+
+AbstractFactory.s: AbstractFactory.cpp.s
+
+.PHONY : AbstractFactory.s
+
+# target to generate assembly for a file
+AbstractFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/AbstractFactory.cpp.s
+.PHONY : AbstractFactory.cpp.s
+
+Bullet.o: Bullet.cpp.o
+
+.PHONY : Bullet.o
+
+# target to build an object file
+Bullet.cpp.o:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Bullet.cpp.o
+.PHONY : Bullet.cpp.o
+
+Bullet.i: Bullet.cpp.i
+
+.PHONY : Bullet.i
+
+# target to preprocess a source file
+Bullet.cpp.i:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Bullet.cpp.i
+.PHONY : Bullet.cpp.i
+
+Bullet.s: Bullet.cpp.s
+
+.PHONY : Bullet.s
+
+# target to generate assembly for a file
+Bullet.cpp.s:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Bullet.cpp.s
+.PHONY : Bullet.cpp.s
+
+Entity.o: Entity.cpp.o
+
+.PHONY : Entity.o
+
+# target to build an object file
+Entity.cpp.o:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Entity.cpp.o
+.PHONY : Entity.cpp.o
+
+Entity.i: Entity.cpp.i
+
+.PHONY : Entity.i
+
+# target to preprocess a source file
+Entity.cpp.i:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Entity.cpp.i
+.PHONY : Entity.cpp.i
+
+Entity.s: Entity.cpp.s
+
+.PHONY : Entity.s
+
+# target to generate assembly for a file
+Entity.cpp.s:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Entity.cpp.s
+.PHONY : Entity.cpp.s
+
+Game.o: Game.cpp.o
+
+.PHONY : Game.o
+
+# target to build an object file
+Game.cpp.o:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Game.cpp.o
+.PHONY : Game.cpp.o
+
+Game.i: Game.cpp.i
+
+.PHONY : Game.i
+
+# target to preprocess a source file
+Game.cpp.i:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Game.cpp.i
+.PHONY : Game.cpp.i
+
+Game.s: Game.cpp.s
+
+.PHONY : Game.s
+
+# target to generate assembly for a file
+Game.cpp.s:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Game.cpp.s
+.PHONY : Game.cpp.s
+
+Ghost.o: Ghost.cpp.o
+
+.PHONY : Ghost.o
+
+# target to build an object file
+Ghost.cpp.o:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Ghost.cpp.o
+.PHONY : Ghost.cpp.o
+
+Ghost.i: Ghost.cpp.i
+
+.PHONY : Ghost.i
+
+# target to preprocess a source file
+Ghost.cpp.i:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Ghost.cpp.i
+.PHONY : Ghost.cpp.i
+
+Ghost.s: Ghost.cpp.s
+
+.PHONY : Ghost.s
+
+# target to generate assembly for a file
+Ghost.cpp.s:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Ghost.cpp.s
+.PHONY : Ghost.cpp.s
+
+Pacman.o: Pacman.cpp.o
+
+.PHONY : Pacman.o
+
+# target to build an object file
+Pacman.cpp.o:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Pacman.cpp.o
+.PHONY : Pacman.cpp.o
+
+Pacman.i: Pacman.cpp.i
+
+.PHONY : Pacman.i
+
+# target to preprocess a source file
+Pacman.cpp.i:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Pacman.cpp.i
+.PHONY : Pacman.cpp.i
+
+Pacman.s: Pacman.cpp.s
+
+.PHONY : Pacman.s
+
+# target to generate assembly for a file
+Pacman.cpp.s:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Pacman.cpp.s
+.PHONY : Pacman.cpp.s
+
+Player.o: Player.cpp.o
+
+.PHONY : Player.o
+
+# target to build an object file
+Player.cpp.o:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Player.cpp.o
+.PHONY : Player.cpp.o
+
+Player.i: Player.cpp.i
+
+.PHONY : Player.i
+
+# target to preprocess a source file
+Player.cpp.i:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Player.cpp.i
+.PHONY : Player.cpp.i
+
+Player.s: Player.cpp.s
+
+.PHONY : Player.s
+
+# target to generate assembly for a file
+Player.cpp.s:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Player.cpp.s
+.PHONY : Player.cpp.s
+
+SDLFactory.o: SDLFactory.cpp.o
+
+.PHONY : SDLFactory.o
+
+# target to build an object file
+SDLFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLFactory.cpp.o
+.PHONY : SDLFactory.cpp.o
+
+SDLFactory.i: SDLFactory.cpp.i
+
+.PHONY : SDLFactory.i
+
+# target to preprocess a source file
+SDLFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLFactory.cpp.i
+.PHONY : SDLFactory.cpp.i
+
+SDLFactory.s: SDLFactory.cpp.s
+
+.PHONY : SDLFactory.s
+
+# target to generate assembly for a file
+SDLFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLFactory.cpp.s
+.PHONY : SDLFactory.cpp.s
+
+Wall.o: Wall.cpp.o
+
+.PHONY : Wall.o
+
+# target to build an object file
+Wall.cpp.o:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Wall.cpp.o
+.PHONY : Wall.cpp.o
+
+Wall.i: Wall.cpp.i
+
+.PHONY : Wall.i
+
+# target to preprocess a source file
+Wall.cpp.i:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Wall.cpp.i
+.PHONY : Wall.cpp.i
+
+Wall.s: Wall.cpp.s
+
+.PHONY : Wall.s
+
+# target to generate assembly for a file
+Wall.cpp.s:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Wall.cpp.s
+.PHONY : Wall.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +402,33 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Pacman"
+	@echo "... AbstractFactory.o"
+	@echo "... AbstractFactory.i"
+	@echo "... AbstractFactory.s"
+	@echo "... Bullet.o"
+	@echo "... Bullet.i"
+	@echo "... Bullet.s"
+	@echo "... Entity.o"
+	@echo "... Entity.i"
+	@echo "... Entity.s"
+	@echo "... Game.o"
+	@echo "... Game.i"
+	@echo "... Game.s"
+	@echo "... Ghost.o"
+	@echo "... Ghost.i"
+	@echo "... Ghost.s"
+	@echo "... Pacman.o"
+	@echo "... Pacman.i"
+	@echo "... Pacman.s"
+	@echo "... Player.o"
+	@echo "... Player.i"
+	@echo "... Player.s"
+	@echo "... SDLFactory.o"
+	@echo "... SDLFactory.i"
+	@echo "... SDLFactory.s"
+	@echo "... Wall.o"
+	@echo "... Wall.i"
+	@echo "... Wall.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

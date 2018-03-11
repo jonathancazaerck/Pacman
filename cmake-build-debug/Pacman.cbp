@@ -82,6 +82,63 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/AbstractFactory.cpp">
+			<Option target="Pacman"/>
+		</Unit>
+		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/AbstractFactory.h">
+			<Option target="Pacman"/>
+		</Unit>
+		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Bullet.cpp">
+			<Option target="Pacman"/>
+		</Unit>
+		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Bullet.h">
+			<Option target="Pacman"/>
+		</Unit>
+		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Constants.h">
+			<Option target="Pacman"/>
+		</Unit>
+		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Entity.cpp">
+			<Option target="Pacman"/>
+		</Unit>
+		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Entity.h">
+			<Option target="Pacman"/>
+		</Unit>
+		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Game.cpp">
+			<Option target="Pacman"/>
+		</Unit>
+		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Game.h">
+			<Option target="Pacman"/>
+		</Unit>
+		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Ghost.cpp">
+			<Option target="Pacman"/>
+		</Unit>
+		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Ghost.h">
+			<Option target="Pacman"/>
+		</Unit>
+		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Pacman.cpp">
+			<Option target="Pacman"/>
+		</Unit>
+		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Pacman.h">
+			<Option target="Pacman"/>
+		</Unit>
+		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Player.cpp">
+			<Option target="Pacman"/>
+		</Unit>
+		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Player.h">
+			<Option target="Pacman"/>
+		</Unit>
+		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLFactory.cpp">
+			<Option target="Pacman"/>
+		</Unit>
+		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLFactory.h">
+			<Option target="Pacman"/>
+		</Unit>
+		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Wall.cpp">
+			<Option target="Pacman"/>
+		</Unit>
+		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Wall.h">
+			<Option target="Pacman"/>
+		</Unit>
 		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/main.cpp">
 			<Option target="Pacman"/>
 		</Unit>
