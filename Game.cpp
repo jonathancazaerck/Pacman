@@ -41,6 +41,7 @@ Game::Game() {
 
 void Game::run() {
     while (true) {
+        std::cout << std::string(10, '\n');
         print();
         tick();
         std::this_thread::sleep_for(std::chrono::seconds(1));
@@ -85,6 +86,10 @@ void Game::print() {
 }
 
 void Game::tick() {
+
+    //@todo: collision between Pacman and wall
+    //@todo: collision between Pacman and ghost
+
     std::cout << "Tick " << ghosts.size() << std::endl;
 
 

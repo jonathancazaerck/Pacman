@@ -16,3 +16,5 @@ void Pacman::update() {
         case right: moveRight(); break;
     }
 }
+
+//@todo: create stop-function when collision between wall and pacman. Inspiration --> Player.cpp

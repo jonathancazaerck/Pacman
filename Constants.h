@@ -11,6 +11,6 @@ const int minY = 0;
 const int maxX = 79;
 const int minX = 0;
 
-enum directions{up,down,left,right};
+enum directions{up,down,left,right,stop};
 
 #endif //PACMAN_CONSTANTS_H
