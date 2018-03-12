@@ -11,11 +11,17 @@
 class Wall;
 
 class Ghost : public Player{
+private:
+    bool enemy;
+    int noEnemyLifetime;
 public:
     Ghost(int x, int y);
     void update();
     void onCollisionWith(Wall* wall);
-    void onCollisionWith(Ghost* ghost);
+    //void onCollisionWith(Ghost* ghost);
+    bool getEnemy();
+    void setNotEnemy();
+    void timetick();
 };
 
 

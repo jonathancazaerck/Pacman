@@ -2,6 +2,7 @@
 // Created by Jonathan Cazaerck on 10/03/18.
 //
 
+#include <iostream>
 #include "Pacman.h"
 
 Pacman::Pacman(int x, int y) :Player(x,y) {
@@ -14,7 +15,16 @@ void Pacman::update() {
         case down: moveDown(); break;
         case left: moveLeft(); break;
         case right: moveRight(); break;
+        case stop: stopMoving(); break;
     }
 }
 
-//@todo: create stop-function when collision between wall and pacman. Inspiration --> Player.cpp
+void Pacman::stopMoving(){
+    direction = stop;
+    //don't do anything
+}
+
+void Pacman::onCollisionWith(Wall *wall) {
+    std::cout<< "On collision with wall/pacman" << std::endl;
+    stopMoving();
+}

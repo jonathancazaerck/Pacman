@@ -12,6 +12,10 @@ class Pacman: public Player {
 public:
     Pacman(int x, int y);
     void update();
+    void onCollisionWith(Wall *wall);
+
+private:
+    void stopMoving();
 };
 
 

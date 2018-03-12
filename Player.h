@@ -12,6 +12,8 @@
 class Player : public Entity {
 protected:
     directions direction;
+public:
+    int getDirection();
 
 public:
     Player(int x, int y):Entity(x,y){};

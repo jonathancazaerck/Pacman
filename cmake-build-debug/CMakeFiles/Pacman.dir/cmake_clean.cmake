@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Pacman.dir/AbstractFactory.cpp.o"
   "CMakeFiles/Pacman.dir/SDLFactory.cpp.o"
   "CMakeFiles/Pacman.dir/Bullet.cpp.o"
+  "CMakeFiles/Pacman.dir/Bonus.cpp.o"
   "Pacman.pdb"
   "Pacman"
 )

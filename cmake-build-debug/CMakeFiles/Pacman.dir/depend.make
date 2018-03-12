@@ -4,6 +4,14 @@
 CMakeFiles/Pacman.dir/AbstractFactory.cpp.o: ../AbstractFactory.cpp
 CMakeFiles/Pacman.dir/AbstractFactory.cpp.o: ../AbstractFactory.h
 
+CMakeFiles/Pacman.dir/Bonus.cpp.o: ../Bonus.cpp
+CMakeFiles/Pacman.dir/Bonus.cpp.o: ../Bonus.h
+CMakeFiles/Pacman.dir/Bonus.cpp.o: ../Bullet.h
+CMakeFiles/Pacman.dir/Bonus.cpp.o: ../Constants.h
+CMakeFiles/Pacman.dir/Bonus.cpp.o: ../Entity.h
+CMakeFiles/Pacman.dir/Bonus.cpp.o: ../Pacman.h
+CMakeFiles/Pacman.dir/Bonus.cpp.o: ../Player.h
+
 CMakeFiles/Pacman.dir/Bullet.cpp.o: ../Bullet.cpp
 CMakeFiles/Pacman.dir/Bullet.cpp.o: ../Bullet.h
 CMakeFiles/Pacman.dir/Bullet.cpp.o: ../Constants.h
@@ -11,9 +19,11 @@ CMakeFiles/Pacman.dir/Bullet.cpp.o: ../Entity.h
 CMakeFiles/Pacman.dir/Bullet.cpp.o: ../Pacman.h
 CMakeFiles/Pacman.dir/Bullet.cpp.o: ../Player.h
 
+CMakeFiles/Pacman.dir/Entity.cpp.o: ../Constants.h
 CMakeFiles/Pacman.dir/Entity.cpp.o: ../Entity.cpp
 CMakeFiles/Pacman.dir/Entity.cpp.o: ../Entity.h
 
+CMakeFiles/Pacman.dir/Game.cpp.o: ../Bonus.h
 CMakeFiles/Pacman.dir/Game.cpp.o: ../Bullet.h
 CMakeFiles/Pacman.dir/Game.cpp.o: ../Constants.h
 CMakeFiles/Pacman.dir/Game.cpp.o: ../Entity.h
@@ -44,6 +54,7 @@ CMakeFiles/Pacman.dir/Player.cpp.o: ../Player.h
 CMakeFiles/Pacman.dir/SDLFactory.cpp.o: ../SDLFactory.cpp
 CMakeFiles/Pacman.dir/SDLFactory.cpp.o: ../SDLFactory.h
 
+CMakeFiles/Pacman.dir/Wall.cpp.o: ../Constants.h
 CMakeFiles/Pacman.dir/Wall.cpp.o: ../Entity.h
 CMakeFiles/Pacman.dir/Wall.cpp.o: ../Wall.cpp
 CMakeFiles/Pacman.dir/Wall.cpp.o: ../Wall.h

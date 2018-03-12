@@ -8,14 +8,17 @@
 #include <iostream>
 #include "Constants.h"
 #include "Game.h"
+#include "Bonus.h"
 
 
 Game::Game() {
 
     //Constructor
-    pacman = new Pacman(10, 10);
+    pacman = new Pacman(20, 10);
 
-    ghosts.push_back(new Ghost(3, 5));
+    bonuses.push_back(new Bonus(15, 10));
+
+    ghosts.push_back(new Ghost(1, 1));
     ghosts.push_back(new Ghost(4, 8));
     ghosts.push_back(new Ghost(7, 8));
     ghosts[1]->moveRight();
@@ -57,17 +60,25 @@ void Game::print() {
         grid[x][y] = "+";
     }
 
-    for (Ghost *ghost: ghosts) {
-//        std::cout << ghost->getX() << '\t' << ghost->getY() << std::endl;
-        grid[ghost->getX()][ghost->getY()] = "G";
-    }
-
     for (Bullet *bullet : bullets) {
         int x = bullet->getX();
         int y = bullet->getY();
         if(!bullet->getEated()){
             grid[x][y] = "*";
         }
+    }
+
+    for (Bonus *bonus : bonuses) {
+        int x = bonus->getX();
+        int y = bonus->getY();
+        if(!bonus->getEated()){
+            grid[x][y] = "B";
+        }
+    }
+
+    for (Ghost *ghost: ghosts) {
+//        std::cout << ghost->getX() << '\t' << ghost->getY() << std::endl;
+        grid[ghost->getX()][ghost->getY()] = "G";
     }
 
     grid[pacman->getX()][pacman->getY()] = "P";
@@ -86,38 +97,72 @@ void Game::print() {
 }
 
 void Game::tick() {
+    std::cout << "Tick " << std::endl;
 
-    //@todo: collision between Pacman and wall
-    //@todo: collision between Pacman and ghost
-
-    std::cout << "Tick " << ghosts.size() << std::endl;
-
-
-    for (Ghost *ghost1 : ghosts) {
-        for (Ghost *ghost2 : ghosts) {
-//            std::cout << "collision check" << std::endl;
-//        Ghost* ghost1 = ghosts[1];
-//        Ghost* ghost2 = ghosts[2];
-
-            if (ghost1->checkCollision(ghost2, false, true)) {
-                ghost1->onCollisionWith(ghost2);
-                ghost2->onCollisionWith(ghost1);
-                std::cout << "collision" << std::endl;
-            }
-        }
-    }
+//DELETED: COLLISION BETWEEN TWO GHOSTS = NOT NECESSARY
+//    for (Ghost *ghost1 : ghosts) {
+//        for (Ghost *ghost2 : ghosts) {
+////            std::cout << "collision check" << std::endl;
+////        Ghost* ghost1 = ghosts[1];
+////        Ghost* ghost2 = ghosts[2];
+//
+//            if (ghost1->checkCollision(ghost2, false, true)) {
+//                ghost1->onCollisionWith(ghost2);
+//                ghost2->onCollisionWith(ghost1);
+//                //std::cout << "collision" << std::endl;
+//            }
+//        }
+//    }
 
     for (Ghost *ghost : ghosts) {
         for (Wall *wall : walls) {
-            if (ghost->checkCollision(wall, false, false)) {
+            if (ghost->checkCollision(wall, false, false, ghost->getDirection())) {
                 ghost->onCollisionWith(wall);
             }
         }
     }
 
     for (Bullet *bullet : bullets){
-        if(bullet->checkCollision(pacman,true, false)){
+        if(bullet->checkCollision(pacman,true, false, 0)){
             bullet->onCollisionWith(pacman);
+        }
+    }
+
+    for (Wall *wall : walls){
+        if(pacman->checkCollision(wall, false, false, 0)){
+            pacman->onCollisionWith(wall);
+        }
+    }
+
+    for(Bonus *bonus : bonuses){
+        bonus->setDeactive();
+        if(bonus->checkCollision(pacman,true, false, 0)){
+            bonus->onCollisionWith(pacman);
+        }
+    }
+
+    //Check if there're some bonuses and if so -> transform all the ghosts.
+    for(Bonus *bonus : bonuses) {
+        if (bonus->isActive()) {
+            for (Ghost *ghost : ghosts) {
+                ghost->setNotEnemy();
+            }
+        }
+    }
+
+
+    for (Ghost *ghost : ghosts){
+        if(pacman->checkCollision(ghost,true,true, 0)){
+            if(ghost->getEnemy()){
+                //als de ghost de vijand is
+                std::cout << "DOOD!!!!" << std::endl;
+                exit(0); //@fixme: maak dit wat eleganter
+            }
+
+            else{
+                //ghost is de vijand niet
+                std::cout << "BONUS" << std::endl;
+            }
         }
     }
 

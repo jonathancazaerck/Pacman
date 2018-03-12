@@ -9,7 +9,7 @@
 #include "Pacman.h"
 
 class Bullet : public Entity {
-private:
+protected:
     bool eated;
 public:
     Bullet(int x, int y);

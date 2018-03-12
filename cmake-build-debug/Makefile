@@ -150,6 +150,33 @@ AbstractFactory.cpp.s:
 	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/AbstractFactory.cpp.s
 .PHONY : AbstractFactory.cpp.s
 
+Bonus.o: Bonus.cpp.o
+
+.PHONY : Bonus.o
+
+# target to build an object file
+Bonus.cpp.o:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Bonus.cpp.o
+.PHONY : Bonus.cpp.o
+
+Bonus.i: Bonus.cpp.i
+
+.PHONY : Bonus.i
+
+# target to preprocess a source file
+Bonus.cpp.i:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Bonus.cpp.i
+.PHONY : Bonus.cpp.i
+
+Bonus.s: Bonus.cpp.s
+
+.PHONY : Bonus.s
+
+# target to generate assembly for a file
+Bonus.cpp.s:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Bonus.cpp.s
+.PHONY : Bonus.cpp.s
+
 Bullet.o: Bullet.cpp.o
 
 .PHONY : Bullet.o
@@ -405,6 +432,9 @@ help:
 	@echo "... AbstractFactory.o"
 	@echo "... AbstractFactory.i"
 	@echo "... AbstractFactory.s"
+	@echo "... Bonus.o"
+	@echo "... Bonus.i"
+	@echo "... Bonus.s"
 	@echo "... Bullet.o"
 	@echo "... Bullet.i"
 	@echo "... Bullet.s"

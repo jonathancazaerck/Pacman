@@ -88,6 +88,12 @@
 		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/AbstractFactory.h">
 			<Option target="Pacman"/>
 		</Unit>
+		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Bonus.cpp">
+			<Option target="Pacman"/>
+		</Unit>
+		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Bonus.h">
+			<Option target="Pacman"/>
+		</Unit>
 		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Bullet.cpp">
 			<Option target="Pacman"/>
 		</Unit>

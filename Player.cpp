@@ -24,3 +24,7 @@ void Player::moveRight() {
     direction = right;
     x++;
 }
+
+int Player::getDirection() {
+    return direction;
+}

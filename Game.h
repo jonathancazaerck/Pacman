@@ -18,6 +18,7 @@ private:
     std::vector <Ghost*> ghosts;
     std::vector <Bullet*> bullets;
     std::vector <Wall*> walls;
+    std::vector <Bonus*> bonuses;
     void tick();
     void print();
 
