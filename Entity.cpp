@@ -3,9 +3,7 @@
 //
 
 #include <iostream>
-#include <tclDecls.h>
 #include "Entity.h"
-#include "Constants.h"
 
 Entity::Entity(int x, int y) {
     this->x = x;
@@ -14,7 +12,7 @@ Entity::Entity(int x, int y) {
     std::cout << x << '\t' << y << std::endl;
 };
 
-bool Entity::checkCollision(Entity *entity, bool eat, bool bothMoving, int thisDirection) {
+bool Entity::checkCollision(Entity *entity, bool eat, bool bothMoving, directions thisDirection) {
 
     //@todo: geef de richting mee zodat een object langs bvb een muur kan blijven lopen
 
@@ -38,19 +36,20 @@ bool Entity::checkCollision(Entity *entity, bool eat, bool bothMoving, int thisD
 //                    (x == entity->getX() && y == entity->getY() + 1) ||
 //                    (x == entity->getX() && y == entity->getY() - 1);
 
-        //@fixme: die richting moet doorgegeven worden!!
+        //@fixme: Botsing PacMan herstellen
+        //@fixme: 1 Ghost gaat uit het scherm en komt op de kader terecht
         switch (thisDirection) {
             case up:
-                collision = (x == entity->getX() && y <= entity->getY()-1);
+                collision = (x == entity->getX() && y == entity->getY()-1);
                 break;
             case down:
-                collision = (x == entity->getX() && y >= entity->getY()+1);
+                collision = (x == entity->getX() && y == entity->getY()+1);
                 break;
             case left:
-                collision = (x >= entity->getX()+1 && y == entity->getY());
+                collision = (x == entity->getX()+1 && y == entity->getY());
                 break;
             case right:
-                collision = (x <= entity->getX()-1 && y == entity->getY());
+                collision = (x == entity->getX()-1 && y == entity->getY());
                 break;
         }
     } else {

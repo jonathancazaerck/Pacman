@@ -22,7 +22,7 @@ protected:
 public:
     Entity(int x, int y);
     virtual ~Entity(){};
-    bool checkCollision(Entity* entity, bool eat, bool bothMoving, int thisDirection);
+    bool checkCollision(Entity* entity, bool eat, bool bothMoving, directions thisDirection);
     virtual void onCollisionWith(Ghost* ghost){};
     virtual void onCollisionWith(Bullet* bullet){};
     virtual void onCollisionWith(Wall* wall){};

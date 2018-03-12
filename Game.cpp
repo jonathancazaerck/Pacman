@@ -123,20 +123,20 @@ void Game::tick() {
     }
 
     for (Bullet *bullet : bullets){
-        if(bullet->checkCollision(pacman,true, false, 0)){
+        if(bullet->checkCollision(pacman,true, false, stop)){
             bullet->onCollisionWith(pacman);
         }
     }
 
     for (Wall *wall : walls){
-        if(pacman->checkCollision(wall, false, false, 0)){
+        if(pacman->checkCollision(wall, false, false, stop)){
             pacman->onCollisionWith(wall);
         }
     }
 
     for(Bonus *bonus : bonuses){
         bonus->setDeactive();
-        if(bonus->checkCollision(pacman,true, false, 0)){
+        if(bonus->checkCollision(pacman,true, false, stop)){
             bonus->onCollisionWith(pacman);
         }
     }
@@ -152,7 +152,7 @@ void Game::tick() {
 
 
     for (Ghost *ghost : ghosts){
-        if(pacman->checkCollision(ghost,true,true, 0)){
+        if(pacman->checkCollision(ghost,true,true, stop)){
             if(ghost->getEnemy()){
                 //als de ghost de vijand is
                 std::cout << "DOOD!!!!" << std::endl;
