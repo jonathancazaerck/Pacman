@@ -13,39 +13,14 @@
   <component name="ChangeListManager">
     <list default="true" id="54a6874b-2c3b-41c3-85d1-6f3978331e64" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/AbstractFactory.h" afterPath="$PROJECT_DIR$/AbstractFactory.h" />
-      <change beforePath="$PROJECT_DIR$/Constants.h" afterPath="$PROJECT_DIR$/Constants.h" />
       <change beforePath="$PROJECT_DIR$/Game.cpp" afterPath="$PROJECT_DIR$/Game.cpp" />
-      <change beforePath="$PROJECT_DIR$/Game.h" afterPath="$PROJECT_DIR$/Game.h" />
       <change beforePath="$PROJECT_DIR$/SDLFactory.cpp" afterPath="$PROJECT_DIR$/SDLFactory.cpp" />
-      <change beforePath="$PROJECT_DIR$/SDLFactory.h" afterPath="$PROJECT_DIR$/SDLFactory.h" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" afterPath="$PROJECT_DIR$/build/CMakeCache.txt" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Pacman.dir/CXX.includecache" afterPath="$PROJECT_DIR$/build/CMakeFiles/Pacman.dir/CXX.includecache" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Pacman.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/CMakeFiles/Pacman.dir/DependInfo.cmake" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Pacman.dir/Game.cpp.o" afterPath="$PROJECT_DIR$/build/CMakeFiles/Pacman.dir/Game.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Pacman.dir/SDLFactory.cpp.o" afterPath="$PROJECT_DIR$/build/CMakeFiles/Pacman.dir/SDLFactory.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Pacman.dir/depend.internal" afterPath="$PROJECT_DIR$/build/CMakeFiles/Pacman.dir/depend.internal" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Pacman.dir/depend.make" afterPath="$PROJECT_DIR$/build/CMakeFiles/Pacman.dir/depend.make" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Pacman.dir/flags.make" afterPath="$PROJECT_DIR$/build/CMakeFiles/Pacman.dir/flags.make" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Pacman.dir/link.txt" afterPath="$PROJECT_DIR$/build/CMakeFiles/Pacman.dir/link.txt" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Pacman.dir/main.cpp.o" afterPath="$PROJECT_DIR$/build/CMakeFiles/Pacman.dir/main.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/Pacman" afterPath="$PROJECT_DIR$/build/Pacman" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/Bonus.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/Bonus.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/Bullet.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/Bullet.cpp.o" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/CXX.includecache" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/Entity.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/Entity.cpp.o" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/Game.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/Game.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/Ghost.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/Ghost.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/Pacman.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/Pacman.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/Player.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/Player.cpp.o" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/SDLFactory.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/SDLFactory.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/Wall.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/Wall.cpp.o" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/depend.internal" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/depend.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/main.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/main.cpp.o" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Pacman" afterPath="$PROJECT_DIR$/cmake-build-debug/Pacman" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,8 +36,8 @@
       <file leaf-file-name="Game.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Game.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+            <state relative-caret-position="269">
+              <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
               <folding>
                 <element signature="e#98#115#0" expanded="true" />
               </folding>
@@ -73,8 +48,8 @@
       <file leaf-file-name="Game.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Game.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="51" column="29" lean-forward="true" selection-start-line="48" selection-start-column="4" selection-end-line="51" selection-end-column="29" />
+            <state relative-caret-position="163">
+              <caret line="45" column="1" lean-forward="true" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
               <folding>
                 <element signature="e#52#69#0" expanded="true" />
               </folding>
@@ -137,8 +112,8 @@
       <file leaf-file-name="SDLFactory.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SDLFactory.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="47" column="57" lean-forward="true" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="57" />
+            <state relative-caret-position="283">
+              <caret line="23" column="71" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -188,10 +163,10 @@
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/Game.h" />
         <option value="$PROJECT_DIR$/AbstractFactory.h" />
-        <option value="$PROJECT_DIR$/Game.cpp" />
-        <option value="$PROJECT_DIR$/SDLFactory.cpp" />
         <option value="$PROJECT_DIR$/Constants.h" />
         <option value="$PROJECT_DIR$/SDLFactory.h" />
+        <option value="$PROJECT_DIR$/Game.cpp" />
+        <option value="$PROJECT_DIR$/SDLFactory.cpp" />
       </list>
     </option>
   </component>
@@ -295,12 +270,12 @@
       <updated>1520678766221</updated>
       <workItem from="1520678769039" duration="11348000" />
       <workItem from="1520778172051" duration="16470000" />
-      <workItem from="1521446144914" duration="7514000" />
+      <workItem from="1521446144914" duration="8232000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35332000" />
+    <option name="totallyTimeSpent" value="36050000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -313,6 +288,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1280" height="705" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25019857" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.49722" order="6" side_tool="false" content_ui="tabs" />
@@ -320,7 +296,7 @@
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.50277996" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.124590166" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.124590166" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -728,14 +704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Constants.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -744,21 +712,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cmake/FindSDL2.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="150" column="27" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="172" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Constants.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Game.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+        <state relative-caret-position="269">
+          <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
           <folding>
             <element signature="e#98#115#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AbstractFactory.h">
+    <entry file="file://$PROJECT_DIR$/Game.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="163">
+          <caret line="45" column="1" lean-forward="true" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+          <folding>
+            <element signature="e#52#69#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -772,24 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmake/FindSDL2.cmake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="150" column="27" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="172" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Game.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="29" lean-forward="true" selection-start-line="48" selection-start-column="4" selection-end-line="51" selection-end-column="29" />
-          <folding>
-            <element signature="e#52#69#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SDLFactory.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -798,10 +766,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/AbstractFactory.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SDLFactory.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="47" column="57" lean-forward="true" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="57" />
+        <state relative-caret-position="283">
+          <caret line="23" column="71" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="71" />
           <folding />
         </state>
       </provider>

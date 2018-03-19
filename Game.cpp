@@ -9,6 +9,7 @@
 #include "Constants.h"
 #include "Game.h"
 #include "Bonus.h"
+#include "SDL.h"
 
 
 Game::Game(AbstractFactory* abstractFactory) {
@@ -46,10 +47,6 @@ Game::Game(AbstractFactory* abstractFactory) {
 
 void Game::run() {
 
-    abstractFactory->init();
-    abstractFactory->loadMedia();
-    std::this_thread::sleep_for(std::chrono::seconds(10));
-    abstractFactory->close();
 
     while (true) {
         //std::cout << std::string(10, '\n');
