@@ -11,6 +11,7 @@
 #include "Ghost.h"
 #include "Bullet.h"
 #include "Wall.h"
+#include "AbstractFactory.h"
 
 class Game {
 private:
@@ -21,9 +22,10 @@ private:
     std::vector <Bonus*> bonuses;
     void tick();
     void print();
+    AbstractFactory* abstractFactory;
 
 public:
-    Game();
+    Game(AbstractFactory* abstractFactory);
     void run();
 };
 

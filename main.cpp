@@ -1,9 +1,11 @@
 #include <iostream>
 #include "Game.h"
+#include "SDLFactory.h"
 
 int main() {
 
-    Game* game = new Game;
+    AbstractFactory* abstractFactory = new SDLFactory();
+    Game* game = new Game(abstractFactory);
     game->run();
 
     return 0;

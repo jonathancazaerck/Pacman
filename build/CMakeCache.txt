@@ -185,6 +185,12 @@ Pacman_BINARY_DIR:STATIC=/Users/jonathancazaerck/Google Drive/Universiteit/6-Gea
 //Value Computed by CMake
 Pacman_SOURCE_DIR:STATIC=/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman
 
+//Path to a file.
+SDL2_INCLUDE_DIR:PATH=/Library/Frameworks/SDL2.framework/Headers
+
+//Where the SDL2 Library can be found
+SDL2_LIBRARY:STRING=/Library/Frameworks/SDL2.framework;-framework Cocoa
+
 
 ########################
 # INTERNAL cache entries
@@ -319,4 +325,7 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding SDL2
+FIND_PACKAGE_MESSAGE_DETAILS_SDL2:INTERNAL=[/Library/Frameworks/SDL2.framework;-framework Cocoa][/Library/Frameworks/SDL2.framework/Headers][v()]
+SDL2_LIBRARY_TEMP:INTERNAL=/Library/Frameworks/SDL2.framework;-framework Cocoa;-framework Cocoa
 

@@ -11,9 +11,11 @@
 #include "Bonus.h"
 
 
-Game::Game() {
+Game::Game(AbstractFactory* abstractFactory) {
 
     //Constructor
+    this->abstractFactory = abstractFactory;
+
     pacman = new Pacman(20, 10);
 
     bonuses.push_back(new Bonus(15, 10));
@@ -43,11 +45,17 @@ Game::Game() {
 }
 
 void Game::run() {
+
+    abstractFactory->init();
+    abstractFactory->loadMedia();
+    std::this_thread::sleep_for(std::chrono::seconds(10));
+    abstractFactory->close();
+
     while (true) {
-        std::cout << std::string(10, '\n');
-        print();
-        tick();
-        std::this_thread::sleep_for(std::chrono::seconds(1));
+        //std::cout << std::string(10, '\n');
+        //print();
+        //tick();
+        //std::this_thread::sleep_for(std::chrono::seconds(1));
     }
 }
 
