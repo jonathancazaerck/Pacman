@@ -9,7 +9,6 @@
 #include "Constants.h"
 #include "Game.h"
 #include "Bonus.h"
-#include "SDL.h"
 
 
 Game::Game(AbstractFactory* abstractFactory) {
@@ -47,12 +46,22 @@ Game::Game(AbstractFactory* abstractFactory) {
 
 void Game::run() {
 
+////HIER SDL
+//    bool quit = false;
+//    //While application is running
+//    while( !quit )
+//    {
+//        quit = abstractFactory ->pollEvent();
+//    }
+//
+//    abstractFactory->close();
 
+////HIER TEXT MODE
     while (true) {
-        //std::cout << std::string(10, '\n');
-        //print();
-        //tick();
-        //std::this_thread::sleep_for(std::chrono::seconds(1));
+        std::cout << std::string(10, '\n');
+        print();
+        tick();
+        std::this_thread::sleep_for(std::chrono::seconds(1));
     }
 }
 

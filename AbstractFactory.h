@@ -11,6 +11,7 @@ public:
     virtual bool init()=0;
     virtual bool loadMedia()=0;
     virtual void close()=0;
+    virtual bool pollEvent()=0;
 };
 
 

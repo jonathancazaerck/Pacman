@@ -22,14 +22,9 @@ bool Entity::checkCollision(Entity *entity, bool eat, bool bothMoving, direction
     if (eat && bothMoving) {
         collision = (x == entity->getX() && y == entity->getY()) ||
                     (x == entity->getX() + 1 && y == entity->getY()) ||
-                    //Added because there can be one coordinate between two ghosts.
                     (x == entity->getX() - 1 && y == entity->getY()) ||
-                    //...when both are moving towards each other they will be at the same
                     (x == entity->getX() && y == entity->getY() + 1) ||
-                    //...position. We have to prevent that situation.
-                    (x == entity->getX() && y == entity->getY() -
-                                                 1);   //|X|-> <-|X| --- X go towards each other and will have the same position
-        //... when there are odd places between each other.
+                    (x == entity->getX() && y == entity->getY() - 1);
     } else if (!eat && !bothMoving) {
 //        collision = (x == entity->getX() + 1 && y == entity->getY()) ||
 //                    (x == entity->getX() - 1 && y == entity->getY()) ||
