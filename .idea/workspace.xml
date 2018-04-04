@@ -11,29 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54a6874b-2c3b-41c3-85d1-6f3978331e64" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/AbstractFactory.h" afterPath="$PROJECT_DIR$/AbstractFactory.h" />
-      <change beforePath="$PROJECT_DIR$/Entity.cpp" afterPath="$PROJECT_DIR$/Entity.cpp" />
-      <change beforePath="$PROJECT_DIR$/Game.cpp" afterPath="$PROJECT_DIR$/Game.cpp" />
-      <change beforePath="$PROJECT_DIR$/SDLFactory.cpp" afterPath="$PROJECT_DIR$/SDLFactory.cpp" />
-      <change beforePath="$PROJECT_DIR$/SDLFactory.h" afterPath="$PROJECT_DIR$/SDLFactory.h" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" afterPath="$PROJECT_DIR$/build/CMakeCache.txt" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Pacman.dir/CXX.includecache" afterPath="$PROJECT_DIR$/build/CMakeFiles/Pacman.dir/CXX.includecache" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Pacman.dir/Game.cpp.o" afterPath="$PROJECT_DIR$/build/CMakeFiles/Pacman.dir/Game.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Pacman.dir/SDLFactory.cpp.o" afterPath="$PROJECT_DIR$/build/CMakeFiles/Pacman.dir/SDLFactory.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Pacman.dir/depend.internal" afterPath="$PROJECT_DIR$/build/CMakeFiles/Pacman.dir/depend.internal" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Pacman.dir/depend.make" afterPath="$PROJECT_DIR$/build/CMakeFiles/Pacman.dir/depend.make" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Pacman.dir/main.cpp.o" afterPath="$PROJECT_DIR$/build/CMakeFiles/Pacman.dir/main.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/Pacman" afterPath="$PROJECT_DIR$/build/Pacman" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/CXX.includecache" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/Game.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/Game.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/SDLFactory.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/SDLFactory.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/depend.internal" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/depend.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/main.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/main.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Pacman" afterPath="$PROJECT_DIR$/cmake-build-debug/Pacman" />
-    </list>
+    <list default="true" id="54a6874b-2c3b-41c3-85d1-6f3978331e64" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -224,12 +202,12 @@
       <workItem from="1520778172051" duration="16470000" />
       <workItem from="1521446144914" duration="8708000" />
       <workItem from="1522046885355" duration="4806000" />
-      <workItem from="1522672000473" duration="1022000" />
+      <workItem from="1522672000473" duration="1310000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42354000" />
+    <option name="totallyTimeSpent" value="42642000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

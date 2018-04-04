@@ -47,10 +47,16 @@ CMakeFiles/Pacman.dir/Pacman.cpp.o: ../Pacman.cpp
 CMakeFiles/Pacman.dir/Pacman.cpp.o: ../Pacman.h
 CMakeFiles/Pacman.dir/Pacman.cpp.o: ../Player.h
 
+CMakeFiles/Pacman.dir/Player.cpp.o: ../AbstractFactory.h
+CMakeFiles/Pacman.dir/Player.cpp.o: ../Bullet.h
 CMakeFiles/Pacman.dir/Player.cpp.o: ../Constants.h
 CMakeFiles/Pacman.dir/Player.cpp.o: ../Entity.h
+CMakeFiles/Pacman.dir/Player.cpp.o: ../Game.h
+CMakeFiles/Pacman.dir/Player.cpp.o: ../Ghost.h
+CMakeFiles/Pacman.dir/Player.cpp.o: ../Pacman.h
 CMakeFiles/Pacman.dir/Player.cpp.o: ../Player.cpp
 CMakeFiles/Pacman.dir/Player.cpp.o: ../Player.h
+CMakeFiles/Pacman.dir/Player.cpp.o: ../Wall.h
 
 CMakeFiles/Pacman.dir/SDLFactory.cpp.o: ../AbstractFactory.h
 CMakeFiles/Pacman.dir/SDLFactory.cpp.o: ../Constants.h

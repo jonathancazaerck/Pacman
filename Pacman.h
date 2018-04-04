@@ -10,7 +10,7 @@
 
 class Pacman: public Player {
 public:
-    Pacman(int x, int y);
+    Pacman(int x, int y, Game* game);
     void update();
     void onCollisionWith(Wall *wall);
 

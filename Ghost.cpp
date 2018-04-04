@@ -5,10 +5,12 @@
 #include <iostream>
 #include "Ghost.h"
 
-Ghost::Ghost(int x, int y) : Player(x, y) {
+Ghost::Ghost(int x, int y, Game* game) : Player(x, y, game) {
     enemy = false;
     direction = left;
     noEnemyLifetime = 0;
+    width = 3;
+    height = 3;
 };
 
 void Ghost::update() {
@@ -22,6 +24,7 @@ void Ghost::update() {
         std::cout << "Time's up!" << std::endl;
     }
 
+    std::cout << "dir " << direction << std::endl;
 
     switch (direction) {
         case up:
@@ -41,40 +44,36 @@ void Ghost::update() {
 
 void Ghost::onCollisionWith(Wall *wall) {
     //Clockwise if there is a collision between the ghost and the walls
+    std::cout << "collision" << std::endl;
     switch (direction) {
         case up:
-            moveLeft();
-            break;
+            if (changeToLeft()) {
+                break;
+            }
         case down:
-            moveRight();
-            break;
+            if (changeToRight()) {
+                break;
+            }
         case left:
-            moveDown();
-            break;
+            if (changeToDown()) {
+                break;
+            }
         case right:
-            moveUp();
-            break;
+            if (changeToUp()) {
+                std::cout << "change up " << direction << std::endl;
+                break;
+            } else if (changeToDown()) {
+                std::cout << "change down " << std::endl;
+                break;
+            } else if (changeToRight()) {
+                std::cout << "change right" << std::endl;
+                break;
+            } else if (changeToLeft()) {
+                std::cout << "change left" << std::endl;
+                break;
+            }
     }
 }
-
-//DELETED: COLLISION BETWEEN TWO GHOSTS = NOT NECESSARY
-//void Ghost::onCollisionWith(Ghost *ghost) {
-//    std::cout << "collision with ghost" << std::endl;
-//    switch (direction) {
-//        case up:
-//            moveDown();
-//            break;
-//        case down:
-//            moveUp();
-//            break;
-//        case left:
-//            moveRight();
-//            break;
-//        case right:
-//            moveLeft();
-//            break;
-//    }
-//}
 
 bool Ghost::getEnemy() {
     return enemy;

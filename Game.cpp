@@ -16,14 +16,16 @@ Game::Game(AbstractFactory* abstractFactory) {
     //Constructor
     this->abstractFactory = abstractFactory;
 
-    pacman = new Pacman(20, 10);
+    pacman = new Pacman(50, 50, this);
+    pacman->moveRight();
 
     bonuses.push_back(new Bonus(15, 10));
 
-    ghosts.push_back(new Ghost(1, 1));
-    ghosts.push_back(new Ghost(4, 8));
-    ghosts.push_back(new Ghost(7, 8));
-    ghosts[1]->moveRight();
+//    ghosts.push_back(new Ghost(1, 1, this));
+//    ghosts.push_back(new Ghost(4, 8, this));
+    ghosts.push_back(new Ghost(70, 50, this));
+    ghosts[0]->moveRight();
+//    ghosts[2]->moveRight();
 
     bullets.push_back(new Bullet(9,10));
     bullets.push_back(new Bullet(8,10));
@@ -61,7 +63,7 @@ void Game::run() {
         std::cout << std::string(10, '\n');
         print();
         tick();
-        std::this_thread::sleep_for(std::chrono::seconds(1));
+        std::this_thread::sleep_for(std::chrono::milliseconds(100));
     }
 }
 
@@ -92,12 +94,18 @@ void Game::print() {
 
     for (Ghost *ghost: ghosts) {
 //        std::cout << ghost->getX() << '\t' << ghost->getY() << std::endl;
-        grid[ghost->getX()][ghost->getY()] = "G";
+        grid[ghost->getX() + 1][ghost->getY()+1] = "G";
     }
 
-    grid[pacman->getX()][pacman->getY()] = "P";
+    if (pacman->getX() >= minX && pacman->getX() <= maxX
+        && pacman->getY() >= minY && pacman->getY() <= maxY) {
+        grid[pacman->getX()][pacman->getY()] = "P";
+    } else {
+        std::cout << "Pacman out of range" << std::endl;
+    }
 
     for (int y = 0; y <= maxY; y++) {
+            std::cout << y << "\t";
         for (int x = 0; x <= maxX; x++) {
             std::string str = grid[x][y];
             if (str.empty()) {
@@ -132,6 +140,8 @@ void Game::tick() {
         for (Wall *wall : walls) {
             if (ghost->checkCollision(wall, false, false, ghost->getDirection())) {
                 ghost->onCollisionWith(wall);
+                // stop on first collision  to prevent changing directions multiple times
+                break;
             }
         }
     }
@@ -186,4 +196,15 @@ void Game::tick() {
 
 
 
+}
+
+bool Game::checkOccupiedByWall(int x, int y) const {
+
+    for (Wall* wall : walls) {
+        if (wall->getX() == x && wall->getY() == y) {
+            return true;
+        }
+    }
+
+    return false;
 }

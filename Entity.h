@@ -18,6 +18,8 @@ class Entity {
 protected:
     int x;
     int y;
+    int width;
+    int height;
 
 public:
     Entity(int x, int y);
@@ -29,6 +31,8 @@ public:
     virtual void onCollisionWith(Pacman* pacman){};
     int getX();
     int getY();
+    int getWidth();
+    int getHeight();
 };
 
 

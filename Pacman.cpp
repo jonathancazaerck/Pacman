@@ -5,7 +5,7 @@
 #include <iostream>
 #include "Pacman.h"
 
-Pacman::Pacman(int x, int y) :Player(x,y) {
+Pacman::Pacman(int x, int y, Game* game) :Player(x,y, game) {
     direction = left;
 };
 

@@ -15,7 +15,7 @@ private:
     bool enemy;
     int noEnemyLifetime;
 public:
-    Ghost(int x, int y);
+    Ghost(int x, int y, Game* game);
     void update();
     void onCollisionWith(Wall* wall);
     //void onCollisionWith(Ghost* ghost);

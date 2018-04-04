@@ -8,152 +8,154 @@
 		<Option virtualFolders="CMake Files\;CMake Files\cmake\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/cmake-build-debug"/>
+				<Option working_dir="/home/tobia/Workspace/3BA/Pacman/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/jonathancazaerck/Google\ Drive/Universiteit/6-Geavanceerde\ programmeertechnieken/Projecten/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jonathancazaerck/Google\ Drive/Universiteit/6-Geavanceerde\ programmeertechnieken/Projecten/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jonathancazaerck/Google\ Drive/Universiteit/6-Geavanceerde\ programmeertechnieken/Projecten/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jonathancazaerck/Google\ Drive/Universiteit/6-Geavanceerde\ programmeertechnieken/Projecten/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/tobia/Workspace/3BA/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/tobia/Workspace/3BA/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/tobia/Workspace/3BA/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/tobia/Workspace/3BA/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/cmake-build-debug"/>
+				<Option working_dir="/home/tobia/Workspace/3BA/Pacman/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/jonathancazaerck/Google\ Drive/Universiteit/6-Geavanceerde\ programmeertechnieken/Projecten/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jonathancazaerck/Google\ Drive/Universiteit/6-Geavanceerde\ programmeertechnieken/Projecten/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jonathancazaerck/Google\ Drive/Universiteit/6-Geavanceerde\ programmeertechnieken/Projecten/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jonathancazaerck/Google\ Drive/Universiteit/6-Geavanceerde\ programmeertechnieken/Projecten/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/tobia/Workspace/3BA/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/tobia/Workspace/3BA/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/tobia/Workspace/3BA/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/tobia/Workspace/3BA/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/cmake-build-debug"/>
+				<Option working_dir="/home/tobia/Workspace/3BA/Pacman/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/jonathancazaerck/Google\ Drive/Universiteit/6-Geavanceerde\ programmeertechnieken/Projecten/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jonathancazaerck/Google\ Drive/Universiteit/6-Geavanceerde\ programmeertechnieken/Projecten/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jonathancazaerck/Google\ Drive/Universiteit/6-Geavanceerde\ programmeertechnieken/Projecten/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jonathancazaerck/Google\ Drive/Universiteit/6-Geavanceerde\ programmeertechnieken/Projecten/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/tobia/Workspace/3BA/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/tobia/Workspace/3BA/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/tobia/Workspace/3BA/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/tobia/Workspace/3BA/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Pacman">
-				<Option output="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/cmake-build-debug/Pacman" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/cmake-build-debug"/>
+				<Option output="/home/tobia/Workspace/3BA/Pacman/cmake-build-debug/Pacman" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tobia/Workspace/3BA/Pacman/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/c++/7/x86_64-suse-linux"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib64/gcc/x86_64-suse-linux/7/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/lib64/gcc/x86_64-suse-linux/7/include-fixed"/>
+					<Add directory="/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/include"/>
 					<Add directory="/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/jonathancazaerck/Google\ Drive/Universiteit/6-Geavanceerde\ programmeertechnieken/Projecten/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 Pacman"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jonathancazaerck/Google\ Drive/Universiteit/6-Geavanceerde\ programmeertechnieken/Projecten/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jonathancazaerck/Google\ Drive/Universiteit/6-Geavanceerde\ programmeertechnieken/Projecten/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jonathancazaerck/Google\ Drive/Universiteit/6-Geavanceerde\ programmeertechnieken/Projecten/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/tobia/Workspace/3BA/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 Pacman"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/tobia/Workspace/3BA/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/tobia/Workspace/3BA/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/tobia/Workspace/3BA/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Pacman/fast">
-				<Option output="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/cmake-build-debug/Pacman" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/cmake-build-debug"/>
+				<Option output="/home/tobia/Workspace/3BA/Pacman/cmake-build-debug/Pacman" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tobia/Workspace/3BA/Pacman/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/c++/7/x86_64-suse-linux"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib64/gcc/x86_64-suse-linux/7/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/lib64/gcc/x86_64-suse-linux/7/include-fixed"/>
+					<Add directory="/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/include"/>
 					<Add directory="/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/jonathancazaerck/Google\ Drive/Universiteit/6-Geavanceerde\ programmeertechnieken/Projecten/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 Pacman/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jonathancazaerck/Google\ Drive/Universiteit/6-Geavanceerde\ programmeertechnieken/Projecten/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jonathancazaerck/Google\ Drive/Universiteit/6-Geavanceerde\ programmeertechnieken/Projecten/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jonathancazaerck/Google\ Drive/Universiteit/6-Geavanceerde\ programmeertechnieken/Projecten/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/tobia/Workspace/3BA/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 Pacman/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/tobia/Workspace/3BA/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/tobia/Workspace/3BA/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/tobia/Workspace/3BA/Pacman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/AbstractFactory.cpp">
+		<Unit filename="/home/tobia/Workspace/3BA/Pacman/AbstractFactory.cpp">
 			<Option target="Pacman"/>
 		</Unit>
-		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/AbstractFactory.h">
+		<Unit filename="/home/tobia/Workspace/3BA/Pacman/AbstractFactory.h">
 			<Option target="Pacman"/>
 		</Unit>
-		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Bonus.cpp">
+		<Unit filename="/home/tobia/Workspace/3BA/Pacman/Bonus.cpp">
 			<Option target="Pacman"/>
 		</Unit>
-		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Bonus.h">
+		<Unit filename="/home/tobia/Workspace/3BA/Pacman/Bonus.h">
 			<Option target="Pacman"/>
 		</Unit>
-		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Bullet.cpp">
+		<Unit filename="/home/tobia/Workspace/3BA/Pacman/Bullet.cpp">
 			<Option target="Pacman"/>
 		</Unit>
-		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Bullet.h">
+		<Unit filename="/home/tobia/Workspace/3BA/Pacman/Bullet.h">
 			<Option target="Pacman"/>
 		</Unit>
-		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Constants.h">
+		<Unit filename="/home/tobia/Workspace/3BA/Pacman/Constants.h">
 			<Option target="Pacman"/>
 		</Unit>
-		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Entity.cpp">
+		<Unit filename="/home/tobia/Workspace/3BA/Pacman/Entity.cpp">
 			<Option target="Pacman"/>
 		</Unit>
-		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Entity.h">
+		<Unit filename="/home/tobia/Workspace/3BA/Pacman/Entity.h">
 			<Option target="Pacman"/>
 		</Unit>
-		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Game.cpp">
+		<Unit filename="/home/tobia/Workspace/3BA/Pacman/Game.cpp">
 			<Option target="Pacman"/>
 		</Unit>
-		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Game.h">
+		<Unit filename="/home/tobia/Workspace/3BA/Pacman/Game.h">
 			<Option target="Pacman"/>
 		</Unit>
-		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Ghost.cpp">
+		<Unit filename="/home/tobia/Workspace/3BA/Pacman/Ghost.cpp">
 			<Option target="Pacman"/>
 		</Unit>
-		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Ghost.h">
+		<Unit filename="/home/tobia/Workspace/3BA/Pacman/Ghost.h">
 			<Option target="Pacman"/>
 		</Unit>
-		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Pacman.cpp">
+		<Unit filename="/home/tobia/Workspace/3BA/Pacman/Pacman.cpp">
 			<Option target="Pacman"/>
 		</Unit>
-		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Pacman.h">
+		<Unit filename="/home/tobia/Workspace/3BA/Pacman/Pacman.h">
 			<Option target="Pacman"/>
 		</Unit>
-		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Player.cpp">
+		<Unit filename="/home/tobia/Workspace/3BA/Pacman/Player.cpp">
 			<Option target="Pacman"/>
 		</Unit>
-		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Player.h">
+		<Unit filename="/home/tobia/Workspace/3BA/Pacman/Player.h">
 			<Option target="Pacman"/>
 		</Unit>
-		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLFactory.cpp">
+		<Unit filename="/home/tobia/Workspace/3BA/Pacman/SDLFactory.cpp">
 			<Option target="Pacman"/>
 		</Unit>
-		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLFactory.h">
+		<Unit filename="/home/tobia/Workspace/3BA/Pacman/SDLFactory.h">
 			<Option target="Pacman"/>
 		</Unit>
-		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Wall.cpp">
+		<Unit filename="/home/tobia/Workspace/3BA/Pacman/Wall.cpp">
 			<Option target="Pacman"/>
 		</Unit>
-		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Wall.h">
+		<Unit filename="/home/tobia/Workspace/3BA/Pacman/Wall.h">
 			<Option target="Pacman"/>
 		</Unit>
-		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/main.cpp">
+		<Unit filename="/home/tobia/Workspace/3BA/Pacman/main.cpp">
 			<Option target="Pacman"/>
 		</Unit>
-		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/CMakeLists.txt">
+		<Unit filename="/home/tobia/Workspace/3BA/Pacman/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/cmake/FindSDL2.cmake">
+		<Unit filename="/home/tobia/Workspace/3BA/Pacman/cmake/FindSDL2.cmake">
 			<Option virtualFolder="CMake Files\cmake\"/>
 		</Unit>
 	</Project>

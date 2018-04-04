@@ -9,6 +9,8 @@
 #include "Constants.h"
 #include "Entity.h"
 
+class Game;
+
 class Player : public Entity {
 protected:
     directions direction;
@@ -16,13 +18,24 @@ public:
     directions getDirection();
 
 public:
-    Player(int x, int y):Entity(x,y){};
+    Player(int x, int y, Game* game):Entity(x,y){
+            this->game = game;
+            width = 1;
+            height = 1;
+    };
     virtual ~Player(){};
-    void moveUp();
-    void moveDown();
-    void moveLeft();
-    void moveRight();
+    bool moveUp();
+    bool moveDown();
+    bool moveLeft();
+    bool moveRight();
+
+    bool changeToUp();
+    bool changeToDown();
+    bool changeToLeft();
+    bool changeToRight();
     virtual void update(){};
+private:
+    Game* game;
 };
 
 
