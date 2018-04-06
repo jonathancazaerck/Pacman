@@ -204,6 +204,33 @@ Bullet.cpp.s:
 	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Bullet.cpp.s
 .PHONY : Bullet.cpp.s
 
+Coordinate.o: Coordinate.cpp.o
+
+.PHONY : Coordinate.o
+
+# target to build an object file
+Coordinate.cpp.o:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Coordinate.cpp.o
+.PHONY : Coordinate.cpp.o
+
+Coordinate.i: Coordinate.cpp.i
+
+.PHONY : Coordinate.i
+
+# target to preprocess a source file
+Coordinate.cpp.i:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Coordinate.cpp.i
+.PHONY : Coordinate.cpp.i
+
+Coordinate.s: Coordinate.cpp.s
+
+.PHONY : Coordinate.s
+
+# target to generate assembly for a file
+Coordinate.cpp.s:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Coordinate.cpp.s
+.PHONY : Coordinate.cpp.s
+
 Entity.o: Entity.cpp.o
 
 .PHONY : Entity.o
@@ -465,6 +492,9 @@ help:
 	@echo "... Bullet.o"
 	@echo "... Bullet.i"
 	@echo "... Bullet.s"
+	@echo "... Coordinate.o"
+	@echo "... Coordinate.i"
+	@echo "... Coordinate.s"
 	@echo "... Entity.o"
 	@echo "... Entity.i"
 	@echo "... Entity.s"

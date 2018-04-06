@@ -6,24 +6,25 @@
 #include "SDLFactory.h"
 
 SDLFactory::SDLFactory() {
+    //@fixme: Even alles in commentaar gezet zodat SDL niet start!
     //CONSTRUCTOR
     //Start up SDL and create window
-    if( !init() )
-    {
-        printf( "Failed to initialize!\n" );
-    }
-    else
-    {
-        //Load media
-        if( !loadMedia() )
-        {
-            printf( "Failed to load media!\n" );
-        }
-        else
-        {
-
-        }
-    }
+//    if( !init() )
+//    {
+//        printf( "Failed to initialize!\n" );
+//    }
+//    else
+//    {
+//        //Load media
+//        if( !loadMedia() )
+//        {
+//            printf( "Failed to load media!\n" );
+//        }
+//        else
+//        {
+//
+//        }
+//    }
 }
 
 bool SDLFactory::init()

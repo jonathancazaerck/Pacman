@@ -321,6 +321,54 @@ CMakeFiles/Pacman.dir/Bonus.cpp.o.provides: CMakeFiles/Pacman.dir/Bonus.cpp.o.re
 CMakeFiles/Pacman.dir/Bonus.cpp.o.provides.build: CMakeFiles/Pacman.dir/Bonus.cpp.o
 
 
+CMakeFiles/Pacman.dir/JsonReader.cpp.o: CMakeFiles/Pacman.dir/flags.make
+CMakeFiles/Pacman.dir/JsonReader.cpp.o: ../JsonReader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Pacman.dir/JsonReader.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pacman.dir/JsonReader.cpp.o -c "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/JsonReader.cpp"
+
+CMakeFiles/Pacman.dir/JsonReader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pacman.dir/JsonReader.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/JsonReader.cpp" > CMakeFiles/Pacman.dir/JsonReader.cpp.i
+
+CMakeFiles/Pacman.dir/JsonReader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pacman.dir/JsonReader.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/JsonReader.cpp" -o CMakeFiles/Pacman.dir/JsonReader.cpp.s
+
+CMakeFiles/Pacman.dir/JsonReader.cpp.o.requires:
+
+.PHONY : CMakeFiles/Pacman.dir/JsonReader.cpp.o.requires
+
+CMakeFiles/Pacman.dir/JsonReader.cpp.o.provides: CMakeFiles/Pacman.dir/JsonReader.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/JsonReader.cpp.o.provides.build
+.PHONY : CMakeFiles/Pacman.dir/JsonReader.cpp.o.provides
+
+CMakeFiles/Pacman.dir/JsonReader.cpp.o.provides.build: CMakeFiles/Pacman.dir/JsonReader.cpp.o
+
+
+CMakeFiles/Pacman.dir/Coordinate.cpp.o: CMakeFiles/Pacman.dir/flags.make
+CMakeFiles/Pacman.dir/Coordinate.cpp.o: ../Coordinate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Pacman.dir/Coordinate.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pacman.dir/Coordinate.cpp.o -c "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Coordinate.cpp"
+
+CMakeFiles/Pacman.dir/Coordinate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pacman.dir/Coordinate.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Coordinate.cpp" > CMakeFiles/Pacman.dir/Coordinate.cpp.i
+
+CMakeFiles/Pacman.dir/Coordinate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pacman.dir/Coordinate.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Coordinate.cpp" -o CMakeFiles/Pacman.dir/Coordinate.cpp.s
+
+CMakeFiles/Pacman.dir/Coordinate.cpp.o.requires:
+
+.PHONY : CMakeFiles/Pacman.dir/Coordinate.cpp.o.requires
+
+CMakeFiles/Pacman.dir/Coordinate.cpp.o.provides: CMakeFiles/Pacman.dir/Coordinate.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Coordinate.cpp.o.provides.build
+.PHONY : CMakeFiles/Pacman.dir/Coordinate.cpp.o.provides
+
+CMakeFiles/Pacman.dir/Coordinate.cpp.o.provides.build: CMakeFiles/Pacman.dir/Coordinate.cpp.o
+
+
 # Object files for target Pacman
 Pacman_OBJECTS = \
 "CMakeFiles/Pacman.dir/main.cpp.o" \
@@ -333,7 +381,9 @@ Pacman_OBJECTS = \
 "CMakeFiles/Pacman.dir/AbstractFactory.cpp.o" \
 "CMakeFiles/Pacman.dir/SDLFactory.cpp.o" \
 "CMakeFiles/Pacman.dir/Bullet.cpp.o" \
-"CMakeFiles/Pacman.dir/Bonus.cpp.o"
+"CMakeFiles/Pacman.dir/Bonus.cpp.o" \
+"CMakeFiles/Pacman.dir/JsonReader.cpp.o" \
+"CMakeFiles/Pacman.dir/Coordinate.cpp.o"
 
 # External object files for target Pacman
 Pacman_EXTERNAL_OBJECTS =
@@ -349,9 +399,11 @@ Pacman: CMakeFiles/Pacman.dir/AbstractFactory.cpp.o
 Pacman: CMakeFiles/Pacman.dir/SDLFactory.cpp.o
 Pacman: CMakeFiles/Pacman.dir/Bullet.cpp.o
 Pacman: CMakeFiles/Pacman.dir/Bonus.cpp.o
+Pacman: CMakeFiles/Pacman.dir/JsonReader.cpp.o
+Pacman: CMakeFiles/Pacman.dir/Coordinate.cpp.o
 Pacman: CMakeFiles/Pacman.dir/build.make
 Pacman: CMakeFiles/Pacman.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable Pacman"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable Pacman"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Pacman.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -370,6 +422,8 @@ CMakeFiles/Pacman.dir/requires: CMakeFiles/Pacman.dir/AbstractFactory.cpp.o.requ
 CMakeFiles/Pacman.dir/requires: CMakeFiles/Pacman.dir/SDLFactory.cpp.o.requires
 CMakeFiles/Pacman.dir/requires: CMakeFiles/Pacman.dir/Bullet.cpp.o.requires
 CMakeFiles/Pacman.dir/requires: CMakeFiles/Pacman.dir/Bonus.cpp.o.requires
+CMakeFiles/Pacman.dir/requires: CMakeFiles/Pacman.dir/JsonReader.cpp.o.requires
+CMakeFiles/Pacman.dir/requires: CMakeFiles/Pacman.dir/Coordinate.cpp.o.requires
 
 .PHONY : CMakeFiles/Pacman.dir/requires
 

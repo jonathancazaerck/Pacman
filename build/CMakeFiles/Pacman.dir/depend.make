@@ -19,6 +19,10 @@ CMakeFiles/Pacman.dir/Bullet.cpp.o: ../Entity.h
 CMakeFiles/Pacman.dir/Bullet.cpp.o: ../Pacman.h
 CMakeFiles/Pacman.dir/Bullet.cpp.o: ../Player.h
 
+CMakeFiles/Pacman.dir/Coordinate.cpp.o: ../Constants.h
+CMakeFiles/Pacman.dir/Coordinate.cpp.o: ../Coordinate.cpp
+CMakeFiles/Pacman.dir/Coordinate.cpp.o: ../Coordinate.h
+
 CMakeFiles/Pacman.dir/Entity.cpp.o: ../Constants.h
 CMakeFiles/Pacman.dir/Entity.cpp.o: ../Entity.cpp
 CMakeFiles/Pacman.dir/Entity.cpp.o: ../Entity.h
@@ -27,10 +31,12 @@ CMakeFiles/Pacman.dir/Game.cpp.o: ../AbstractFactory.h
 CMakeFiles/Pacman.dir/Game.cpp.o: ../Bonus.h
 CMakeFiles/Pacman.dir/Game.cpp.o: ../Bullet.h
 CMakeFiles/Pacman.dir/Game.cpp.o: ../Constants.h
+CMakeFiles/Pacman.dir/Game.cpp.o: ../Coordinate.h
 CMakeFiles/Pacman.dir/Game.cpp.o: ../Entity.h
 CMakeFiles/Pacman.dir/Game.cpp.o: ../Game.cpp
 CMakeFiles/Pacman.dir/Game.cpp.o: ../Game.h
 CMakeFiles/Pacman.dir/Game.cpp.o: ../Ghost.h
+CMakeFiles/Pacman.dir/Game.cpp.o: ../JsonReader.h
 CMakeFiles/Pacman.dir/Game.cpp.o: ../Pacman.h
 CMakeFiles/Pacman.dir/Game.cpp.o: ../Player.h
 CMakeFiles/Pacman.dir/Game.cpp.o: ../Wall.h
@@ -40,6 +46,19 @@ CMakeFiles/Pacman.dir/Ghost.cpp.o: ../Entity.h
 CMakeFiles/Pacman.dir/Ghost.cpp.o: ../Ghost.cpp
 CMakeFiles/Pacman.dir/Ghost.cpp.o: ../Ghost.h
 CMakeFiles/Pacman.dir/Ghost.cpp.o: ../Player.h
+
+CMakeFiles/Pacman.dir/JsonReader.cpp.o: ../AbstractFactory.h
+CMakeFiles/Pacman.dir/JsonReader.cpp.o: ../Bullet.h
+CMakeFiles/Pacman.dir/JsonReader.cpp.o: ../Constants.h
+CMakeFiles/Pacman.dir/JsonReader.cpp.o: ../Coordinate.h
+CMakeFiles/Pacman.dir/JsonReader.cpp.o: ../Entity.h
+CMakeFiles/Pacman.dir/JsonReader.cpp.o: ../Game.h
+CMakeFiles/Pacman.dir/JsonReader.cpp.o: ../Ghost.h
+CMakeFiles/Pacman.dir/JsonReader.cpp.o: ../JsonReader.cpp
+CMakeFiles/Pacman.dir/JsonReader.cpp.o: ../JsonReader.h
+CMakeFiles/Pacman.dir/JsonReader.cpp.o: ../Pacman.h
+CMakeFiles/Pacman.dir/JsonReader.cpp.o: ../Player.h
+CMakeFiles/Pacman.dir/JsonReader.cpp.o: ../Wall.h
 
 CMakeFiles/Pacman.dir/Pacman.cpp.o: ../Constants.h
 CMakeFiles/Pacman.dir/Pacman.cpp.o: ../Entity.h
@@ -71,9 +90,11 @@ CMakeFiles/Pacman.dir/Wall.cpp.o: ../Wall.h
 CMakeFiles/Pacman.dir/main.cpp.o: ../AbstractFactory.h
 CMakeFiles/Pacman.dir/main.cpp.o: ../Bullet.h
 CMakeFiles/Pacman.dir/main.cpp.o: ../Constants.h
+CMakeFiles/Pacman.dir/main.cpp.o: ../Coordinate.h
 CMakeFiles/Pacman.dir/main.cpp.o: ../Entity.h
 CMakeFiles/Pacman.dir/main.cpp.o: ../Game.h
 CMakeFiles/Pacman.dir/main.cpp.o: ../Ghost.h
+CMakeFiles/Pacman.dir/main.cpp.o: ../JsonReader.h
 CMakeFiles/Pacman.dir/main.cpp.o: ../Pacman.h
 CMakeFiles/Pacman.dir/main.cpp.o: ../Player.h
 CMakeFiles/Pacman.dir/main.cpp.o: ../SDLFactory.h

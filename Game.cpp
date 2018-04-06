@@ -9,6 +9,7 @@
 #include "Constants.h"
 #include "Game.h"
 #include "Bonus.h"
+#include "JsonReader.h"
 
 
 Game::Game(AbstractFactory* abstractFactory) {
@@ -16,31 +17,86 @@ Game::Game(AbstractFactory* abstractFactory) {
     //Constructor
     this->abstractFactory = abstractFactory;
 
-    pacman = new Pacman(50, 50, this);
-    pacman->moveRight();
-
-    bonuses.push_back(new Bonus(15, 10));
-
+//    pacman = new Pacman(50, 50, this);
+//    pacman->moveRight();
+//
+//    bonuses.push_back(new Bonus(15, 10));
+//
 //    ghosts.push_back(new Ghost(1, 1, this));
 //    ghosts.push_back(new Ghost(4, 8, this));
-    ghosts.push_back(new Ghost(70, 50, this));
-    ghosts[0]->moveRight();
+//    ghosts.push_back(new Ghost(70, 50, this));
+//    ghosts[0]->moveRight();
 //    ghosts[2]->moveRight();
+//
+//    bullets.push_back(new Bullet(9,10));
+//    bullets.push_back(new Bullet(8,10));
+//    bullets.push_back(new Bullet(7,10));
+//
+//    //Upper and bottom border
+//    for (int i = 0; i <= maxX; i++) {
+//        walls.push_back(new Wall(i, maxY));
+//        walls.push_back(new Wall(i, minY));
+//    }
+//
+//    //left right border and no overlap with above
+//    for (int i = 1; i <= maxY - 1; i++) {
+//        walls.push_back(new Wall(minX, i));
+//        walls.push_back(new Wall(maxX, i));
+//    }
 
-    bullets.push_back(new Bullet(9,10));
-    bullets.push_back(new Bullet(8,10));
-    bullets.push_back(new Bullet(7,10));
+//// VANAF HIER JSON
 
-    //Upper and bottom border
-    for (int i = 0; i <= maxX; i++) {
-        walls.push_back(new Wall(i, maxY));
-        walls.push_back(new Wall(i, minY));
+    JsonReader* jsonReader = new JsonReader();
+    jsonReader->read(); //read file!
+
+    //Display level
+    std::cout << "Level id: " << jsonReader->getLevel() << std::endl;
+
+    //Pacman
+    Coordinate* coordinatePacman = jsonReader->getPacmanCoordinates();
+    pacman = new Pacman(coordinatePacman->getX(), coordinatePacman->getY(), this);
+
+    //Walls
+    std::vector<Coordinate *> coordinateWalls = jsonReader->getInfrastructure();
+    for(Coordinate *coordinateWall : coordinateWalls){
+        walls.push_back(new Wall(coordinateWall->getX(),coordinateWall->getY()));
     }
 
-    //left right border and no overlap with above
-    for (int i = 1; i <= maxY - 1; i++) {
-        walls.push_back(new Wall(minX, i));
-        walls.push_back(new Wall(maxX, i));
+    //Ghosts
+    std::vector<Coordinate *> coordinateGhosts = jsonReader->getFixedNonWallCoordinates("Ghosts");
+    for(Coordinate *coordinateGhost : coordinateGhosts){
+        Ghost* newGhost = new Ghost(coordinateGhost->getX(),coordinateGhost->getY(),this);
+        ghosts.push_back(newGhost);
+        switch (coordinateGhost->getDirection()){
+            case up:
+                newGhost->moveUp();
+                break;
+            case down:
+                newGhost->moveDown();
+                break;
+            case left:
+                newGhost->moveLeft();
+                break;
+            case right:
+                newGhost->moveRight();
+                break;
+            default:
+                //go left
+                newGhost->moveLeft();
+                break;
+        }
+    }
+
+    //Bullets
+    std::vector<Coordinate *> coordinateBullets = jsonReader->getFixedNonWallCoordinates("Bullets");
+    for(Coordinate *coordinateBullet : coordinateBullets){
+        bullets.push_back(new Bullet(coordinateBullet->getX(),coordinateBullet->getY()));
+    }
+
+    //Bonuses
+    std::vector<Coordinate *> coordinateBonuses = jsonReader->getFixedNonWallCoordinates("Bonuses");
+    for(Coordinate *coordinateBonus : coordinateBonuses){
+        bonuses.push_back(new Bonus(coordinateBonus->getX(),coordinateBonus->getY()));
     }
 
 
@@ -99,7 +155,7 @@ void Game::print() {
 
     if (pacman->getX() >= minX && pacman->getX() <= maxX
         && pacman->getY() >= minY && pacman->getY() <= maxY) {
-        grid[pacman->getX()][pacman->getY()] = "P";
+        grid[pacman->getX() + 1][pacman->getY() + 1] = "P";
     } else {
         std::cout << "Pacman out of range" << std::endl;
     }

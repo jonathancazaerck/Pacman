@@ -107,6 +107,12 @@
 		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Constants.h">
 			<Option target="Pacman"/>
 		</Unit>
+		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Coordinate.cpp">
+			<Option target="Pacman"/>
+		</Unit>
+		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Coordinate.h">
+			<Option target="Pacman"/>
+		</Unit>
 		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Entity.cpp">
 			<Option target="Pacman"/>
 		</Unit>

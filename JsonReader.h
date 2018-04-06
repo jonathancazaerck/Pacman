@@ -5,6 +5,10 @@
 #include <fstream>
 #include <iostream>
 #include <nlohmann/json.hpp>
+#include "Game.h"
+#include "Coordinate.h"
+#include "Constants.h"
+
 using json = nlohmann::json;
 
 #ifndef PACMAN_JSONREADER_H
@@ -13,17 +17,17 @@ using json = nlohmann::json;
 
 class JsonReader {
 public:
+    Game* game;
     void read();
     void showJson();
-    void getCoordinates();
+    void getAllCoordinates();
+    int getLevel();
+    Coordinate * getPacmanCoordinates();
+    std::vector<Coordinate *> getFixedNonWallCoordinates(std::string objectType);
+    std::vector<Coordinate *> getInfrastructure();
 
 private:
     json j;
-
-    void getPacmanCoordinates();
-    void getGhostCoordinates();
-    void getInfrastructure();
-    void getBonuses();
 };
 
 

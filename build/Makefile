@@ -204,6 +204,33 @@ Bullet.cpp.s:
 	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Bullet.cpp.s
 .PHONY : Bullet.cpp.s
 
+Coordinate.o: Coordinate.cpp.o
+
+.PHONY : Coordinate.o
+
+# target to build an object file
+Coordinate.cpp.o:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Coordinate.cpp.o
+.PHONY : Coordinate.cpp.o
+
+Coordinate.i: Coordinate.cpp.i
+
+.PHONY : Coordinate.i
+
+# target to preprocess a source file
+Coordinate.cpp.i:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Coordinate.cpp.i
+.PHONY : Coordinate.cpp.i
+
+Coordinate.s: Coordinate.cpp.s
+
+.PHONY : Coordinate.s
+
+# target to generate assembly for a file
+Coordinate.cpp.s:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Coordinate.cpp.s
+.PHONY : Coordinate.cpp.s
+
 Entity.o: Entity.cpp.o
 
 .PHONY : Entity.o
@@ -284,6 +311,33 @@ Ghost.s: Ghost.cpp.s
 Ghost.cpp.s:
 	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Ghost.cpp.s
 .PHONY : Ghost.cpp.s
+
+JsonReader.o: JsonReader.cpp.o
+
+.PHONY : JsonReader.o
+
+# target to build an object file
+JsonReader.cpp.o:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/JsonReader.cpp.o
+.PHONY : JsonReader.cpp.o
+
+JsonReader.i: JsonReader.cpp.i
+
+.PHONY : JsonReader.i
+
+# target to preprocess a source file
+JsonReader.cpp.i:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/JsonReader.cpp.i
+.PHONY : JsonReader.cpp.i
+
+JsonReader.s: JsonReader.cpp.s
+
+.PHONY : JsonReader.s
+
+# target to generate assembly for a file
+JsonReader.cpp.s:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/JsonReader.cpp.s
+.PHONY : JsonReader.cpp.s
 
 Pacman.o: Pacman.cpp.o
 
@@ -438,6 +492,9 @@ help:
 	@echo "... Bullet.o"
 	@echo "... Bullet.i"
 	@echo "... Bullet.s"
+	@echo "... Coordinate.o"
+	@echo "... Coordinate.i"
+	@echo "... Coordinate.s"
 	@echo "... Entity.o"
 	@echo "... Entity.i"
 	@echo "... Entity.s"
@@ -447,6 +504,9 @@ help:
 	@echo "... Ghost.o"
 	@echo "... Ghost.i"
 	@echo "... Ghost.s"
+	@echo "... JsonReader.o"
+	@echo "... JsonReader.i"
+	@echo "... JsonReader.s"
 	@echo "... Pacman.o"
 	@echo "... Pacman.i"
 	@echo "... Pacman.s"
