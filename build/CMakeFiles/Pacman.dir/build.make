@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.10.2/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E remove -f
+RM = /usr/local/Cellar/cmake/3.10.2/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tobia/Workspace/3BA/Pacman
+CMAKE_SOURCE_DIR = "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tobia/Workspace/3BA/Pacman/build
+CMAKE_BINARY_DIR = "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/build"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Pacman.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/Pacman.dir/flags.make
 
 CMakeFiles/Pacman.dir/main.cpp.o: CMakeFiles/Pacman.dir/flags.make
 CMakeFiles/Pacman.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tobia/Workspace/3BA/Pacman/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Pacman.dir/main.cpp.o"
-	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pacman.dir/main.cpp.o -c /home/tobia/Workspace/3BA/Pacman/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Pacman.dir/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pacman.dir/main.cpp.o -c "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/main.cpp"
 
 CMakeFiles/Pacman.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pacman.dir/main.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tobia/Workspace/3BA/Pacman/main.cpp > CMakeFiles/Pacman.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/main.cpp" > CMakeFiles/Pacman.dir/main.cpp.i
 
 CMakeFiles/Pacman.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pacman.dir/main.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tobia/Workspace/3BA/Pacman/main.cpp -o CMakeFiles/Pacman.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/main.cpp" -o CMakeFiles/Pacman.dir/main.cpp.s
 
 CMakeFiles/Pacman.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/Pacman.dir/main.cpp.o.provides.build: CMakeFiles/Pacman.dir/main.cpp.
 
 CMakeFiles/Pacman.dir/Game.cpp.o: CMakeFiles/Pacman.dir/flags.make
 CMakeFiles/Pacman.dir/Game.cpp.o: ../Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tobia/Workspace/3BA/Pacman/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Pacman.dir/Game.cpp.o"
-	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pacman.dir/Game.cpp.o -c /home/tobia/Workspace/3BA/Pacman/Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Pacman.dir/Game.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pacman.dir/Game.cpp.o -c "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Game.cpp"
 
 CMakeFiles/Pacman.dir/Game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pacman.dir/Game.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tobia/Workspace/3BA/Pacman/Game.cpp > CMakeFiles/Pacman.dir/Game.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Game.cpp" > CMakeFiles/Pacman.dir/Game.cpp.i
 
 CMakeFiles/Pacman.dir/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pacman.dir/Game.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tobia/Workspace/3BA/Pacman/Game.cpp -o CMakeFiles/Pacman.dir/Game.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Game.cpp" -o CMakeFiles/Pacman.dir/Game.cpp.s
 
 CMakeFiles/Pacman.dir/Game.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/Pacman.dir/Game.cpp.o.provides.build: CMakeFiles/Pacman.dir/Game.cpp.
 
 CMakeFiles/Pacman.dir/Entity.cpp.o: CMakeFiles/Pacman.dir/flags.make
 CMakeFiles/Pacman.dir/Entity.cpp.o: ../Entity.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tobia/Workspace/3BA/Pacman/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Pacman.dir/Entity.cpp.o"
-	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pacman.dir/Entity.cpp.o -c /home/tobia/Workspace/3BA/Pacman/Entity.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Pacman.dir/Entity.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pacman.dir/Entity.cpp.o -c "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Entity.cpp"
 
 CMakeFiles/Pacman.dir/Entity.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pacman.dir/Entity.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tobia/Workspace/3BA/Pacman/Entity.cpp > CMakeFiles/Pacman.dir/Entity.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Entity.cpp" > CMakeFiles/Pacman.dir/Entity.cpp.i
 
 CMakeFiles/Pacman.dir/Entity.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pacman.dir/Entity.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tobia/Workspace/3BA/Pacman/Entity.cpp -o CMakeFiles/Pacman.dir/Entity.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Entity.cpp" -o CMakeFiles/Pacman.dir/Entity.cpp.s
 
 CMakeFiles/Pacman.dir/Entity.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/Pacman.dir/Entity.cpp.o.provides.build: CMakeFiles/Pacman.dir/Entity.
 
 CMakeFiles/Pacman.dir/Pacman.cpp.o: CMakeFiles/Pacman.dir/flags.make
 CMakeFiles/Pacman.dir/Pacman.cpp.o: ../Pacman.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tobia/Workspace/3BA/Pacman/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Pacman.dir/Pacman.cpp.o"
-	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pacman.dir/Pacman.cpp.o -c /home/tobia/Workspace/3BA/Pacman/Pacman.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Pacman.dir/Pacman.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pacman.dir/Pacman.cpp.o -c "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Pacman.cpp"
 
 CMakeFiles/Pacman.dir/Pacman.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pacman.dir/Pacman.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tobia/Workspace/3BA/Pacman/Pacman.cpp > CMakeFiles/Pacman.dir/Pacman.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Pacman.cpp" > CMakeFiles/Pacman.dir/Pacman.cpp.i
 
 CMakeFiles/Pacman.dir/Pacman.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pacman.dir/Pacman.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tobia/Workspace/3BA/Pacman/Pacman.cpp -o CMakeFiles/Pacman.dir/Pacman.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Pacman.cpp" -o CMakeFiles/Pacman.dir/Pacman.cpp.s
 
 CMakeFiles/Pacman.dir/Pacman.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/Pacman.dir/Pacman.cpp.o.provides.build: CMakeFiles/Pacman.dir/Pacman.
 
 CMakeFiles/Pacman.dir/Wall.cpp.o: CMakeFiles/Pacman.dir/flags.make
 CMakeFiles/Pacman.dir/Wall.cpp.o: ../Wall.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tobia/Workspace/3BA/Pacman/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Pacman.dir/Wall.cpp.o"
-	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pacman.dir/Wall.cpp.o -c /home/tobia/Workspace/3BA/Pacman/Wall.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Pacman.dir/Wall.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pacman.dir/Wall.cpp.o -c "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Wall.cpp"
 
 CMakeFiles/Pacman.dir/Wall.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pacman.dir/Wall.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tobia/Workspace/3BA/Pacman/Wall.cpp > CMakeFiles/Pacman.dir/Wall.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Wall.cpp" > CMakeFiles/Pacman.dir/Wall.cpp.i
 
 CMakeFiles/Pacman.dir/Wall.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pacman.dir/Wall.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tobia/Workspace/3BA/Pacman/Wall.cpp -o CMakeFiles/Pacman.dir/Wall.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Wall.cpp" -o CMakeFiles/Pacman.dir/Wall.cpp.s
 
 CMakeFiles/Pacman.dir/Wall.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/Pacman.dir/Wall.cpp.o.provides.build: CMakeFiles/Pacman.dir/Wall.cpp.
 
 CMakeFiles/Pacman.dir/Ghost.cpp.o: CMakeFiles/Pacman.dir/flags.make
 CMakeFiles/Pacman.dir/Ghost.cpp.o: ../Ghost.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tobia/Workspace/3BA/Pacman/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Pacman.dir/Ghost.cpp.o"
-	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pacman.dir/Ghost.cpp.o -c /home/tobia/Workspace/3BA/Pacman/Ghost.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Pacman.dir/Ghost.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pacman.dir/Ghost.cpp.o -c "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Ghost.cpp"
 
 CMakeFiles/Pacman.dir/Ghost.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pacman.dir/Ghost.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tobia/Workspace/3BA/Pacman/Ghost.cpp > CMakeFiles/Pacman.dir/Ghost.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Ghost.cpp" > CMakeFiles/Pacman.dir/Ghost.cpp.i
 
 CMakeFiles/Pacman.dir/Ghost.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pacman.dir/Ghost.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tobia/Workspace/3BA/Pacman/Ghost.cpp -o CMakeFiles/Pacman.dir/Ghost.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Ghost.cpp" -o CMakeFiles/Pacman.dir/Ghost.cpp.s
 
 CMakeFiles/Pacman.dir/Ghost.cpp.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/Pacman.dir/Ghost.cpp.o.provides.build: CMakeFiles/Pacman.dir/Ghost.cp
 
 CMakeFiles/Pacman.dir/Player.cpp.o: CMakeFiles/Pacman.dir/flags.make
 CMakeFiles/Pacman.dir/Player.cpp.o: ../Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tobia/Workspace/3BA/Pacman/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Pacman.dir/Player.cpp.o"
-	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pacman.dir/Player.cpp.o -c /home/tobia/Workspace/3BA/Pacman/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Pacman.dir/Player.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pacman.dir/Player.cpp.o -c "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Player.cpp"
 
 CMakeFiles/Pacman.dir/Player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pacman.dir/Player.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tobia/Workspace/3BA/Pacman/Player.cpp > CMakeFiles/Pacman.dir/Player.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Player.cpp" > CMakeFiles/Pacman.dir/Player.cpp.i
 
 CMakeFiles/Pacman.dir/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pacman.dir/Player.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tobia/Workspace/3BA/Pacman/Player.cpp -o CMakeFiles/Pacman.dir/Player.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Player.cpp" -o CMakeFiles/Pacman.dir/Player.cpp.s
 
 CMakeFiles/Pacman.dir/Player.cpp.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/Pacman.dir/Player.cpp.o.provides.build: CMakeFiles/Pacman.dir/Player.
 
 CMakeFiles/Pacman.dir/AbstractFactory.cpp.o: CMakeFiles/Pacman.dir/flags.make
 CMakeFiles/Pacman.dir/AbstractFactory.cpp.o: ../AbstractFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tobia/Workspace/3BA/Pacman/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Pacman.dir/AbstractFactory.cpp.o"
-	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pacman.dir/AbstractFactory.cpp.o -c /home/tobia/Workspace/3BA/Pacman/AbstractFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Pacman.dir/AbstractFactory.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pacman.dir/AbstractFactory.cpp.o -c "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/AbstractFactory.cpp"
 
 CMakeFiles/Pacman.dir/AbstractFactory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pacman.dir/AbstractFactory.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tobia/Workspace/3BA/Pacman/AbstractFactory.cpp > CMakeFiles/Pacman.dir/AbstractFactory.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/AbstractFactory.cpp" > CMakeFiles/Pacman.dir/AbstractFactory.cpp.i
 
 CMakeFiles/Pacman.dir/AbstractFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pacman.dir/AbstractFactory.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tobia/Workspace/3BA/Pacman/AbstractFactory.cpp -o CMakeFiles/Pacman.dir/AbstractFactory.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/AbstractFactory.cpp" -o CMakeFiles/Pacman.dir/AbstractFactory.cpp.s
 
 CMakeFiles/Pacman.dir/AbstractFactory.cpp.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/Pacman.dir/AbstractFactory.cpp.o.provides.build: CMakeFiles/Pacman.di
 
 CMakeFiles/Pacman.dir/SDLFactory.cpp.o: CMakeFiles/Pacman.dir/flags.make
 CMakeFiles/Pacman.dir/SDLFactory.cpp.o: ../SDLFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tobia/Workspace/3BA/Pacman/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Pacman.dir/SDLFactory.cpp.o"
-	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pacman.dir/SDLFactory.cpp.o -c /home/tobia/Workspace/3BA/Pacman/SDLFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Pacman.dir/SDLFactory.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pacman.dir/SDLFactory.cpp.o -c "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLFactory.cpp"
 
 CMakeFiles/Pacman.dir/SDLFactory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pacman.dir/SDLFactory.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tobia/Workspace/3BA/Pacman/SDLFactory.cpp > CMakeFiles/Pacman.dir/SDLFactory.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLFactory.cpp" > CMakeFiles/Pacman.dir/SDLFactory.cpp.i
 
 CMakeFiles/Pacman.dir/SDLFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pacman.dir/SDLFactory.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tobia/Workspace/3BA/Pacman/SDLFactory.cpp -o CMakeFiles/Pacman.dir/SDLFactory.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLFactory.cpp" -o CMakeFiles/Pacman.dir/SDLFactory.cpp.s
 
 CMakeFiles/Pacman.dir/SDLFactory.cpp.o.requires:
 
@@ -275,16 +275,16 @@ CMakeFiles/Pacman.dir/SDLFactory.cpp.o.provides.build: CMakeFiles/Pacman.dir/SDL
 
 CMakeFiles/Pacman.dir/Bullet.cpp.o: CMakeFiles/Pacman.dir/flags.make
 CMakeFiles/Pacman.dir/Bullet.cpp.o: ../Bullet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tobia/Workspace/3BA/Pacman/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Pacman.dir/Bullet.cpp.o"
-	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pacman.dir/Bullet.cpp.o -c /home/tobia/Workspace/3BA/Pacman/Bullet.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Pacman.dir/Bullet.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pacman.dir/Bullet.cpp.o -c "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Bullet.cpp"
 
 CMakeFiles/Pacman.dir/Bullet.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pacman.dir/Bullet.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tobia/Workspace/3BA/Pacman/Bullet.cpp > CMakeFiles/Pacman.dir/Bullet.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Bullet.cpp" > CMakeFiles/Pacman.dir/Bullet.cpp.i
 
 CMakeFiles/Pacman.dir/Bullet.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pacman.dir/Bullet.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tobia/Workspace/3BA/Pacman/Bullet.cpp -o CMakeFiles/Pacman.dir/Bullet.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Bullet.cpp" -o CMakeFiles/Pacman.dir/Bullet.cpp.s
 
 CMakeFiles/Pacman.dir/Bullet.cpp.o.requires:
 
@@ -299,16 +299,16 @@ CMakeFiles/Pacman.dir/Bullet.cpp.o.provides.build: CMakeFiles/Pacman.dir/Bullet.
 
 CMakeFiles/Pacman.dir/Bonus.cpp.o: CMakeFiles/Pacman.dir/flags.make
 CMakeFiles/Pacman.dir/Bonus.cpp.o: ../Bonus.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tobia/Workspace/3BA/Pacman/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Pacman.dir/Bonus.cpp.o"
-	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pacman.dir/Bonus.cpp.o -c /home/tobia/Workspace/3BA/Pacman/Bonus.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Pacman.dir/Bonus.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pacman.dir/Bonus.cpp.o -c "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Bonus.cpp"
 
 CMakeFiles/Pacman.dir/Bonus.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pacman.dir/Bonus.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tobia/Workspace/3BA/Pacman/Bonus.cpp > CMakeFiles/Pacman.dir/Bonus.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Bonus.cpp" > CMakeFiles/Pacman.dir/Bonus.cpp.i
 
 CMakeFiles/Pacman.dir/Bonus.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pacman.dir/Bonus.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tobia/Workspace/3BA/Pacman/Bonus.cpp -o CMakeFiles/Pacman.dir/Bonus.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Bonus.cpp" -o CMakeFiles/Pacman.dir/Bonus.cpp.s
 
 CMakeFiles/Pacman.dir/Bonus.cpp.o.requires:
 
@@ -350,10 +350,8 @@ Pacman: CMakeFiles/Pacman.dir/SDLFactory.cpp.o
 Pacman: CMakeFiles/Pacman.dir/Bullet.cpp.o
 Pacman: CMakeFiles/Pacman.dir/Bonus.cpp.o
 Pacman: CMakeFiles/Pacman.dir/build.make
-Pacman: /usr/lib64/libSDL2main.a
-Pacman: /usr/lib64/libSDL2.so
 Pacman: CMakeFiles/Pacman.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tobia/Workspace/3BA/Pacman/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable Pacman"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable Pacman"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Pacman.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -380,6 +378,6 @@ CMakeFiles/Pacman.dir/clean:
 .PHONY : CMakeFiles/Pacman.dir/clean
 
 CMakeFiles/Pacman.dir/depend:
-	cd /home/tobia/Workspace/3BA/Pacman/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tobia/Workspace/3BA/Pacman /home/tobia/Workspace/3BA/Pacman /home/tobia/Workspace/3BA/Pacman/build /home/tobia/Workspace/3BA/Pacman/build /home/tobia/Workspace/3BA/Pacman/build/CMakeFiles/Pacman.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman" "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman" "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/build" "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/build" "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/build/CMakeFiles/Pacman.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/Pacman.dir/depend
 

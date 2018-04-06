@@ -80,6 +80,18 @@ Ghost.h
 Player.h
 /Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Player.h
 
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/JsonReader.cpp
+JsonReader.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/JsonReader.h
+
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/JsonReader.h
+fstream
+-
+iostream
+-
+nlohmann/json.hpp
+-
+
 /Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Pacman.cpp
 iostream
 -
@@ -91,8 +103,12 @@ Player.h
 /Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Player.h
 
 /Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Player.cpp
+iostream
+-
 Player.h
 /Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Player.h
+Game.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Game.h
 
 /Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Player.h
 Constants.h
@@ -129,4 +145,6 @@ Game.h
 /Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Game.h
 SDLFactory.h
 /Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLFactory.h
+JsonReader.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/JsonReader.h
 

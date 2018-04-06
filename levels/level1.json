@@ -1,0 +1,16 @@
+{
+    "Level" : 1,
+    "Pacman" : {"x":3, "y":3},
+    "Ghosts" : [
+      {"x":5, "y":5},
+      {"x":15, "y":15},
+      {"x":5, "y":15},
+      {"x":20, "y":20}
+    ],
+    "Walls" : [
+      {"beginX":0, "beginY":0, "end":79, "type":"horizontal"},
+      {"beginX":0, "beginY":59, "end":79, "type":"horizontal"},
+      {"beginX":0, "beginY":1, "end":58, "type":"vertical"},
+      {"beginX":79, "beginY":1, "end":58, "type":"vertical"}
+    ]
+}

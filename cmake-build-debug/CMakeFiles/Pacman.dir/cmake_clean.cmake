@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Pacman.dir/SDLFactory.cpp.o"
   "CMakeFiles/Pacman.dir/Bullet.cpp.o"
   "CMakeFiles/Pacman.dir/Bonus.cpp.o"
+  "CMakeFiles/Pacman.dir/JsonReader.cpp.o"
   "Pacman.pdb"
   "Pacman"
 )
