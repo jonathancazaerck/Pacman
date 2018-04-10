@@ -9,11 +9,11 @@
 #include "SDLBullet.h"
 #include "SDLBonus.h"
 
+SDL_Event SDLFactory::event;
 
 SDLFactory::SDLFactory() {
     //
 }
-
 
 void SDLFactory::init(const char* title, int xPos, int yPos, int width, int height, bool fullscreen) {
     int flags = 0;
@@ -33,14 +33,19 @@ void SDLFactory::init(const char* title, int xPos, int yPos, int width, int heig
             std::cout << "Renderer created" << std::endl;
         }
 
+        objTexture = SDLTextureManager::LoadTexture("../assets/Sprite.png", renderer);
+
         isRunning = true;
     }
 
     else { isRunning = false; }
 }
 
+void SDLFactory::initKeyboardController(Pacman *pacman) {
+    sdlKeyboardController = new SDLKeyboardController(pacman);
+}
+
 void SDLFactory::handleEvents() {
-    SDL_Event event;
     SDL_PollEvent(&event);
     switch (event.type){
         case SDL_QUIT:
@@ -50,6 +55,8 @@ void SDLFactory::handleEvents() {
         default:
             break;
     }
+
+    sdlKeyboardController->update();
 }
 
 void SDLFactory::renderClear() {
@@ -70,15 +77,15 @@ void SDLFactory::clean() {
 
 //Create game objects
 Pacman* SDLFactory::createPacman(int x, int y, Game* game) {
-    return new SDLPacman(x, y, game, "../assets/pacman.png", renderer);
+    return new SDLPacman(x, y, game, objTexture, renderer);
 }
 
 Wall* SDLFactory::createWall(int x, int y) {
-    return new SDLWall(x, y, "dfd", renderer);
+    return new SDLWall(x, y, "../assets/wall.png", renderer);
 }
 
 Ghost* SDLFactory::createGhost(int x, int y, Game* game) {
-    return new SDLGhost(x, y, game, "dfd", renderer);
+    return new SDLGhost(x, y, game, objTexture, renderer);
 }
 
 Bullet* SDLFactory::createBullet(int x, int y) {

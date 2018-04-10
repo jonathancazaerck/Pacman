@@ -13,6 +13,8 @@ class SDLWall : public Wall{
 
 public:
     SDLWall(int x, int y, const char* texturesheet, SDL_Renderer *renderer);
+    void visualize();
+    void render();
 
 private:
     SDL_Texture* objTexture;

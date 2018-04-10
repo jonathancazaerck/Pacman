@@ -11,6 +11,8 @@
 class Wall : public Entity {
 public:
     Wall(int x, int y);
+    virtual void visualize(){};
+    virtual void render(){};
 };
 
 

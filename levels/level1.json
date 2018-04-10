@@ -1,14 +1,17 @@
 {
     "Level" : 1,
-    "Pacman" : {"x":8, "y":17},
+    "Pacman" : {"x":200, "y":80},
     "Ghosts" : [
       {"x":1, "y":1, "direction":"down"},
-      {"x":1, "y":28, "direction":"up"},
-      {"x":38, "y":1, "direction":"left"},
-      {"x":38, "y":28, "direction":"right"}
+      {"x":1, "y":590, "direction":"up"},
+      {"x":795, "y":1, "direction":"left"},
+      {"x":795, "y":590, "direction":"right"}
     ],
     "Walls" :  [
-      
+      {"beginX":0, "beginY":0, "end":799, "type":"horizontal"},
+      {"beginX":0, "beginY":598, "end":799, "type":"horizontal"},
+      {"beginX":0, "beginY":1, "end":599, "type":"vertical"},
+      {"beginX":798, "beginY":1, "end":599, "type":"vertical"}
     ],
     "Bullets": [
       {"x":10, "y":10},

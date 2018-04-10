@@ -6,9 +6,9 @@
 #include "Pacman.h"
 
 Pacman::Pacman(int x, int y, Game* game) :Player(x,y, game) {
-    direction = right;
-    width = 32;
-    height = 32;
+    direction = stop;
+    width = 13;
+    height = 13;
 };
 
 void Pacman::update() {

@@ -11,6 +11,7 @@
 class AbstractFactory {
 public:
     virtual void init(const char* title, int xPos, int yPos, int width, int height, bool fullscreen){};
+    virtual void initKeyboardController(Pacman* pacman){};
     virtual bool running()=0;
     virtual void handleEvents(){};
     virtual void renderClear(){};

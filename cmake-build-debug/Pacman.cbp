@@ -175,6 +175,12 @@
 		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLGhost.h">
 			<Option target="Pacman"/>
 		</Unit>
+		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLKeyboardController.cpp">
+			<Option target="Pacman"/>
+		</Unit>
+		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLKeyboardController.h">
+			<Option target="Pacman"/>
+		</Unit>
 		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLPacman.cpp">
 			<Option target="Pacman"/>
 		</Unit>

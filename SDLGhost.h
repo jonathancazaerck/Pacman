@@ -10,7 +10,9 @@
 
 class SDLGhost : public Ghost {
 public:
-    SDLGhost(int x, int y, Game* game, const char* texturesheet, SDL_Renderer *renderer);
+    SDLGhost(int x, int y, Game* game, SDL_Texture* objTexture, SDL_Renderer *renderer);
+    void visualize();
+    void render();
 
 private:
     SDL_Texture* objTexture;

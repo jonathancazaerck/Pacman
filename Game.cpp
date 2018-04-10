@@ -120,16 +120,37 @@ void Game::run() {
     abstractFactory->init("Jonathan Cazaerck", 0, 0, 800, 600, false);
 
     initObjects();
+    abstractFactory->initKeyboardController(pacman);
+
+    for(Wall* wall:walls){
+        wall->visualize();
+        wall->render();
+    }
+
 
     while (abstractFactory->running()) {
+
+        tick();
 
         frameStart = SDL_GetTicks();
 
         abstractFactory->handleEvents();
+        abstractFactory->renderClear();
+
         pacman->update();
         pacman->visualize();
-        abstractFactory->renderClear();
         pacman->render();
+
+        for(Ghost* ghost:ghosts){
+            ghost->update();
+            ghost->visualize();
+            ghost->render();
+        }
+
+        for(Wall* wall:walls){
+            wall->render();
+        }
+
         abstractFactory->renderPresent();
 
         frameTime = SDL_GetTicks() - frameStart;

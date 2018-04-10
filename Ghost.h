@@ -22,6 +22,8 @@ public:
     bool getEnemy();
     void setNotEnemy();
     void timetick();
+    virtual void visualize(){};
+    virtual void render(){};
 };
 
 

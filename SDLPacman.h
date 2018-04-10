@@ -11,7 +11,7 @@
 
 class SDLPacman : public Pacman {
 public:
-    SDLPacman(int x, int y, Game* game, const char* texturesheet, SDL_Renderer* renderer);
+    SDLPacman(int x, int y, Game* game, SDL_Texture* objTexture, SDL_Renderer* renderer);
     void visualize();
     void render();
 

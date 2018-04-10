@@ -501,6 +501,33 @@ SDLGhost.cpp.s:
 	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLGhost.cpp.s
 .PHONY : SDLGhost.cpp.s
 
+SDLKeyboardController.o: SDLKeyboardController.cpp.o
+
+.PHONY : SDLKeyboardController.o
+
+# target to build an object file
+SDLKeyboardController.cpp.o:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.o
+.PHONY : SDLKeyboardController.cpp.o
+
+SDLKeyboardController.i: SDLKeyboardController.cpp.i
+
+.PHONY : SDLKeyboardController.i
+
+# target to preprocess a source file
+SDLKeyboardController.cpp.i:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.i
+.PHONY : SDLKeyboardController.cpp.i
+
+SDLKeyboardController.s: SDLKeyboardController.cpp.s
+
+.PHONY : SDLKeyboardController.s
+
+# target to generate assembly for a file
+SDLKeyboardController.cpp.s:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.s
+.PHONY : SDLKeyboardController.cpp.s
+
 SDLPacman.o: SDLPacman.cpp.o
 
 .PHONY : SDLPacman.o
@@ -687,6 +714,9 @@ help:
 	@echo "... SDLGhost.o"
 	@echo "... SDLGhost.i"
 	@echo "... SDLGhost.s"
+	@echo "... SDLKeyboardController.o"
+	@echo "... SDLKeyboardController.i"
+	@echo "... SDLKeyboardController.s"
 	@echo "... SDLPacman.o"
 	@echo "... SDLPacman.i"
 	@echo "... SDLPacman.s"

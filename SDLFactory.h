@@ -10,13 +10,18 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include "Constants.h"
+#include "SDLKeyboardController.h"
 #include <iostream>
+
+class SDLKeyboardController;
 
 class SDLFactory : public AbstractFactory {
 public:
     SDLFactory();
 
     void init(const char* title, int xPos, int yPos, int width, int height, bool fullscreen);
+
+    void initKeyboardController(Pacman* pacman);
 
     void handleEvents();
 
@@ -34,10 +39,15 @@ public:
     Bonus* createBonus(int x, int y);
     Bullet* createBullet(int x, int y);
 
+    static SDL_Event event;
+
 private:
     bool isRunning;
     SDL_Window *window;
     SDL_Renderer *renderer;
+    SDL_Texture* objTexture;
+
+    SDLKeyboardController *sdlKeyboardController;
 };
 
 

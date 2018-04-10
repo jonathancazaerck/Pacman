@@ -5,16 +5,16 @@
 #include "SDLPacman.h"
 #include "SDLTextureManager.h"
 
-SDLPacman::SDLPacman(int x, int y, Game* game, const char* texturesheet, SDL_Renderer* renderer) : Pacman(x,y,game) {
+SDLPacman::SDLPacman(int x, int y, Game* game, SDL_Texture* objTexture, SDL_Renderer* renderer) : Pacman(x,y,game) {
     this->renderer = renderer;
-    objTexture = SDLTextureManager::LoadTexture(texturesheet,this->renderer);
+    this->objTexture = objTexture;
 }
 
 void SDLPacman::visualize(){
-    srcRect.h = 128;
-    srcRect.w = 128;
-    srcRect.x = 0;
-    srcRect.y = 0;
+    srcRect.h = 13;
+    srcRect.w = 13;
+    srcRect.x = 473;
+    srcRect.y = 1;
 
     destRect.h = height;
     destRect.w = width;
