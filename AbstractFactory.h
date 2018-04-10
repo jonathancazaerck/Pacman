@@ -6,12 +6,23 @@
 #define PACMAN_ABSTRACTFACTORY_H
 
 
+#include "Pacman.h"
+
 class AbstractFactory {
 public:
-    virtual bool init()=0;
-    virtual bool loadMedia()=0;
-    virtual void close()=0;
-    virtual bool pollEvent()=0;
+    virtual void init(const char* title, int xPos, int yPos, int width, int height, bool fullscreen){};
+    virtual bool running()=0;
+    virtual void handleEvents(){};
+    virtual void renderClear(){};
+    virtual void renderPresent(){};
+    virtual void clean(){};
+
+    //Create the game objects
+    virtual Pacman* createPacman(int x, int y, Game* game) = 0;
+    virtual Wall* createWall(int x, int y) = 0;
+    virtual Ghost* createGhost(int x, int y, Game* game) = 0;
+    virtual Bonus* createBonus(int x, int y) = 0;
+    virtual Bullet* createBullet(int x, int y) = 0;
 };
 
 

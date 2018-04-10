@@ -28,6 +28,7 @@ public:
     Game(AbstractFactory* abstractFactory);
     bool checkOccupiedByWall(int x, int y) const;
     void run();
+    void initObjects();
 };
 
 

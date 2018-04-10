@@ -6,9 +6,9 @@
 #define PACMAN_CONSTANTS_H
 
 //Field is 80x60
-const int maxY = 59;
+const int maxY = 31;
 const int minY = 0;
-const int maxX = 79;
+const int maxX = 41;
 const int minX = 0;
 
 const int SCREEN_WIDTH = 800;

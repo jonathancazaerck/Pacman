@@ -6,13 +6,14 @@
 #include <array>
 #include <string>
 #include <iostream>
+#include <SDL2/SDL.h>
 #include "Constants.h"
 #include "Game.h"
 #include "Bonus.h"
 #include "JsonReader.h"
 
 
-Game::Game(AbstractFactory* abstractFactory) {
+Game::Game(AbstractFactory *abstractFactory) {
 
     //Constructor
     this->abstractFactory = abstractFactory;
@@ -43,85 +44,113 @@ Game::Game(AbstractFactory* abstractFactory) {
 //        walls.push_back(new Wall(minX, i));
 //        walls.push_back(new Wall(maxX, i));
 //    }
+}
 
 //// VANAF HIER JSON
 
-    JsonReader* jsonReader = new JsonReader();
-    jsonReader->read(); //read file!
+    void Game::initObjects(){
 
-    //Display level
-    std::cout << "Level id: " << jsonReader->getLevel() << std::endl;
+        JsonReader *jsonReader = new JsonReader();
+        jsonReader->read(); //read file!
 
-    //Pacman
-    Coordinate* coordinatePacman = jsonReader->getPacmanCoordinates();
-    pacman = new Pacman(coordinatePacman->getX(), coordinatePacman->getY(), this);
+        //Display level
+        //std::cout << "Level id: " << jsonReader->getLevel() << std::endl;
 
-    //Walls
-    std::vector<Coordinate *> coordinateWalls = jsonReader->getInfrastructure();
-    for(Coordinate *coordinateWall : coordinateWalls){
-        walls.push_back(new Wall(coordinateWall->getX(),coordinateWall->getY()));
-    }
+        //Pacman
+        Coordinate *coordinatePacman = jsonReader->getPacmanCoordinates();
+        pacman = abstractFactory->createPacman(coordinatePacman->getX(), coordinatePacman->getY(), this);
 
-    //Ghosts
-    std::vector<Coordinate *> coordinateGhosts = jsonReader->getFixedNonWallCoordinates("Ghosts");
-    for(Coordinate *coordinateGhost : coordinateGhosts){
-        Ghost* newGhost = new Ghost(coordinateGhost->getX(),coordinateGhost->getY(),this);
-        ghosts.push_back(newGhost);
-        switch (coordinateGhost->getDirection()){
-            case up:
-                newGhost->moveUp();
-                break;
-            case down:
-                newGhost->moveDown();
-                break;
-            case left:
-                newGhost->moveLeft();
-                break;
-            case right:
-                newGhost->moveRight();
-                break;
-            default:
-                //go left
-                newGhost->moveLeft();
-                break;
+        //Walls
+        std::vector<Coordinate *> coordinateWalls = jsonReader->getInfrastructure();
+        for (Coordinate *coordinateWall : coordinateWalls) {
+            walls.push_back(abstractFactory->createWall(coordinateWall->getX(), coordinateWall->getY()));
         }
+
+        //Ghosts
+        std::vector<Coordinate *> coordinateGhosts = jsonReader->getFixedNonWallCoordinates("Ghosts");
+        for (Coordinate *coordinateGhost : coordinateGhosts) {
+            Ghost *newGhost = abstractFactory->createGhost(coordinateGhost->getX(), coordinateGhost->getY(), this);
+            ghosts.push_back(newGhost);
+            switch (coordinateGhost->getDirection()) {
+                case up:
+                    newGhost->moveUp();
+                    break;
+                case down:
+                    newGhost->moveDown();
+                    break;
+                case left:
+                    newGhost->moveLeft();
+                    break;
+                case right:
+                    newGhost->moveRight();
+                    break;
+                default:
+                    //go left
+                    newGhost->moveLeft();
+                    break;
+            }
+        }
+
+        //Bullets
+        std::vector<Coordinate *> coordinateBullets = jsonReader->getFixedNonWallCoordinates("Bullets");
+        for (Coordinate *coordinateBullet : coordinateBullets) {
+            bullets.push_back(abstractFactory->createBullet(coordinateBullet->getX(), coordinateBullet->getY()));
+        }
+
+        //Bonuses
+        std::vector<Coordinate *> coordinateBonuses = jsonReader->getFixedNonWallCoordinates("Bonuses");
+        for (Coordinate *coordinateBonus : coordinateBonuses) {
+            bonuses.push_back(abstractFactory->createBonus(coordinateBonus->getX(), coordinateBonus->getY()));
+        }
+
+
     }
 
-    //Bullets
-    std::vector<Coordinate *> coordinateBullets = jsonReader->getFixedNonWallCoordinates("Bullets");
-    for(Coordinate *coordinateBullet : coordinateBullets){
-        bullets.push_back(new Bullet(coordinateBullet->getX(),coordinateBullet->getY()));
-    }
-
-    //Bonuses
-    std::vector<Coordinate *> coordinateBonuses = jsonReader->getFixedNonWallCoordinates("Bonuses");
-    for(Coordinate *coordinateBonus : coordinateBonuses){
-        bonuses.push_back(new Bonus(coordinateBonus->getX(),coordinateBonus->getY()));
-    }
-
-
-}
 
 void Game::run() {
 
 ////HIER SDL
-//    bool quit = false;
-//    //While application is running
-//    while( !quit )
-//    {
-//        quit = abstractFactory ->pollEvent();
-//    }
-//
-//    abstractFactory->close();
+
+    const int FPS = 60;
+    const int frameDelay = 1000/FPS;
+
+    Uint32 frameStart;
+    int frameTime;
+
+    abstractFactory->init("Jonathan Cazaerck", 0, 0, 800, 600, false);
+
+    initObjects();
+
+    while (abstractFactory->running()) {
+
+        frameStart = SDL_GetTicks();
+
+        abstractFactory->handleEvents();
+        pacman->update();
+        pacman->visualize();
+        abstractFactory->renderClear();
+        pacman->render();
+        abstractFactory->renderPresent();
+
+        frameTime = SDL_GetTicks() - frameStart;
+
+        if(frameDelay > frameTime)
+            SDL_Delay(frameDelay - frameTime);
+
+    }
+
+    abstractFactory->clean();
+
+}
 
 ////HIER TEXT MODE
-    while (true) {
-        std::cout << std::string(10, '\n');
-        print();
-        tick();
-        std::this_thread::sleep_for(std::chrono::milliseconds(100));
-    }
-}
+//    while (true) {
+//        std::cout << std::string(10, '\n');
+//        print();
+//        tick();
+//        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+//    }
+//}
 
 void Game::print() {
     std::array<std::array<std::string, maxY + 1>, maxX + 1> grid;
@@ -135,7 +164,7 @@ void Game::print() {
     for (Bullet *bullet : bullets) {
         int x = bullet->getX();
         int y = bullet->getY();
-        if(!bullet->getEated()){
+        if (!bullet->getEated()) {
             grid[x][y] = "*";
         }
     }
@@ -143,14 +172,14 @@ void Game::print() {
     for (Bonus *bonus : bonuses) {
         int x = bonus->getX();
         int y = bonus->getY();
-        if(!bonus->getEated()){
+        if (!bonus->getEated()) {
             grid[x][y] = "B";
         }
     }
 
     for (Ghost *ghost: ghosts) {
-//        std::cout << ghost->getX() << '\t' << ghost->getY() << std::endl;
-        grid[ghost->getX() + 1][ghost->getY()+1] = "G";
+        std::cout << ghost->getX() << '\t' << ghost->getY() << std::endl;
+        grid[ghost->getX() + 1][ghost->getY() + 1] = "G";
     }
 
     if (pacman->getX() >= minX && pacman->getX() <= maxX
@@ -161,7 +190,7 @@ void Game::print() {
     }
 
     for (int y = 0; y <= maxY; y++) {
-            std::cout << y << "\t";
+        std::cout << y << "\t";
         for (int x = 0; x <= maxX; x++) {
             std::string str = grid[x][y];
             if (str.empty()) {
@@ -175,7 +204,7 @@ void Game::print() {
 }
 
 void Game::tick() {
-    std::cout << "Tick " << std::endl;
+//    std::cout << "Tick " << std::endl;
 
 //DELETED: COLLISION BETWEEN TWO GHOSTS = NOT NECESSARY
 //    for (Ghost *ghost1 : ghosts) {
@@ -202,27 +231,27 @@ void Game::tick() {
         }
     }
 
-    for (Bullet *bullet : bullets){
-        if(bullet->checkCollision(pacman,true, false, stop)){
+    for (Bullet *bullet : bullets) {
+        if (bullet->checkCollision(pacman, true, false, stop)) {
             bullet->onCollisionWith(pacman);
         }
     }
 
-    for (Wall *wall : walls){
-        if(pacman->checkCollision(wall, false, false, stop)){
+    for (Wall *wall : walls) {
+        if (pacman->checkCollision(wall, false, false, stop)) {
             pacman->onCollisionWith(wall);
         }
     }
 
-    for(Bonus *bonus : bonuses){
+    for (Bonus *bonus : bonuses) {
         bonus->setDeactive();
-        if(bonus->checkCollision(pacman,true, false, stop)){
+        if (bonus->checkCollision(pacman, true, false, stop)) {
             bonus->onCollisionWith(pacman);
         }
     }
 
     //Check if there're some bonuses and if so -> transform all the ghosts.
-    for(Bonus *bonus : bonuses) {
+    for (Bonus *bonus : bonuses) {
         if (bonus->isActive()) {
             for (Ghost *ghost : ghosts) {
                 ghost->setNotEnemy();
@@ -231,15 +260,13 @@ void Game::tick() {
     }
 
 
-    for (Ghost *ghost : ghosts){
-        if(pacman->checkCollision(ghost,true,true, stop)){
-            if(ghost->getEnemy()){
+    for (Ghost *ghost : ghosts) {
+        if (pacman->checkCollision(ghost, true, true, stop)) {
+            if (ghost->getEnemy()) {
                 //als de ghost de vijand is
                 std::cout << "DOOD!!!!" << std::endl;
                 exit(0); //@fixme: maak dit wat eleganter
-            }
-
-            else{
+            } else {
                 //ghost is de vijand niet
                 std::cout << "BONUS" << std::endl;
             }
@@ -251,12 +278,11 @@ void Game::tick() {
         ghost->update();
 
 
-
 }
 
 bool Game::checkOccupiedByWall(int x, int y) const {
 
-    for (Wall* wall : walls) {
+    for (Wall *wall : walls) {
         if (wall->getX() == x && wall->getY() == y) {
             return true;
         }

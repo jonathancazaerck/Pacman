@@ -37,13 +37,13 @@ Coordinate * JsonReader::getPacmanCoordinates() {
 
 std::vector<Coordinate *> JsonReader::getFixedNonWallCoordinates(std::string objectType) {
 
-    std::cout << "ObjectType: " << objectType << std::endl;
+//    std::cout << "ObjectType: " << objectType << std::endl;
 
     std::vector<Coordinate *> coordinates;
 
     for (auto it = j[objectType].begin(); it != j[objectType].end(); ++it)
     {
-        std::cout << "Fixed object coordinate: \t" << it.value().at("x").get<int>() << "\t" << it.value().at("y").get<int>() << "\n";
+//        std::cout << "Fixed object coordinate: \t" << it.value().at("x").get<int>() << "\t" << it.value().at("y").get<int>() << "\n";
         int x = it.value().at("x").get<int>();
         int y = it.value().at("y").get<int>();
         Coordinate* coordinate = new Coordinate(x,y);
@@ -88,7 +88,7 @@ std::vector<Coordinate *> JsonReader::getInfrastructure() {
 
         if((type.compare("horizontal")) != 0){
             for(int i = (it.value().at("beginY").get<int>()); i <= (it.value().at("end")); i++){
-                std::cout << "Wall coordinate: \t" << it.value().at("beginX").get<int>() << "\t" << i << std::endl;
+//                std::cout << "Wall coordinate: \t" << it.value().at("beginX").get<int>() << "\t" << i << std::endl;
                 int x = it.value().at("beginX").get<int>();
                 int y = i;
                 Coordinate* coordinate = new Coordinate(x,y);
@@ -99,7 +99,7 @@ std::vector<Coordinate *> JsonReader::getInfrastructure() {
 
         else{
             for(int i = (it.value().at("beginX").get<int>()); i <= (it.value().at("end")); i++){
-                std::cout << "Wall coordinate: \t" << i << "\t" << it.value().at("beginY").get<int>() << std::endl;
+//                std::cout << "Wall coordinate: \t" << i << "\t" << it.value().at("beginY").get<int>() << std::endl;
                 int x = i;
                 int y = it.value().at("beginY").get<int>();
                 Coordinate* coordinate = new Coordinate(x,y);

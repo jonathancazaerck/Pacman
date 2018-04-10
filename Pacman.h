@@ -13,6 +13,8 @@ public:
     Pacman(int x, int y, Game* game);
     void update();
     void onCollisionWith(Wall *wall);
+    virtual void visualize(){};
+    virtual void render(){};
 
 private:
     void stopMoving();

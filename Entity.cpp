@@ -9,7 +9,7 @@ Entity::Entity(int x, int y) {
     this->x = x;
     this->y = y;
 
-    std::cout << x << '\t' << y << std::endl;
+//    std::cout << x << '\t' << y << std::endl;
 };
 
 bool Entity::checkCollision(Entity *entity, bool eat, bool bothMoving, directions thisDirection) {
@@ -70,7 +70,7 @@ bool Entity::checkCollision(Entity *entity, bool eat, bool bothMoving, direction
                 break;
         }
         if (collision) {
-            std::cout << "collision in directionn" << std::endl;
+//            std::cout << "collision in directionn" << std::endl;
         }
     } else {
         collision = (x == entity->getX() && y == entity->getY());

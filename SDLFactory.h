@@ -8,32 +8,36 @@
 
 #include "AbstractFactory.h"
 #include <SDL2/SDL.h>
+#include <SDL2/SDL_image.h>
 #include "Constants.h"
+#include <iostream>
 
 class SDLFactory : public AbstractFactory {
 public:
     SDLFactory();
-    bool init() override ;
-    bool loadMedia() override;
-    void close() override;
-    bool pollEvent() override ;
+
+    void init(const char* title, int xPos, int yPos, int width, int height, bool fullscreen);
+
+    void handleEvents();
+
+    void renderClear();
+
+    void renderPresent();
+
+    void clean();
+
+    bool running() { return  isRunning; }
+
+    Pacman* createPacman(int x, int y, Game* game);
+    Wall* createWall(int x, int y);
+    Ghost* createGhost(int x, int y, Game* game);
+    Bonus* createBonus(int x, int y);
+    Bullet* createBullet(int x, int y);
 
 private:
-    SDL_Window* gWindow = NULL;
-    SDL_Renderer* renderer = NULL;
-    SDL_Surface* gScreenSurface = NULL;
-    SDL_Surface* gCurrentSurface = NULL;
-    SDL_Event e;
-    enum KeyPressSurfaces
-    {
-        KEY_PRESS_SURFACE_DEFAULT,
-        KEY_PRESS_SURFACE_UP,
-        KEY_PRESS_SURFACE_DOWN,
-        KEY_PRESS_SURFACE_LEFT,
-        KEY_PRESS_SURFACE_RIGHT,
-        KEY_PRESS_SURFACE_TOTAL
-    };
-    SDL_Surface* gKeyPressSurfaces[ KEY_PRESS_SURFACE_TOTAL ];
+    bool isRunning;
+    SDL_Window *window;
+    SDL_Renderer *renderer;
 };
 
 

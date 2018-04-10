@@ -1,0 +1,82 @@
+{
+    "Level" : 1,
+    "Pacman" : {"x":8, "y":17},
+    "Ghosts" : [
+      {"x":1, "y":1, "direction":"down"},
+      {"x":1, "y":28, "direction":"up"},
+      {"x":38, "y":1, "direction":"left"},
+      {"x":38, "y":28, "direction":"right"}
+    ],
+    "Walls" :  [
+      {"beginX":0, "beginY":0, "end":41, "type":"horizontal"},
+      {"beginX":0, "beginY":31, "end":41, "type":"horizontal"},
+      {"beginX":0, "beginY":1, "end":31, "type":"vertical"},
+      {"beginX":41, "beginY":1, "end":31, "type":"vertical"},
+
+      {"beginX":4, "beginY":4, "end":6, "type":"horizontal"},
+      {"beginX":4, "beginY":5, "end":5, "type":"vertical"},
+      {"beginX":6, "beginY":5, "end":5, "type":"vertical"},
+      {"beginX":4, "beginY":6, "end":6, "type":"horizontal"},
+
+      {"beginX":10, "beginY":4, "end":17, "type":"horizontal"},
+      {"beginX":10, "beginY":5, "end":5, "type":"vertical"},
+      {"beginX":17, "beginY":5, "end":5, "type":"vertical"},
+      {"beginX":10, "beginY":6, "end":17, "type":"horizontal"},
+
+      {"beginX":21, "beginY":1, "end":4, "type":"vertical"},
+
+      {"beginX":25, "beginY":4, "end":30, "type":"horizontal"},
+      {"beginX":25, "beginY":5, "end":5, "type":"vertical"},
+      {"beginX":30, "beginY":5, "end":5, "type":"vertical"},
+      {"beginX":25, "beginY":6, "end":30, "type":"horizontal"},
+
+      {"beginX":34, "beginY":4, "end":37, "type":"horizontal"},
+      {"beginX":34, "beginY":5, "end":5, "type":"vertical"},
+      {"beginX":37, "beginY":5, "end":5, "type":"vertical"},
+      {"beginX":34, "beginY":6, "end":37, "type":"horizontal"},
+
+      {"beginX":1, "beginY":10, "end":6, "type":"horizontal"},
+
+      {"beginX":10, "beginY":10, "end":15, "type":"horizontal"},
+
+      {"beginX":19, "beginY":10, "end":30, "type":"horizontal"},
+
+      {"beginX":34, "beginY":10, "end":40, "type":"horizontal"},
+
+      {"beginX":4, "beginY":14, "end":12, "type":"horizontal"},
+      {"beginX":4, "beginY":15, "end":22, "type":"vertical"},
+      {"beginX":12, "beginY":15, "end":22, "type":"vertical"},
+      {"beginX":4, "beginY":23, "end":12, "type":"horizontal"},
+
+      {"beginX":16, "beginY":14, "end":21, "type":"horizontal"},
+      {"beginX":16, "beginY":15, "end":18, "type":"vertical"},
+      {"beginX":21, "beginY":15, "end":18, "type":"vertical"},
+      {"beginX":16, "beginY":19, "end":21, "type":"horizontal"},
+
+      {"beginX":25, "beginY":14, "end":37, "type":"horizontal"},
+      {"beginX":25, "beginY":15, "end":37, "type":"horizontal"},
+
+      {"beginX":34, "beginY":19, "end":37, "type":"horizontal"},
+      {"beginX":34, "beginY":20, "end":22, "type":"vertical"},
+      {"beginX":32, "beginY":23, "end":34, "type":"horizontal"},
+
+      {"beginX":38, "beginY":23, "end":40, "type":"horizontal"},
+
+      {"beginX":4, "beginY":27, "end":18, "type":"horizontal"},
+      {"beginX":16, "beginY":23, "end":26, "type":"vertical"},
+
+      {"beginX":20, "beginY":23, "end":24, "type":"horizontal"},
+      {"beginX":22, "beginY":24, "end":27, "type":"vertical"},
+
+      {"beginX":26, "beginY":27, "end":37, "type":"horizontal"},
+      {"beginX":28, "beginY":23, "end":26, "type":"vertical"}
+    ],
+    "Bullets": [
+      {"x":10, "y":10},
+      {"x":11, "y":10},
+      {"x":12, "y":10}
+    ],
+    "Bonuses" : [
+      {"x":12, "y":13}
+    ]
+}

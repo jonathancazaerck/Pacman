@@ -6,9 +6,9 @@
 #include "Pacman.h"
 
 Pacman::Pacman(int x, int y, Game* game) :Player(x,y, game) {
-    direction = left;
-    width = 3;
-    height = 3;
+    direction = right;
+    width = 32;
+    height = 32;
 };
 
 void Pacman::update() {
@@ -27,6 +27,6 @@ void Pacman::stopMoving(){
 }
 
 void Pacman::onCollisionWith(Wall *wall) {
-    std::cout<< "On collision with wall/pacman" << std::endl;
+//    std::cout<< "On collision with wall/pacman" << std::endl;
     stopMoving();
 }

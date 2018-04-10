@@ -12,6 +12,12 @@ file(REMOVE_RECURSE
   "CMakeFiles/Pacman.dir/Bonus.cpp.o"
   "CMakeFiles/Pacman.dir/JsonReader.cpp.o"
   "CMakeFiles/Pacman.dir/Coordinate.cpp.o"
+  "CMakeFiles/Pacman.dir/SDLTextureManager.cpp.o"
+  "CMakeFiles/Pacman.dir/SDLPacman.cpp.o"
+  "CMakeFiles/Pacman.dir/SDLWall.cpp.o"
+  "CMakeFiles/Pacman.dir/SDLGhost.cpp.o"
+  "CMakeFiles/Pacman.dir/SDLBullet.cpp.o"
+  "CMakeFiles/Pacman.dir/SDLBonus.cpp.o"
   "Pacman.pdb"
   "Pacman"
 )

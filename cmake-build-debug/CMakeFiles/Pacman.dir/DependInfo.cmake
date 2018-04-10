@@ -14,7 +14,13 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/JsonReader.cpp" "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/cmake-build-debug/CMakeFiles/Pacman.dir/JsonReader.cpp.o"
   "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Pacman.cpp" "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/cmake-build-debug/CMakeFiles/Pacman.dir/Pacman.cpp.o"
   "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Player.cpp" "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/cmake-build-debug/CMakeFiles/Pacman.dir/Player.cpp.o"
+  "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLBonus.cpp" "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/cmake-build-debug/CMakeFiles/Pacman.dir/SDLBonus.cpp.o"
+  "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLBullet.cpp" "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/cmake-build-debug/CMakeFiles/Pacman.dir/SDLBullet.cpp.o"
   "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLFactory.cpp" "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/cmake-build-debug/CMakeFiles/Pacman.dir/SDLFactory.cpp.o"
+  "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLGhost.cpp" "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/cmake-build-debug/CMakeFiles/Pacman.dir/SDLGhost.cpp.o"
+  "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLPacman.cpp" "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/cmake-build-debug/CMakeFiles/Pacman.dir/SDLPacman.cpp.o"
+  "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLTextureManager.cpp" "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/cmake-build-debug/CMakeFiles/Pacman.dir/SDLTextureManager.cpp.o"
+  "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLWall.cpp" "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/cmake-build-debug/CMakeFiles/Pacman.dir/SDLWall.cpp.o"
   "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Wall.cpp" "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/cmake-build-debug/CMakeFiles/Pacman.dir/Wall.cpp.o"
   "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/main.cpp" "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/cmake-build-debug/CMakeFiles/Pacman.dir/main.cpp.o"
   )
@@ -24,6 +30,7 @@ set(CMAKE_CXX_COMPILER_ID "AppleClang")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/Library/Frameworks/SDL2.framework/Headers"
   "../nlohmann"
+  "/Library/Frameworks/SDL2_image.framework/Headers"
   )
 
 # Targets to which this target links.

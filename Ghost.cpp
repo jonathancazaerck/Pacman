@@ -16,15 +16,15 @@ Ghost::Ghost(int x, int y, Game* game) : Player(x, y, game) {
 void Ghost::update() {
     if (!enemy){
         noEnemyLifetime--;
-        std::cout << noEnemyLifetime << std::endl;
+//        std::cout << noEnemyLifetime << std::endl;
     }
 
     if (noEnemyLifetime < 0){
         enemy = true;
-        std::cout << "Time's up!" << std::endl;
+//        std::cout << "Time's up!" << std::endl;
     }
 
-    std::cout << "dir " << direction << std::endl;
+//    std::cout << "dir " << direction << std::endl;
 
     switch (direction) {
         case up:
@@ -44,8 +44,9 @@ void Ghost::update() {
 
 void Ghost::onCollisionWith(Wall *wall) {
     //Clockwise if there is a collision between the ghost and the walls
-    std::cout << "collision" << std::endl;
-    switch (direction) {
+//    std::cout << "collision" << std::endl;
+    directions randomDirection = static_cast<directions>(rand() % right);
+    switch (randomDirection) {
         case up:
             if (changeToLeft()) {
                 break;
@@ -60,16 +61,16 @@ void Ghost::onCollisionWith(Wall *wall) {
             }
         case right:
             if (changeToUp()) {
-                std::cout << "change up " << direction << std::endl;
+                //std::cout << "change up " << direction << std::endl;
                 break;
             } else if (changeToDown()) {
-                std::cout << "change down " << std::endl;
+                //std::cout << "change down " << std::endl;
                 break;
             } else if (changeToRight()) {
-                std::cout << "change right" << std::endl;
+                //std::cout << "change right" << std::endl;
                 break;
             } else if (changeToLeft()) {
-                std::cout << "change left" << std::endl;
+                //std::cout << "change left" << std::endl;
                 break;
             }
     }
@@ -80,7 +81,7 @@ bool Ghost::getEnemy() {
 }
 
 void Ghost::setNotEnemy() {
-    std::cout << "Set not enemy" << std::endl;
+    //std::cout << "Set not enemy" << std::endl;
     this->enemy = false;
     noEnemyLifetime = 5;
 }
