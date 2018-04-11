@@ -20,8 +20,8 @@ public:
 public:
     Player(int x, int y, Game* game):Entity(x,y){
             this->game = game;
-            width = 1;
-            height = 1;
+            width = 18;
+            height = 18;
     };
     virtual ~Player(){};
     bool moveUp();

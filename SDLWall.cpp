@@ -6,9 +6,9 @@
 #include "SDLTextureManager.h"
 
 
-SDLWall::SDLWall(int x, int y, const char *texturesheet, SDL_Renderer *renderer) : Wall(x,y) {
+SDLWall::SDLWall(int x, int y, SDL_Texture* objTexture, SDL_Renderer *renderer) : Wall(x,y) {
     this->renderer = renderer;
-    objTexture = SDLTextureManager::LoadTexture(texturesheet,renderer);
+    this->objTexture = objTexture;
 }
 
 void SDLWall::visualize(){

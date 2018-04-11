@@ -117,7 +117,7 @@ void Game::run() {
     Uint32 frameStart;
     int frameTime;
 
-    abstractFactory->init("Jonathan Cazaerck", 0, 0, 800, 600, false);
+    abstractFactory->init("Jonathan Cazaerck", 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, false);
 
     initObjects();
     abstractFactory->initKeyboardController(pacman);

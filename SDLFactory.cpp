@@ -34,6 +34,7 @@ void SDLFactory::init(const char* title, int xPos, int yPos, int width, int heig
         }
 
         objTexture = SDLTextureManager::LoadTexture("../assets/Sprite.png", renderer);
+        wallTexture = SDLTextureManager::LoadTexture("../assets/blueWall.png", renderer);
 
         isRunning = true;
     }
@@ -81,7 +82,7 @@ Pacman* SDLFactory::createPacman(int x, int y, Game* game) {
 }
 
 Wall* SDLFactory::createWall(int x, int y) {
-    return new SDLWall(x, y, "../assets/wall.png", renderer);
+    return new SDLWall(x, y, wallTexture, renderer);
 }
 
 Ghost* SDLFactory::createGhost(int x, int y, Game* game) {

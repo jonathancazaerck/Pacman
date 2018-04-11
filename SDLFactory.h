@@ -46,6 +46,7 @@ private:
     SDL_Window *window;
     SDL_Renderer *renderer;
     SDL_Texture* objTexture;
+    SDL_Texture* wallTexture;
 
     SDLKeyboardController *sdlKeyboardController;
 };

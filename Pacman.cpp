@@ -7,8 +7,6 @@
 
 Pacman::Pacman(int x, int y, Game* game) :Player(x,y, game) {
     direction = stop;
-    width = 13;
-    height = 13;
 };
 
 void Pacman::update() {

@@ -9,8 +9,6 @@ Ghost::Ghost(int x, int y, Game* game) : Player(x, y, game) {
     enemy = false;
     direction = left;
     noEnemyLifetime = 0;
-    width = 14;
-    height = 14;
 };
 
 void Ghost::update() {
