@@ -3,7 +3,7 @@ project(Pacman)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(Pacman main.cpp Game.cpp Game.h Entity.cpp Entity.h Pacman.cpp Pacman.h Wall.cpp Wall.h Ghost.cpp Ghost.h Player.cpp Player.h AbstractFactory.cpp AbstractFactory.h SDLFactory.cpp SDLFactory.h Bullet.cpp Bullet.h Constants.h Bonus.cpp Bonus.h JsonReader.cpp JsonReader.h Coordinate.cpp Coordinate.h SDLTextureManager.cpp SDLTextureManager.h SDLPacman.cpp SDLPacman.h SDLWall.cpp SDLWall.h SDLGhost.cpp SDLGhost.h SDLBullet.cpp SDLBullet.h SDLBonus.cpp SDLBonus.h SDLKeyboardController.cpp SDLKeyboardController.h)
+add_executable(Pacman main.cpp Game.cpp Game.h Entity.cpp Entity.h Pacman.cpp Pacman.h Wall.cpp Wall.h Ghost.cpp Ghost.h Player.cpp Player.h AbstractFactory.cpp AbstractFactory.h SDLFactory.cpp SDLFactory.h Bullet.cpp Bullet.h Constants.h Bonus.cpp Bonus.h JsonReader.cpp JsonReader.h Coordinate.cpp Coordinate.h SDLTextureManager.cpp SDLTextureManager.h SDLPacman.cpp SDLPacman.h SDLWall.cpp SDLWall.h SDLGhost.cpp SDLGhost.h SDLBullet.cpp SDLBullet.h SDLBonus.cpp SDLBonus.h SDLKeyboardController.cpp SDLKeyboardController.h Score.cpp Score.h SDLScore.cpp SDLScore.h)
 
 
 

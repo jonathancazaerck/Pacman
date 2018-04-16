@@ -6,8 +6,8 @@
 
 Bullet::Bullet(int x, int y) :Entity(x,y) {
     eated = 0;
-    width = 1;
-    height = 1;
+    width = 10;
+    height = 10;
 };
 
 void Bullet::onCollisionWith(Pacman *pacman) {

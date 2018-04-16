@@ -187,6 +187,12 @@
 		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLPacman.h">
 			<Option target="Pacman"/>
 		</Unit>
+		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLScore.cpp">
+			<Option target="Pacman"/>
+		</Unit>
+		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLScore.h">
+			<Option target="Pacman"/>
+		</Unit>
 		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLTextureManager.cpp">
 			<Option target="Pacman"/>
 		</Unit>
@@ -197,6 +203,12 @@
 			<Option target="Pacman"/>
 		</Unit>
 		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLWall.h">
+			<Option target="Pacman"/>
+		</Unit>
+		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Score.cpp">
+			<Option target="Pacman"/>
+		</Unit>
+		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Score.h">
 			<Option target="Pacman"/>
 		</Unit>
 		<Unit filename="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Wall.cpp">

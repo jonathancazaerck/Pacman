@@ -11,10 +11,17 @@ SDLGhost::SDLGhost(int x, int y, Game* game, SDL_Texture* objTexture, SDL_Render
 }
 
 void SDLGhost::visualize(){
-    srcRect.h = 14;
-    srcRect.w = 14;
-    srcRect.x = 457;
-    srcRect.y = 65;
+    if(!enemy) {
+        srcRect.h = 14;
+        srcRect.w = 14;
+        srcRect.x = 585;
+        srcRect.y = 65;
+    } else{
+        srcRect.h = 14;
+        srcRect.w = 14;
+        srcRect.x = 457;
+        srcRect.y = 65;
+    }
 
     destRect.h = height;
     destRect.w = width;

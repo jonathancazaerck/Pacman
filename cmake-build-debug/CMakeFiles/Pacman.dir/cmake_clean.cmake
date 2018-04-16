@@ -19,6 +19,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Pacman.dir/SDLBullet.cpp.o"
   "CMakeFiles/Pacman.dir/SDLBonus.cpp.o"
   "CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.o"
+  "CMakeFiles/Pacman.dir/Score.cpp.o"
+  "CMakeFiles/Pacman.dir/SDLScore.cpp.o"
   "Pacman.pdb"
   "Pacman"
 )

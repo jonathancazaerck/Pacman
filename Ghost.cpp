@@ -7,6 +7,7 @@
 
 Ghost::Ghost(int x, int y, Game* game) : Player(x, y, game) {
     enemy = false;
+    bonusGetted = false;
     direction = left;
     noEnemyLifetime = 0;
 };
@@ -19,6 +20,7 @@ void Ghost::update() {
 
     if (noEnemyLifetime < 0){
         enemy = true;
+        bonusGetted = false;
 //        std::cout << "Time's up!" << std::endl;
     }
 
@@ -81,5 +83,13 @@ bool Ghost::getEnemy() {
 void Ghost::setNotEnemy() {
     //std::cout << "Set not enemy" << std::endl;
     this->enemy = false;
-    noEnemyLifetime = 5;
+    noEnemyLifetime = 1000;
+}
+
+void Ghost::setBonusGetted(){
+    this->bonusGetted = true;
+}
+
+bool Ghost::getBonusGetted(){
+    return bonusGetted;
 }

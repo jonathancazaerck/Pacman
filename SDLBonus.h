@@ -11,7 +11,9 @@
 
 class SDLBonus : public Bonus {
 public:
-    SDLBonus(int x, int y, const char* texturesheet, SDL_Renderer* renderer);
+    SDLBonus(int x, int y, SDL_Texture* objTexture, SDL_Renderer* renderer);
+    void visualize();
+    void render();
 
 private:
     SDL_Texture* objTexture;

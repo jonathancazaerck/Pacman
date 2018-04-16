@@ -38,6 +38,7 @@ public:
     Ghost* createGhost(int x, int y, Game* game);
     Bonus* createBonus(int x, int y);
     Bullet* createBullet(int x, int y);
+    Score* createScore();
 
     static SDL_Event event;
 

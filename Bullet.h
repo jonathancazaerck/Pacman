@@ -15,6 +15,8 @@ public:
     Bullet(int x, int y);
     void onCollisionWith(Pacman* pacman);
     bool getEated();
+    virtual void visualize(){};
+    virtual void render(){};
 };
 
 

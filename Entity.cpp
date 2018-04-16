@@ -17,7 +17,7 @@ bool Entity::checkCollision(Entity *entity, bool eat, bool bothMoving, direction
     bool collision;
 
 
-    if (eat && bothMoving) {
+    if (eat) {
         collision = x < entity->getX() + entity->getWidth() &&
                     x + width > entity->getX() &&
                     y < entity->getY() + entity->getHeight() &&
@@ -48,8 +48,11 @@ bool Entity::checkCollision(Entity *entity, bool eat, bool bothMoving, direction
                              yCheck < entity->getY() + entity->getHeight() &&
                              yCheck + height > entity->getY();
 
+
         if (!fullCollision) {
             return false;
+        } else {
+//            std::cout << "Full collision" << x << y << std::endl;
         }
 
         // there is a collision -> check if collision in correct direction
@@ -68,6 +71,11 @@ bool Entity::checkCollision(Entity *entity, bool eat, bool bothMoving, direction
             case right:
                 collision = x < entity->getX();
                 break;
+                case stop:
+                        collision = true;
+                        break;
+
+
         }
         if (collision) {
 //            std::cout << "collision in directionn" << std::endl;

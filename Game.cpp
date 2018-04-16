@@ -11,6 +11,7 @@
 #include "Game.h"
 #include "Bonus.h"
 #include "JsonReader.h"
+#include "Score.h"
 
 
 Game::Game(AbstractFactory *abstractFactory) {
@@ -50,6 +51,8 @@ Game::Game(AbstractFactory *abstractFactory) {
 
     void Game::initObjects(){
 
+        score = abstractFactory->createScore();
+
         JsonReader *jsonReader = new JsonReader();
         jsonReader->read(); //read file!
 
@@ -61,13 +64,13 @@ Game::Game(AbstractFactory *abstractFactory) {
         pacman = abstractFactory->createPacman(coordinatePacman->getX(), coordinatePacman->getY(), this);
 
         //Walls
-        std::vector<Coordinate *> coordinateWalls = jsonReader->getInfrastructure();
+        std::vector<Coordinate *> coordinateWalls = jsonReader->getInfrastructure("Walls",wallStep);
         for (Coordinate *coordinateWall : coordinateWalls) {
             walls.push_back(abstractFactory->createWall(coordinateWall->getX(), coordinateWall->getY()));
         }
 
         //Ghosts
-        std::vector<Coordinate *> coordinateGhosts = jsonReader->getFixedNonWallCoordinates("Ghosts");
+        std::vector<Coordinate *> coordinateGhosts = jsonReader->getFixedNonInfrastructuralCoordinates("Ghosts");
         for (Coordinate *coordinateGhost : coordinateGhosts) {
             Ghost *newGhost = abstractFactory->createGhost(coordinateGhost->getX(), coordinateGhost->getY(), this);
             ghosts.push_back(newGhost);
@@ -92,13 +95,14 @@ Game::Game(AbstractFactory *abstractFactory) {
         }
 
         //Bullets
-        std::vector<Coordinate *> coordinateBullets = jsonReader->getFixedNonWallCoordinates("Bullets");
+        std::vector<Coordinate *> coordinateBullets = jsonReader->getInfrastructure("Bullets",bulletStep);
         for (Coordinate *coordinateBullet : coordinateBullets) {
             bullets.push_back(abstractFactory->createBullet(coordinateBullet->getX(), coordinateBullet->getY()));
+            //std::cout << coordinateBullet->getX();
         }
 
         //Bonuses
-        std::vector<Coordinate *> coordinateBonuses = jsonReader->getFixedNonWallCoordinates("Bonuses");
+        std::vector<Coordinate *> coordinateBonuses = jsonReader->getFixedNonInfrastructuralCoordinates("Bonuses");
         for (Coordinate *coordinateBonus : coordinateBonuses) {
             bonuses.push_back(abstractFactory->createBonus(coordinateBonus->getX(), coordinateBonus->getY()));
         }
@@ -112,7 +116,7 @@ void Game::run() {
 ////HIER SDL
 
     const int FPS = 60;
-    const int frameDelay = 1000/FPS;
+    const int frameDelay = 1000 / FPS;
 
     Uint32 frameStart;
     int frameTime;
@@ -122,7 +126,7 @@ void Game::run() {
     initObjects();
     abstractFactory->initKeyboardController(pacman);
 
-    for(Wall* wall:walls){
+    for (Wall *wall:walls) {
         wall->visualize();
         wall->render();
     }
@@ -137,17 +141,34 @@ void Game::run() {
         abstractFactory->handleEvents();
         abstractFactory->renderClear();
 
+        for (Bullet *bullet:bullets) {
+            if(!bullet->getEated()){
+                bullet->visualize();
+                bullet->render();
+            }
+        }
+
+        for (Bonus *bonus:bonuses) {
+            if(!bonus->getEated()){
+                bonus->visualize();
+                bonus->render();
+            }
+        }
+
+        score->visualize();
+        score->render();
+
         pacman->update();
         pacman->visualize();
         pacman->render();
 
-        for(Ghost* ghost:ghosts){
+        for (Ghost *ghost:ghosts) {
             ghost->update();
             ghost->visualize();
             ghost->render();
         }
 
-        for(Wall* wall:walls){
+        for (Wall *wall:walls) {
             wall->render();
         }
 
@@ -155,7 +176,7 @@ void Game::run() {
 
         frameTime = SDL_GetTicks() - frameStart;
 
-        if(frameDelay > frameTime)
+        if (frameDelay > frameTime)
             SDL_Delay(frameDelay - frameTime);
 
     }
@@ -254,6 +275,10 @@ void Game::tick() {
 
     for (Bullet *bullet : bullets) {
         if (bullet->checkCollision(pacman, true, false, stop)) {
+            if(!bullet->getEated()) {
+                //std::cout<<"Coll with bullet" << std::endl;
+                score->add(bullet);
+            }
             bullet->onCollisionWith(pacman);
         }
     }
@@ -289,7 +314,11 @@ void Game::tick() {
                 exit(0); //@fixme: maak dit wat eleganter
             } else {
                 //ghost is de vijand niet
-                std::cout << "BONUS" << std::endl;
+                //std::cout << "BONUS" << std::endl;
+                if(!ghost->getBonusGetted()) {
+                    score->add(ghost);
+                    ghost->setBonusGetted();
+                }
             }
         }
     }
@@ -301,10 +330,10 @@ void Game::tick() {
 
 }
 
-bool Game::checkOccupiedByWall(int x, int y) const {
+bool Game::checkOccupiedByWall(Player* player, directions newDirection) const {
 
     for (Wall *wall : walls) {
-        if (wall->getX() == x && wall->getY() == y) {
+        if (player->checkCollision(wall, false, false, newDirection)) {
             return true;
         }
     }

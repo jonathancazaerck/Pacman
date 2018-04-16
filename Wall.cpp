@@ -5,7 +5,7 @@
 #include "Wall.h"
 
 Wall::Wall(int x, int y) : Entity(x,y){
-        width = 2;
-        height = 2;
+        width = 10;
+        height = 10;
 
 }; //Constructor van Entity aanroepen.

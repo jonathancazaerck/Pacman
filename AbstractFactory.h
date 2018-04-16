@@ -7,6 +7,7 @@
 
 
 #include "Pacman.h"
+#include "Score.h"
 
 class AbstractFactory {
 public:
@@ -24,6 +25,7 @@ public:
     virtual Ghost* createGhost(int x, int y, Game* game) = 0;
     virtual Bonus* createBonus(int x, int y) = 0;
     virtual Bullet* createBullet(int x, int y) = 0;
+    virtual Score* createScore() = 0;
 };
 
 

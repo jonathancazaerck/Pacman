@@ -12,6 +12,7 @@
 #include "Bullet.h"
 #include "Wall.h"
 #include "AbstractFactory.h"
+#include "Score.h"
 
 class Game {
 private:
@@ -23,10 +24,11 @@ private:
     void tick();
     void print();
     AbstractFactory* abstractFactory;
+    Score* score;
 
 public:
     Game(AbstractFactory* abstractFactory);
-    bool checkOccupiedByWall(int x, int y) const;
+    bool checkOccupiedByWall(Player* player, directions newDirection) const;
     void run();
     void initObjects();
 };

@@ -23,8 +23,8 @@ public:
     void getAllCoordinates();
     int getLevel();
     Coordinate * getPacmanCoordinates();
-    std::vector<Coordinate *> getFixedNonWallCoordinates(std::string objectType);
-    std::vector<Coordinate *> getInfrastructure();
+    std::vector<Coordinate *> getFixedNonInfrastructuralCoordinates(std::string objectType);
+    std::vector<Coordinate *> getInfrastructure(std::string objectType, int step);
 
 private:
     json j;

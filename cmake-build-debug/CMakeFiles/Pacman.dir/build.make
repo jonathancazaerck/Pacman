@@ -537,6 +537,54 @@ CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.o.provides: CMakeFiles/Pacman.di
 CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.o.provides.build: CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.o
 
 
+CMakeFiles/Pacman.dir/Score.cpp.o: CMakeFiles/Pacman.dir/flags.make
+CMakeFiles/Pacman.dir/Score.cpp.o: ../Score.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Pacman.dir/Score.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pacman.dir/Score.cpp.o -c "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Score.cpp"
+
+CMakeFiles/Pacman.dir/Score.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pacman.dir/Score.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Score.cpp" > CMakeFiles/Pacman.dir/Score.cpp.i
+
+CMakeFiles/Pacman.dir/Score.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pacman.dir/Score.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Score.cpp" -o CMakeFiles/Pacman.dir/Score.cpp.s
+
+CMakeFiles/Pacman.dir/Score.cpp.o.requires:
+
+.PHONY : CMakeFiles/Pacman.dir/Score.cpp.o.requires
+
+CMakeFiles/Pacman.dir/Score.cpp.o.provides: CMakeFiles/Pacman.dir/Score.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Score.cpp.o.provides.build
+.PHONY : CMakeFiles/Pacman.dir/Score.cpp.o.provides
+
+CMakeFiles/Pacman.dir/Score.cpp.o.provides.build: CMakeFiles/Pacman.dir/Score.cpp.o
+
+
+CMakeFiles/Pacman.dir/SDLScore.cpp.o: CMakeFiles/Pacman.dir/flags.make
+CMakeFiles/Pacman.dir/SDLScore.cpp.o: ../SDLScore.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Pacman.dir/SDLScore.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pacman.dir/SDLScore.cpp.o -c "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLScore.cpp"
+
+CMakeFiles/Pacman.dir/SDLScore.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pacman.dir/SDLScore.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLScore.cpp" > CMakeFiles/Pacman.dir/SDLScore.cpp.i
+
+CMakeFiles/Pacman.dir/SDLScore.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pacman.dir/SDLScore.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLScore.cpp" -o CMakeFiles/Pacman.dir/SDLScore.cpp.s
+
+CMakeFiles/Pacman.dir/SDLScore.cpp.o.requires:
+
+.PHONY : CMakeFiles/Pacman.dir/SDLScore.cpp.o.requires
+
+CMakeFiles/Pacman.dir/SDLScore.cpp.o.provides: CMakeFiles/Pacman.dir/SDLScore.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLScore.cpp.o.provides.build
+.PHONY : CMakeFiles/Pacman.dir/SDLScore.cpp.o.provides
+
+CMakeFiles/Pacman.dir/SDLScore.cpp.o.provides.build: CMakeFiles/Pacman.dir/SDLScore.cpp.o
+
+
 # Object files for target Pacman
 Pacman_OBJECTS = \
 "CMakeFiles/Pacman.dir/main.cpp.o" \
@@ -558,7 +606,9 @@ Pacman_OBJECTS = \
 "CMakeFiles/Pacman.dir/SDLGhost.cpp.o" \
 "CMakeFiles/Pacman.dir/SDLBullet.cpp.o" \
 "CMakeFiles/Pacman.dir/SDLBonus.cpp.o" \
-"CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.o"
+"CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.o" \
+"CMakeFiles/Pacman.dir/Score.cpp.o" \
+"CMakeFiles/Pacman.dir/SDLScore.cpp.o"
 
 # External object files for target Pacman
 Pacman_EXTERNAL_OBJECTS =
@@ -583,9 +633,11 @@ Pacman: CMakeFiles/Pacman.dir/SDLGhost.cpp.o
 Pacman: CMakeFiles/Pacman.dir/SDLBullet.cpp.o
 Pacman: CMakeFiles/Pacman.dir/SDLBonus.cpp.o
 Pacman: CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.o
+Pacman: CMakeFiles/Pacman.dir/Score.cpp.o
+Pacman: CMakeFiles/Pacman.dir/SDLScore.cpp.o
 Pacman: CMakeFiles/Pacman.dir/build.make
 Pacman: CMakeFiles/Pacman.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable Pacman"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable Pacman"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Pacman.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -613,6 +665,8 @@ CMakeFiles/Pacman.dir/requires: CMakeFiles/Pacman.dir/SDLGhost.cpp.o.requires
 CMakeFiles/Pacman.dir/requires: CMakeFiles/Pacman.dir/SDLBullet.cpp.o.requires
 CMakeFiles/Pacman.dir/requires: CMakeFiles/Pacman.dir/SDLBonus.cpp.o.requires
 CMakeFiles/Pacman.dir/requires: CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.o.requires
+CMakeFiles/Pacman.dir/requires: CMakeFiles/Pacman.dir/Score.cpp.o.requires
+CMakeFiles/Pacman.dir/requires: CMakeFiles/Pacman.dir/SDLScore.cpp.o.requires
 
 .PHONY : CMakeFiles/Pacman.dir/requires
 

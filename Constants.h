@@ -10,9 +10,11 @@ const int maxY = 480;
 const int minY = 0;
 const int maxX = 370;
 const int minX = 0;
+const int bulletStep = 30;
+const int wallStep = 1;
 
 const int SCREEN_WIDTH = 380;
-const int SCREEN_HEIGHT = 490;
+const int SCREEN_HEIGHT = 510;
 
 enum directions{up,down,left,right,stop};
 

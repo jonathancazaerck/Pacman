@@ -40,7 +40,7 @@ bool Player::moveRight() {
 }
 
 bool Player::changeToUp() {
-    if (game->checkOccupiedByWall(x, y + height)) {
+    if (game->checkOccupiedByWall(this, up)) {
         return false;
     }
     direction = up;
@@ -48,7 +48,7 @@ bool Player::changeToUp() {
 }
 
 bool Player::changeToDown() {
-    if (game->checkOccupiedByWall(x, y - 1)) {
+    if (game->checkOccupiedByWall(this, down)) {
         return false;
     }
     direction = down;
@@ -56,7 +56,7 @@ bool Player::changeToDown() {
 }
 
 bool Player::changeToLeft() {
-    if (game->checkOccupiedByWall(x - 1, y)) {
+    if (game->checkOccupiedByWall(this, left)) {
         return false;
     }
     direction = left;
@@ -65,7 +65,7 @@ bool Player::changeToLeft() {
 
 bool Player::changeToRight() {
 //    std::cout << x << "\t" << y << std::endl;
-    if (game->checkOccupiedByWall(x + width, y)) {
+    if (game->checkOccupiedByWall(this, right)) {
         return false;
     }
     direction = right;

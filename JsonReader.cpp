@@ -16,10 +16,10 @@ void JsonReader::showJson() {
 
 void JsonReader::getAllCoordinates() {
     getPacmanCoordinates();
-    getFixedNonWallCoordinates("Ghosts");
-    getFixedNonWallCoordinates("Bullets");
-    getFixedNonWallCoordinates("Bonuses");
-    getInfrastructure();
+    getFixedNonInfrastructuralCoordinates("Ghosts");
+    getInfrastructure("Bullets",bulletStep);
+    getFixedNonInfrastructuralCoordinates("Bonuses");
+    getInfrastructure("Walls",wallStep);
 }
 
 int JsonReader::getLevel(){
@@ -35,7 +35,7 @@ Coordinate * JsonReader::getPacmanCoordinates() {
     return new Coordinate(x,y);
 }
 
-std::vector<Coordinate *> JsonReader::getFixedNonWallCoordinates(std::string objectType) {
+std::vector<Coordinate *> JsonReader::getFixedNonInfrastructuralCoordinates(std::string objectType) {
 
 //    std::cout << "ObjectType: " << objectType << std::endl;
 
@@ -77,17 +77,17 @@ std::vector<Coordinate *> JsonReader::getFixedNonWallCoordinates(std::string obj
     return coordinates;
 }
 
-std::vector<Coordinate *> JsonReader::getInfrastructure() {
+std::vector<Coordinate *> JsonReader::getInfrastructure(std::string objectType, int step) {
 
     std::vector<Coordinate *> coordinates;
 
-    for (auto it = j["Walls"].begin(); it != j["Walls"].end(); ++it)
+    for (auto it = j[objectType].begin(); it != j[objectType].end(); ++it)
     {
         std::string type = it.value().at("type").get<std::string>();
         //std::cout << type << std::endl;
 
         if((type.compare("horizontal")) != 0){
-            for(int i = (it.value().at("beginY").get<int>()); i <= (it.value().at("end")); i++){
+            for(int i = (it.value().at("beginY").get<int>()); i <= (it.value().at("end")); i=i+step){
 //                std::cout << "Wall coordinate: \t" << it.value().at("beginX").get<int>() << "\t" << i << std::endl;
                 int x = it.value().at("beginX").get<int>();
                 int y = i;
@@ -98,7 +98,7 @@ std::vector<Coordinate *> JsonReader::getInfrastructure() {
         }
 
         else{
-            for(int i = (it.value().at("beginX").get<int>()); i <= (it.value().at("end")); i++){
+            for(int i = (it.value().at("beginX").get<int>()); i <= (it.value().at("end")); i=i+step){
 //                std::cout << "Wall coordinate: \t" << i << "\t" << it.value().at("beginY").get<int>() << std::endl;
                 int x = i;
                 int y = it.value().at("beginY").get<int>();

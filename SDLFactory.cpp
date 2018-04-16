@@ -8,6 +8,7 @@
 #include "SDLGhost.h"
 #include "SDLBullet.h"
 #include "SDLBonus.h"
+#include "SDLScore.h"
 
 SDL_Event SDLFactory::event;
 
@@ -90,9 +91,13 @@ Ghost* SDLFactory::createGhost(int x, int y, Game* game) {
 }
 
 Bullet* SDLFactory::createBullet(int x, int y) {
-    return new SDLBullet(x, y, "dfd", renderer);
+    return new SDLBullet(x, y, objTexture, renderer);
 }
 
 Bonus* SDLFactory::createBonus(int x, int y) {
-    return new SDLBonus(x, y, "dfd", renderer);
+    return new SDLBonus(x, y, objTexture, renderer);
+}
+
+Score* SDLFactory::createScore() {
+    return new SDLScore(objTexture,renderer);
 }

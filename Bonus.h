@@ -21,6 +21,9 @@ public:
     bool isActive();
 
     void setDeactive();
+
+    virtual void visualize(){};
+    virtual void render(){};
 };
 
 

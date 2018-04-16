@@ -7,8 +7,8 @@
 
 Bonus::Bonus(int x, int y) : Bullet(x, y) {
     active = false;
-    width = 1;
-    height = 1;
+    width = 8;
+    height = 8;
 };
 
 void Bonus::onCollisionWith(Pacman *pacman) {

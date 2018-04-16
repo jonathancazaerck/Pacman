@@ -555,6 +555,33 @@ SDLPacman.cpp.s:
 	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLPacman.cpp.s
 .PHONY : SDLPacman.cpp.s
 
+SDLScore.o: SDLScore.cpp.o
+
+.PHONY : SDLScore.o
+
+# target to build an object file
+SDLScore.cpp.o:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLScore.cpp.o
+.PHONY : SDLScore.cpp.o
+
+SDLScore.i: SDLScore.cpp.i
+
+.PHONY : SDLScore.i
+
+# target to preprocess a source file
+SDLScore.cpp.i:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLScore.cpp.i
+.PHONY : SDLScore.cpp.i
+
+SDLScore.s: SDLScore.cpp.s
+
+.PHONY : SDLScore.s
+
+# target to generate assembly for a file
+SDLScore.cpp.s:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLScore.cpp.s
+.PHONY : SDLScore.cpp.s
+
 SDLTextureManager.o: SDLTextureManager.cpp.o
 
 .PHONY : SDLTextureManager.o
@@ -608,6 +635,33 @@ SDLWall.s: SDLWall.cpp.s
 SDLWall.cpp.s:
 	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLWall.cpp.s
 .PHONY : SDLWall.cpp.s
+
+Score.o: Score.cpp.o
+
+.PHONY : Score.o
+
+# target to build an object file
+Score.cpp.o:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Score.cpp.o
+.PHONY : Score.cpp.o
+
+Score.i: Score.cpp.i
+
+.PHONY : Score.i
+
+# target to preprocess a source file
+Score.cpp.i:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Score.cpp.i
+.PHONY : Score.cpp.i
+
+Score.s: Score.cpp.s
+
+.PHONY : Score.s
+
+# target to generate assembly for a file
+Score.cpp.s:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Score.cpp.s
+.PHONY : Score.cpp.s
 
 Wall.o: Wall.cpp.o
 
@@ -720,12 +774,18 @@ help:
 	@echo "... SDLPacman.o"
 	@echo "... SDLPacman.i"
 	@echo "... SDLPacman.s"
+	@echo "... SDLScore.o"
+	@echo "... SDLScore.i"
+	@echo "... SDLScore.s"
 	@echo "... SDLTextureManager.o"
 	@echo "... SDLTextureManager.i"
 	@echo "... SDLTextureManager.s"
 	@echo "... SDLWall.o"
 	@echo "... SDLWall.i"
 	@echo "... SDLWall.s"
+	@echo "... Score.o"
+	@echo "... Score.i"
+	@echo "... Score.s"
 	@echo "... Wall.o"
 	@echo "... Wall.i"
 	@echo "... Wall.s"

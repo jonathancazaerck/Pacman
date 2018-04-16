@@ -11,9 +11,11 @@
 class Wall;
 
 class Ghost : public Player{
-private:
+protected:
     bool enemy;
+private:
     int noEnemyLifetime;
+    bool bonusGetted;
 public:
     Ghost(int x, int y, Game* game);
     void update();
@@ -21,6 +23,8 @@ public:
     //void onCollisionWith(Ghost* ghost);
     bool getEnemy();
     void setNotEnemy();
+    void setBonusGetted();
+    bool getBonusGetted();
     void timetick();
     virtual void visualize(){};
     virtual void render(){};
