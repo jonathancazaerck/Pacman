@@ -291,7 +291,7 @@ void Game::tick() {
 
     for (Bonus *bonus : bonuses) {
         bonus->setDeactive();
-        if (bonus->checkCollision(pacman, true, false, stop)) {
+        if (bonus->checkCollision(pacman, true, false, stop) & !bonus->getEated()) {
             bonus->onCollisionWith(pacman);
         }
     }
