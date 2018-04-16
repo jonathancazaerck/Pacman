@@ -16,6 +16,7 @@ protected:
 private:
     int noEnemyLifetime;
     bool bonusGetted;
+    int defaultX, defaultY;
 public:
     Ghost(int x, int y, Game* game);
     void update();
@@ -28,6 +29,7 @@ public:
     void timetick();
     virtual void visualize(){};
     virtual void render(){};
+    void resetPosition();
 };
 
 

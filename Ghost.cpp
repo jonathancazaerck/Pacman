@@ -10,6 +10,8 @@ Ghost::Ghost(int x, int y, Game* game) : Player(x, y, game) {
     bonusGetted = false;
     direction = left;
     noEnemyLifetime = 0;
+    defaultX = x;
+    defaultY = y;
 };
 
 void Ghost::update() {
@@ -92,4 +94,9 @@ void Ghost::setBonusGetted(){
 
 bool Ghost::getBonusGetted(){
     return bonusGetted;
+}
+
+void Ghost::resetPosition() {
+    x = defaultX;
+    y = defaultY;
 }

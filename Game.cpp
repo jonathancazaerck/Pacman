@@ -318,6 +318,7 @@ void Game::tick() {
                 if(!ghost->getBonusGetted()) {
                     score->add(ghost);
                     ghost->setBonusGetted();
+                    ghost->resetPosition();
                 }
             }
         }
