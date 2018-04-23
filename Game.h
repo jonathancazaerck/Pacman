@@ -25,12 +25,14 @@ private:
     void print();
     AbstractFactory* abstractFactory;
     Score* score;
+    int killInt;
 
 public:
     Game(AbstractFactory* abstractFactory);
     bool checkOccupiedByWall(Player* player, directions newDirection) const;
     void run();
     void initObjects();
+    void gameloop();
 };
 
 

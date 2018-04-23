@@ -6,7 +6,6 @@
 #include <array>
 #include <string>
 #include <iostream>
-#include <SDL2/SDL.h>
 #include "Constants.h"
 #include "Game.h"
 #include "Bonus.h"
@@ -62,6 +61,7 @@ Game::Game(AbstractFactory *abstractFactory) {
         //Pacman
         Coordinate *coordinatePacman = jsonReader->getPacmanCoordinates();
         pacman = abstractFactory->createPacman(coordinatePacman->getX(), coordinatePacman->getY(), this);
+        killInt = 0;
 
         //Walls
         std::vector<Coordinate *> coordinateWalls = jsonReader->getInfrastructure("Walls",wallStep);
@@ -115,12 +115,6 @@ void Game::run() {
 
 ////HIER SDL
 
-    const int FPS = 60;
-    const int frameDelay = 1000 / FPS;
-
-    Uint32 frameStart;
-    int frameTime;
-
     abstractFactory->init("Jonathan Cazaerck", 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, false);
 
     initObjects();
@@ -131,57 +125,72 @@ void Game::run() {
         wall->render();
     }
 
-
-    while (abstractFactory->running()) {
-
-        tick();
-
-        frameStart = SDL_GetTicks();
-
-        abstractFactory->handleEvents();
-        abstractFactory->renderClear();
-
-        for (Bullet *bullet:bullets) {
-            if(!bullet->getEated()){
-                bullet->visualize();
-                bullet->render();
-            }
+    while(abstractFactory->running()){
+        if(!abstractFactory->timerTicking()){
+            gameloop();
+            abstractFactory->timerTicked();
         }
-
-        for (Bonus *bonus:bonuses) {
-            if(!bonus->getEated()){
-                bonus->visualize();
-                bonus->render();
-            }
-        }
-
-        score->visualize();
-        score->render();
-
-        pacman->update();
-        pacman->visualize();
-        pacman->render();
-
-        for (Ghost *ghost:ghosts) {
-            ghost->update();
-            ghost->visualize();
-            ghost->render();
-        }
-
-        for (Wall *wall:walls) {
-            wall->render();
-        }
-
-        abstractFactory->renderPresent();
-
-        frameTime = SDL_GetTicks() - frameStart;
-
-        if (frameDelay > frameTime)
-            SDL_Delay(frameDelay - frameTime);
-
+        if (!pacman->isKilled)
+            abstractFactory->handleEvents();
     }
 
+
+    abstractFactory->showDialog("Game Over!", "You loose!");
+
     abstractFactory->clean();
+
+}
+
+void Game::gameloop() {
+
+    if (!pacman->isKilled)
+        tick();
+
+    abstractFactory->renderClear();
+
+    for (Bullet *bullet:bullets) {
+        if (!bullet->getEated()) {
+            bullet->visualize();
+            bullet->render();
+        }
+    }
+
+    for (Bonus *bonus:bonuses) {
+        if (!bonus->getEated()) {
+            bonus->visualize();
+            bonus->render();
+        }
+    }
+
+    score->visualize();
+    score->render();
+
+    if (!pacman->isKilled) {
+        pacman->update();
+        pacman->visualize();
+    } else {
+        if (killInt < 17) {
+            pacman->kill(killInt);
+            killInt++;
+            std::cout << killInt << std::endl;
+        } else {
+            abstractFactory->stop();
+        }
+    }
+
+    pacman->render();
+
+    for (Ghost *ghost:ghosts) {
+        ghost->update();
+        ghost->visualize();
+        ghost->render();
+    }
+
+    for (Wall *wall:walls) {
+        wall->render();
+    }
+
+    abstractFactory->renderPresent();
 
 }
 
@@ -311,7 +320,7 @@ void Game::tick() {
             if (ghost->getEnemy()) {
                 //als de ghost de vijand is
                 std::cout << "DOOD!!!!" << std::endl;
-                exit(0); //@fixme: maak dit wat eleganter
+                pacman->isKilled = true;
             } else {
                 //ghost is de vijand niet
                 //std::cout << "BONUS" << std::endl;

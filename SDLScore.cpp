@@ -13,7 +13,7 @@ SDLScore::SDLScore(SDL_Texture* objTexture, SDL_Renderer *renderer) : Score() {
 void SDLScore::visualize(){
 
 
-    std::cout<<score<<std::endl;
+    //std::cout<<score<<std::endl;
 
     srcThousandsRect = calcRect(score/1000);
     srcHundardsRect = calcRect((score/100)%10);

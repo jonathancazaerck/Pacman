@@ -28,3 +28,7 @@ void Pacman::onCollisionWith(Wall *wall) {
 //    std::cout<< "On collision with wall/pacman" << std::endl;
     stopMoving();
 }
+
+void Pacman::kill(int i){
+//    Animation from GUI will be played.
+}

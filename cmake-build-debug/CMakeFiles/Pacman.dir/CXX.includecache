@@ -207,6 +207,8 @@ AbstractFactory.h
 /Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/AbstractFactory.h
 
 /Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/AbstractFactory.h
+string
+-
 Pacman.h
 /Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Pacman.h
 Score.h
@@ -258,8 +260,6 @@ array
 string
 -
 iostream
--
-SDL2/SDL.h
 -
 Constants.h
 /Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Constants.h
@@ -392,6 +392,8 @@ Constants.h
 SDLKeyboardController.h
 /Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLKeyboardController.h
 iostream
+-
+stdint.h
 -
 
 /Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLGhost.cpp

@@ -14,6 +14,7 @@ public:
     SDLPacman(int x, int y, Game* game, SDL_Texture* objTexture, SDL_Renderer* renderer);
     void visualize();
     void render();
+    void kill(int i);
 
 private:
     SDL_Texture* objTexture;

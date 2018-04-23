@@ -12,6 +12,7 @@
 #include "Constants.h"
 #include "SDLKeyboardController.h"
 #include <iostream>
+#include <stdint.h>
 
 class SDLKeyboardController;
 
@@ -33,6 +34,14 @@ public:
 
     bool running() { return  isRunning; }
 
+    bool timerTicking() { return  timerTick; }
+
+    void timerTicked();
+
+    void stop();
+
+    void showDialog(const char* title, const char* message);
+
     Pacman* createPacman(int x, int y, Game* game);
     Wall* createWall(int x, int y);
     Ghost* createGhost(int x, int y, Game* game);
@@ -41,13 +50,16 @@ public:
     Score* createScore();
 
     static SDL_Event event;
+    static SDL_UserEvent userEvent;
 
 private:
     bool isRunning;
+    bool timerTick = false;
     SDL_Window *window;
     SDL_Renderer *renderer;
     SDL_Texture* objTexture;
     SDL_Texture* wallTexture;
+    //Uint32 timerCallback(Uint32 interval, void *param);
 
     SDLKeyboardController *sdlKeyboardController;
 };

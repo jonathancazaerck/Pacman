@@ -6,6 +6,7 @@
 #define PACMAN_ABSTRACTFACTORY_H
 
 
+#include <string>
 #include "Pacman.h"
 #include "Score.h"
 
@@ -14,10 +15,14 @@ public:
     virtual void init(const char* title, int xPos, int yPos, int width, int height, bool fullscreen){};
     virtual void initKeyboardController(Pacman* pacman){};
     virtual bool running()=0;
+    virtual void stop()=0;
+    virtual bool timerTicking()=0;
+    virtual void timerTicked(){};
     virtual void handleEvents(){};
     virtual void renderClear(){};
     virtual void renderPresent(){};
     virtual void clean(){};
+    virtual void showDialog(const char* title, const char* message){};
 
     //Create the game objects
     virtual Pacman* createPacman(int x, int y, Game* game) = 0;

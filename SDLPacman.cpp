@@ -78,3 +78,15 @@ void SDLPacman::visualize(){
 void SDLPacman::render() {
     SDL_RenderCopy(renderer, objTexture, &srcRect, &destRect);
 }
+
+void SDLPacman::kill(int i) {
+    destRect.h = height;
+    destRect.w = width;
+    destRect.x = x;
+    destRect.y = y;
+
+    srcRect.h = 13;
+    srcRect.w = 13;
+    srcRect.y = 1;
+    srcRect.x = 489+12*i;
+}

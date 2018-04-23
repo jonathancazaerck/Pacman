@@ -56,8 +56,6 @@ bool Entity::checkCollision(Entity *entity, bool eat, bool bothMoving, direction
         }
 
         // there is a collision -> check if collision in correct direction
-
-        //@fixme: Botsing PacMan herstellen
         switch (thisDirection) {
             case up:
                 collision = y < entity->getY();

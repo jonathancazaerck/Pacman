@@ -15,6 +15,8 @@ public:
     void onCollisionWith(Wall *wall);
     virtual void visualize(){};
     virtual void render(){};
+    virtual void kill(int i);
+    bool isKilled = false;
 
 private:
     void stopMoving();

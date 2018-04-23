@@ -16,6 +16,9 @@ const int wallStep = 1;
 const int SCREEN_WIDTH = 380;
 const int SCREEN_HEIGHT = 510;
 
+const int FPS = 60;
+const int frameDelay = 1000 / FPS;
+
 enum directions{up,down,left,right,stop};
 
 #endif //PACMAN_CONSTANTS_H
