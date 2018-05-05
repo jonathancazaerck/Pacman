@@ -8,6 +8,7 @@
 
 #include <vector>
 #include <iostream>
+#include <tiff.h>
 #include "Pacman.h"
 #include "Ghost.h"
 #include "Bullet.h"
@@ -27,6 +28,20 @@ private:
     AbstractFactory* abstractFactory;
     Score* score;
     int killInt;
+    uint32 frameStart;
+    int frameTime;
+
+protected:
+    virtual uint32 getTimestamp()=0;
+    virtual void delay(uint32 ms)=0;
+    virtual void initKeyboardController(Pacman*)=0;
+    virtual void handleEvents()=0;
+    virtual void renderClear()=0;
+    virtual void renderPresent()=0;
+    virtual void clean()=0;
+    virtual bool getIsRunning()=0;
+    virtual void stopAll()=0;
+    virtual void showDialog(const char* title, const char* message)=0;
 
 public:
     Game(AbstractFactory* abstractFactory);
@@ -34,8 +49,6 @@ public:
     void run();
     void initObjects();
     void gameloop();
-
-
 };
 
 

@@ -99,6 +99,7 @@ CMakeFiles/Pacman.dir/SDLBonus.cpp.o: ../Player.h
 CMakeFiles/Pacman.dir/SDLBonus.cpp.o: ../SDLBonus.cpp
 CMakeFiles/Pacman.dir/SDLBonus.cpp.o: ../SDLBonus.h
 CMakeFiles/Pacman.dir/SDLBonus.cpp.o: ../SDLFactory.h
+CMakeFiles/Pacman.dir/SDLBonus.cpp.o: ../SDLInitiator.h
 CMakeFiles/Pacman.dir/SDLBonus.cpp.o: ../SDLKeyboardController.h
 CMakeFiles/Pacman.dir/SDLBonus.cpp.o: ../SDLPacman.h
 CMakeFiles/Pacman.dir/SDLBonus.cpp.o: ../SDLTextureManager.h
@@ -114,6 +115,7 @@ CMakeFiles/Pacman.dir/SDLBullet.cpp.o: ../Player.h
 CMakeFiles/Pacman.dir/SDLBullet.cpp.o: ../SDLBullet.cpp
 CMakeFiles/Pacman.dir/SDLBullet.cpp.o: ../SDLBullet.h
 CMakeFiles/Pacman.dir/SDLBullet.cpp.o: ../SDLFactory.h
+CMakeFiles/Pacman.dir/SDLBullet.cpp.o: ../SDLInitiator.h
 CMakeFiles/Pacman.dir/SDLBullet.cpp.o: ../SDLKeyboardController.h
 CMakeFiles/Pacman.dir/SDLBullet.cpp.o: ../SDLPacman.h
 CMakeFiles/Pacman.dir/SDLBullet.cpp.o: ../SDLTextureManager.h
@@ -139,6 +141,7 @@ CMakeFiles/Pacman.dir/SDLFactory.cpp.o: ../Bonus.h
 CMakeFiles/Pacman.dir/SDLFactory.cpp.o: ../Bullet.h
 CMakeFiles/Pacman.dir/SDLFactory.cpp.o: ../Constants.h
 CMakeFiles/Pacman.dir/SDLFactory.cpp.o: ../Entity.h
+CMakeFiles/Pacman.dir/SDLFactory.cpp.o: ../Game.h
 CMakeFiles/Pacman.dir/SDLFactory.cpp.o: ../Ghost.h
 CMakeFiles/Pacman.dir/SDLFactory.cpp.o: ../Pacman.h
 CMakeFiles/Pacman.dir/SDLFactory.cpp.o: ../Player.h
@@ -146,7 +149,9 @@ CMakeFiles/Pacman.dir/SDLFactory.cpp.o: ../SDLBonus.h
 CMakeFiles/Pacman.dir/SDLFactory.cpp.o: ../SDLBullet.h
 CMakeFiles/Pacman.dir/SDLFactory.cpp.o: ../SDLFactory.cpp
 CMakeFiles/Pacman.dir/SDLFactory.cpp.o: ../SDLFactory.h
+CMakeFiles/Pacman.dir/SDLFactory.cpp.o: ../SDLGame.h
 CMakeFiles/Pacman.dir/SDLFactory.cpp.o: ../SDLGhost.h
+CMakeFiles/Pacman.dir/SDLFactory.cpp.o: ../SDLInitiator.h
 CMakeFiles/Pacman.dir/SDLFactory.cpp.o: ../SDLKeyboardController.h
 CMakeFiles/Pacman.dir/SDLFactory.cpp.o: ../SDLPacman.h
 CMakeFiles/Pacman.dir/SDLFactory.cpp.o: ../SDLScore.h
@@ -154,6 +159,24 @@ CMakeFiles/Pacman.dir/SDLFactory.cpp.o: ../SDLTextureManager.h
 CMakeFiles/Pacman.dir/SDLFactory.cpp.o: ../SDLWall.h
 CMakeFiles/Pacman.dir/SDLFactory.cpp.o: ../Score.h
 CMakeFiles/Pacman.dir/SDLFactory.cpp.o: ../Wall.h
+
+CMakeFiles/Pacman.dir/SDLGame.cpp.o: ../AbstractFactory.h
+CMakeFiles/Pacman.dir/SDLGame.cpp.o: ../Bullet.h
+CMakeFiles/Pacman.dir/SDLGame.cpp.o: ../Constants.h
+CMakeFiles/Pacman.dir/SDLGame.cpp.o: ../Entity.h
+CMakeFiles/Pacman.dir/SDLGame.cpp.o: ../Game.h
+CMakeFiles/Pacman.dir/SDLGame.cpp.o: ../Ghost.h
+CMakeFiles/Pacman.dir/SDLGame.cpp.o: ../Pacman.h
+CMakeFiles/Pacman.dir/SDLGame.cpp.o: ../Player.h
+CMakeFiles/Pacman.dir/SDLGame.cpp.o: ../SDLFactory.h
+CMakeFiles/Pacman.dir/SDLGame.cpp.o: ../SDLGame.cpp
+CMakeFiles/Pacman.dir/SDLGame.cpp.o: ../SDLGame.h
+CMakeFiles/Pacman.dir/SDLGame.cpp.o: ../SDLInitiator.h
+CMakeFiles/Pacman.dir/SDLGame.cpp.o: ../SDLKeyboardController.h
+CMakeFiles/Pacman.dir/SDLGame.cpp.o: ../SDLPacman.h
+CMakeFiles/Pacman.dir/SDLGame.cpp.o: ../SDLTextureManager.h
+CMakeFiles/Pacman.dir/SDLGame.cpp.o: ../Score.h
+CMakeFiles/Pacman.dir/SDLGame.cpp.o: ../Wall.h
 
 CMakeFiles/Pacman.dir/SDLGhost.cpp.o: ../AbstractFactory.h
 CMakeFiles/Pacman.dir/SDLGhost.cpp.o: ../Constants.h
@@ -164,23 +187,43 @@ CMakeFiles/Pacman.dir/SDLGhost.cpp.o: ../Player.h
 CMakeFiles/Pacman.dir/SDLGhost.cpp.o: ../SDLFactory.h
 CMakeFiles/Pacman.dir/SDLGhost.cpp.o: ../SDLGhost.cpp
 CMakeFiles/Pacman.dir/SDLGhost.cpp.o: ../SDLGhost.h
+CMakeFiles/Pacman.dir/SDLGhost.cpp.o: ../SDLInitiator.h
 CMakeFiles/Pacman.dir/SDLGhost.cpp.o: ../SDLKeyboardController.h
 CMakeFiles/Pacman.dir/SDLGhost.cpp.o: ../SDLPacman.h
 CMakeFiles/Pacman.dir/SDLGhost.cpp.o: ../SDLTextureManager.h
 CMakeFiles/Pacman.dir/SDLGhost.cpp.o: ../Score.h
 
+CMakeFiles/Pacman.dir/SDLInitiator.cpp.o: ../AbstractFactory.h
+CMakeFiles/Pacman.dir/SDLInitiator.cpp.o: ../Constants.h
+CMakeFiles/Pacman.dir/SDLInitiator.cpp.o: ../Entity.h
+CMakeFiles/Pacman.dir/SDLInitiator.cpp.o: ../Ghost.h
+CMakeFiles/Pacman.dir/SDLInitiator.cpp.o: ../Pacman.h
+CMakeFiles/Pacman.dir/SDLInitiator.cpp.o: ../Player.h
+CMakeFiles/Pacman.dir/SDLInitiator.cpp.o: ../SDLFactory.h
+CMakeFiles/Pacman.dir/SDLInitiator.cpp.o: ../SDLInitiator.cpp
+CMakeFiles/Pacman.dir/SDLInitiator.cpp.o: ../SDLInitiator.h
+CMakeFiles/Pacman.dir/SDLInitiator.cpp.o: ../SDLKeyboardController.h
+CMakeFiles/Pacman.dir/SDLInitiator.cpp.o: ../SDLPacman.h
+CMakeFiles/Pacman.dir/SDLInitiator.cpp.o: ../SDLTextureManager.h
+CMakeFiles/Pacman.dir/SDLInitiator.cpp.o: ../Score.h
+
 CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.o: ../AbstractFactory.h
+CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.o: ../Bullet.h
 CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.o: ../Constants.h
 CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.o: ../Entity.h
+CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.o: ../Game.h
 CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.o: ../Ghost.h
 CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.o: ../Pacman.h
 CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.o: ../Player.h
 CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.o: ../SDLFactory.h
+CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.o: ../SDLGame.h
+CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.o: ../SDLInitiator.h
 CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.o: ../SDLKeyboardController.cpp
 CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.o: ../SDLKeyboardController.h
 CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.o: ../SDLPacman.h
 CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.o: ../SDLTextureManager.h
 CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.o: ../Score.h
+CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.o: ../Wall.h
 
 CMakeFiles/Pacman.dir/SDLPacman.cpp.o: ../AbstractFactory.h
 CMakeFiles/Pacman.dir/SDLPacman.cpp.o: ../Constants.h
@@ -189,6 +232,7 @@ CMakeFiles/Pacman.dir/SDLPacman.cpp.o: ../Ghost.h
 CMakeFiles/Pacman.dir/SDLPacman.cpp.o: ../Pacman.h
 CMakeFiles/Pacman.dir/SDLPacman.cpp.o: ../Player.h
 CMakeFiles/Pacman.dir/SDLPacman.cpp.o: ../SDLFactory.h
+CMakeFiles/Pacman.dir/SDLPacman.cpp.o: ../SDLInitiator.h
 CMakeFiles/Pacman.dir/SDLPacman.cpp.o: ../SDLKeyboardController.h
 CMakeFiles/Pacman.dir/SDLPacman.cpp.o: ../SDLPacman.cpp
 CMakeFiles/Pacman.dir/SDLPacman.cpp.o: ../SDLPacman.h
@@ -225,6 +269,7 @@ CMakeFiles/Pacman.dir/SDLTextureManager.cpp.o: ../Ghost.h
 CMakeFiles/Pacman.dir/SDLTextureManager.cpp.o: ../Pacman.h
 CMakeFiles/Pacman.dir/SDLTextureManager.cpp.o: ../Player.h
 CMakeFiles/Pacman.dir/SDLTextureManager.cpp.o: ../SDLFactory.h
+CMakeFiles/Pacman.dir/SDLTextureManager.cpp.o: ../SDLInitiator.h
 CMakeFiles/Pacman.dir/SDLTextureManager.cpp.o: ../SDLKeyboardController.h
 CMakeFiles/Pacman.dir/SDLTextureManager.cpp.o: ../SDLPacman.h
 CMakeFiles/Pacman.dir/SDLTextureManager.cpp.o: ../SDLTextureManager.cpp
@@ -253,6 +298,7 @@ CMakeFiles/Pacman.dir/SDLWall.cpp.o: ../Ghost.h
 CMakeFiles/Pacman.dir/SDLWall.cpp.o: ../Pacman.h
 CMakeFiles/Pacman.dir/SDLWall.cpp.o: ../Player.h
 CMakeFiles/Pacman.dir/SDLWall.cpp.o: ../SDLFactory.h
+CMakeFiles/Pacman.dir/SDLWall.cpp.o: ../SDLInitiator.h
 CMakeFiles/Pacman.dir/SDLWall.cpp.o: ../SDLKeyboardController.h
 CMakeFiles/Pacman.dir/SDLWall.cpp.o: ../SDLPacman.h
 CMakeFiles/Pacman.dir/SDLWall.cpp.o: ../SDLTextureManager.h
@@ -285,6 +331,8 @@ CMakeFiles/Pacman.dir/main.cpp.o: ../JsonReader.h
 CMakeFiles/Pacman.dir/main.cpp.o: ../Pacman.h
 CMakeFiles/Pacman.dir/main.cpp.o: ../Player.h
 CMakeFiles/Pacman.dir/main.cpp.o: ../SDLFactory.h
+CMakeFiles/Pacman.dir/main.cpp.o: ../SDLGame.h
+CMakeFiles/Pacman.dir/main.cpp.o: ../SDLInitiator.h
 CMakeFiles/Pacman.dir/main.cpp.o: ../SDLKeyboardController.h
 CMakeFiles/Pacman.dir/main.cpp.o: ../SDLPacman.h
 CMakeFiles/Pacman.dir/main.cpp.o: ../SDLTextureManager.h

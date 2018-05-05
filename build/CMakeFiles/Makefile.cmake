@@ -12,6 +12,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.10.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.10.2/CMakeSystem.cmake"
   "../cmake/FindSDL2.cmake"
+  "../cmake/FindSDL2_image.cmake"
   "/usr/local/Cellar/cmake/3.10.2/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/local/Cellar/cmake/3.10.2/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/usr/local/Cellar/cmake/3.10.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"

@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Game.h"
+#include "SDLGame.h"
 #include "SDLFactory.h"
 #include "JsonReader.h"
 
@@ -9,8 +9,8 @@ int main() {
 //      jsonReader->read();
 //      jsonReader->getAllCoordinates();
 
-    AbstractFactory *abstractFactory = new SDLFactory();
-    Game *game = new Game(abstractFactory);
+    AbstractFactory *abstractFactory = new SDLFactory("Jonathan Cazaerck", 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, false);
+    Game *game = abstractFactory->createGame(abstractFactory);
     game->run();
 
    return 0;

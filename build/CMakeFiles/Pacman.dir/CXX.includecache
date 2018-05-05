@@ -6,11 +6,489 @@
 
 #IncludeRegexTransform: 
 
+../nlohmann/json.hpp
+algorithm
+-
+cassert
+-
+ciso646
+-
+cstddef
+-
+functional
+-
+initializer_list
+-
+iosfwd
+-
+iterator
+-
+numeric
+-
+string
+-
+utility
+-
+cstdint
+-
+map
+-
+memory
+-
+string
+-
+vector
+-
+ciso646
+-
+cstddef
+-
+limits
+-
+type_traits
+-
+utility
+-
+exception
+-
+stdexcept
+-
+string
+-
+array
+-
+ciso646
+-
+cstddef
+-
+cstdint
+-
+algorithm
+-
+array
+-
+ciso646
+-
+forward_list
+-
+iterator
+-
+string
+-
+tuple
+-
+type_traits
+-
+utility
+-
+valarray
+-
+ciso646
+-
+iterator
+-
+tuple
+-
+type_traits
+-
+utility
+-
+valarray
+-
+vector
+-
+algorithm
+-
+array
+-
+cassert
+-
+cstddef
+-
+cstring
+-
+ios
+-
+istream
+-
+iterator
+-
+memory
+-
+numeric
+-
+string
+-
+type_traits
+-
+utility
+-
+clocale
+-
+cstddef
+-
+cstdlib
+-
+initializer_list
+-
+ios
+-
+iomanip
+-
+sstream
+-
+string
+-
+vector
+-
+cassert
+-
+cmath
+-
+cstdint
+-
+functional
+-
+string
+-
+utility
+-
+cstddef
+-
+limits
+-
+ciso646
+-
+iterator
+-
+type_traits
+-
+cstddef
+-
+string
+-
+cstddef
+-
+iterator
+-
+utility
+-
+algorithm
+-
+cstddef
+-
+ios
+-
+iterator
+-
+memory
+-
+ostream
+-
+string
+-
+vector
+-
+algorithm
+-
+array
+-
+cassert
+-
+cmath
+-
+cstddef
+-
+cstdint
+-
+cstring
+-
+iomanip
+-
+ios
+-
+iterator
+-
+limits
+-
+sstream
+-
+string
+-
+utility
+-
+algorithm
+-
+array
+-
+cstdint
+-
+cstring
+-
+limits
+-
+algorithm
+-
+array
+-
+cassert
+-
+ciso646
+-
+clocale
+-
+cmath
+-
+cstddef
+-
+cstdint
+-
+cstdio
+-
+iomanip
+-
+iterator
+-
+limits
+-
+string
+-
+sstream
+-
+type_traits
+-
+cassert
+-
+ciso646
+-
+cmath
+-
+cstdint
+-
+cstring
+-
+initializer_list
+-
+utility
+-
+cassert
+-
+numeric
+-
+string
+-
+vector
+-
+utility
+-
+
+/Library/Frameworks/SDL2.framework/Headers/SDL_blendmode.h
+begin_code.h
+/Library/Frameworks/SDL2.framework/Headers/begin_code.h
+close_code.h
+/Library/Frameworks/SDL2.framework/Headers/close_code.h
+
+/Library/Frameworks/SDL2.framework/Headers/SDL_config.h
+SDL_platform.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_platform.h
+SDL_config_windows.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_config_windows.h
+SDL_config_winrt.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_config_winrt.h
+SDL_config_macosx.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_config_macosx.h
+SDL_config_iphoneos.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_config_iphoneos.h
+SDL_config_android.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_config_android.h
+SDL_config_psp.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_config_psp.h
+SDL_config_minimal.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_config_minimal.h
+
+/Library/Frameworks/SDL2.framework/Headers/SDL_config_macosx.h
+SDL_platform.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_platform.h
+AvailabilityMacros.h
+-
+
+/Library/Frameworks/SDL2.framework/Headers/SDL_endian.h
+SDL_stdinc.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h
+endian.h
+-
+begin_code.h
+/Library/Frameworks/SDL2.framework/Headers/begin_code.h
+close_code.h
+/Library/Frameworks/SDL2.framework/Headers/close_code.h
+
+/Library/Frameworks/SDL2.framework/Headers/SDL_error.h
+SDL_stdinc.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h
+begin_code.h
+/Library/Frameworks/SDL2.framework/Headers/begin_code.h
+close_code.h
+/Library/Frameworks/SDL2.framework/Headers/close_code.h
+
+/Library/Frameworks/SDL2.framework/Headers/SDL_pixels.h
+SDL_stdinc.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h
+SDL_endian.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_endian.h
+begin_code.h
+/Library/Frameworks/SDL2.framework/Headers/begin_code.h
+close_code.h
+/Library/Frameworks/SDL2.framework/Headers/close_code.h
+
+/Library/Frameworks/SDL2.framework/Headers/SDL_platform.h
+AvailabilityMacros.h
+/Library/Frameworks/SDL2.framework/Headers/AvailabilityMacros.h
+TargetConditionals.h
+/Library/Frameworks/SDL2.framework/Headers/TargetConditionals.h
+winapifamily.h
+-
+begin_code.h
+/Library/Frameworks/SDL2.framework/Headers/begin_code.h
+close_code.h
+/Library/Frameworks/SDL2.framework/Headers/close_code.h
+
+/Library/Frameworks/SDL2.framework/Headers/SDL_rect.h
+SDL_stdinc.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h
+SDL_error.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_error.h
+SDL_pixels.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_pixels.h
+SDL_rwops.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_rwops.h
+begin_code.h
+/Library/Frameworks/SDL2.framework/Headers/begin_code.h
+close_code.h
+/Library/Frameworks/SDL2.framework/Headers/close_code.h
+
+/Library/Frameworks/SDL2.framework/Headers/SDL_render.h
+SDL_stdinc.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h
+SDL_rect.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_rect.h
+SDL_video.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
+begin_code.h
+/Library/Frameworks/SDL2.framework/Headers/begin_code.h
+close_code.h
+/Library/Frameworks/SDL2.framework/Headers/close_code.h
+
+/Library/Frameworks/SDL2.framework/Headers/SDL_rwops.h
+SDL_stdinc.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h
+SDL_error.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_error.h
+begin_code.h
+/Library/Frameworks/SDL2.framework/Headers/begin_code.h
+close_code.h
+/Library/Frameworks/SDL2.framework/Headers/close_code.h
+
+/Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h
+SDL_config.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_config.h
+sys/types.h
+-
+stdio.h
+-
+stdlib.h
+-
+stddef.h
+-
+stdarg.h
+-
+stdlib.h
+-
+malloc.h
+-
+stddef.h
+-
+stdarg.h
+-
+memory.h
+-
+string.h
+-
+strings.h
+-
+wchar.h
+-
+inttypes.h
+-
+stdint.h
+-
+ctype.h
+-
+math.h
+-
+float.h
+-
+sal.h
+-
+begin_code.h
+/Library/Frameworks/SDL2.framework/Headers/begin_code.h
+alloca.h
+-
+malloc.h
+-
+malloc.h
+-
+malloc.h
+-
+stdlib.h
+-
+close_code.h
+/Library/Frameworks/SDL2.framework/Headers/close_code.h
+
+/Library/Frameworks/SDL2.framework/Headers/SDL_surface.h
+SDL_stdinc.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h
+SDL_pixels.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_pixels.h
+SDL_rect.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_rect.h
+SDL_blendmode.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_blendmode.h
+SDL_rwops.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_rwops.h
+begin_code.h
+/Library/Frameworks/SDL2.framework/Headers/begin_code.h
+close_code.h
+/Library/Frameworks/SDL2.framework/Headers/close_code.h
+
+/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
+SDL_stdinc.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h
+SDL_pixels.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_pixels.h
+SDL_rect.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_rect.h
+SDL_surface.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_surface.h
+begin_code.h
+/Library/Frameworks/SDL2.framework/Headers/begin_code.h
+close_code.h
+/Library/Frameworks/SDL2.framework/Headers/close_code.h
+
+/Library/Frameworks/SDL2.framework/Headers/begin_code.h
+
+/Library/Frameworks/SDL2.framework/Headers/close_code.h
+
 /Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/AbstractFactory.cpp
 AbstractFactory.h
 /Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/AbstractFactory.h
 
 /Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/AbstractFactory.h
+string
+-
+Pacman.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Pacman.h
+Score.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Score.h
 
 /Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Bonus.cpp
 Bonus.h
@@ -67,9 +545,13 @@ Bonus.h
 /Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Bonus.h
 JsonReader.h
 /Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/JsonReader.h
+Score.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Score.h
 
 /Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Game.h
 vector
+-
+iostream
 -
 Pacman.h
 /Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Pacman.h
@@ -81,6 +563,8 @@ Wall.h
 /Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Wall.h
 AbstractFactory.h
 /Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/AbstractFactory.h
+Score.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Score.h
 
 /Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Ghost.cpp
 iostream
@@ -101,7 +585,7 @@ fstream
 -
 iostream
 -
-nlohmann/json.hpp
+json.hpp
 -
 Game.h
 /Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Game.h
@@ -134,19 +618,137 @@ Constants.h
 Entity.h
 /Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Entity.h
 
-/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLFactory.cpp
-string
--
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLBonus.cpp
+SDLBonus.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLBonus.h
+SDLTextureManager.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLTextureManager.h
+
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLBonus.h
+Bonus.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Bonus.h
 SDLFactory.h
 /Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLFactory.h
+
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLBullet.cpp
+SDLBullet.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLBullet.h
+SDLTextureManager.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLTextureManager.h
+
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLBullet.h
+SDLFactory.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLFactory.h
+Bullet.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Bullet.h
+
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLFactory.cpp
+SDLFactory.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLFactory.h
+SDLPacman.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLPacman.h
+SDLWall.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLWall.h
+SDLGhost.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLGhost.h
+SDLBullet.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLBullet.h
+SDLBonus.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLBonus.h
+SDLScore.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLScore.h
 
 /Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLFactory.h
 AbstractFactory.h
 /Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/AbstractFactory.h
 SDL2/SDL.h
 -
+SDL2/SDL_image.h
+-
 Constants.h
 /Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Constants.h
+SDLKeyboardController.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLKeyboardController.h
+iostream
+-
+stdint.h
+-
+
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLGhost.cpp
+SDLGhost.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLGhost.h
+SDLTextureManager.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLTextureManager.h
+
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLGhost.h
+SDLFactory.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLFactory.h
+Ghost.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Ghost.h
+
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLKeyboardController.cpp
+SDLKeyboardController.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLKeyboardController.h
+
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLKeyboardController.h
+SDLPacman.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLPacman.h
+
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLPacman.cpp
+SDLPacman.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLPacman.h
+SDLTextureManager.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLTextureManager.h
+
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLPacman.h
+SDLFactory.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLFactory.h
+SDLTextureManager.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLTextureManager.h
+Pacman.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Pacman.h
+
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLScore.cpp
+iostream
+-
+SDLScore.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLScore.h
+
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLScore.h
+SDL_render.h
+-
+Score.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Score.h
+Constants.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Constants.h
+
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLTextureManager.cpp
+SDLTextureManager.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLTextureManager.h
+
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLTextureManager.h
+SDLFactory.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLFactory.h
+
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLWall.cpp
+SDLWall.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLWall.h
+SDLTextureManager.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLTextureManager.h
+
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLWall.h
+SDL_render.h
+-
+Wall.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Wall.h
+
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Score.cpp
+Score.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Score.h
+
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Score.h
+Ghost.h
+/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Ghost.h
 
 /Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/Wall.cpp
 Wall.h

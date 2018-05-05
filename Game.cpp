@@ -10,7 +10,6 @@
 #include "Game.h"
 #include "Bonus.h"
 #include "JsonReader.h"
-#include "Score.h"
 
 
 Game::Game(AbstractFactory *abstractFactory) {
@@ -115,40 +114,41 @@ void Game::run() {
 
 ////HIER SDL
 
-    abstractFactory->init("Jonathan Cazaerck", 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, false);
-
     initObjects();
-    abstractFactory->initKeyboardController(pacman);
+    initKeyboardController(pacman);
 
     for (Wall *wall:walls) {
         wall->visualize();
         wall->render();
     }
 
-    while(abstractFactory->running()){
-        if(abstractFactory->timerTicking()){
-            gameloop();
-            abstractFactory->timerTicked();
-        }
+    while(getIsRunning()){
+        frameStart = getTimestamp();
+
+        gameloop();
+
+        frameTime = getTimestamp() - frameStart;
+
         if (!pacman->isKilled)
-            abstractFactory->handleEvents();
+            handleEvents();
+
+        if (frameDelay > frameTime)
+            delay(frameDelay-frameTime);
     }
 
 
-    abstractFactory->showDialog("Game Over!", "You loose!");
+    showDialog("Game Over!", "You loose!");
 
-    abstractFactory->clean();
+    clean();
 
 }
 
 void Game::gameloop() {
 
-//        std::cout << "Gameloop" << std::endl;
-
     if (!pacman->isKilled)
         tick();
 
-    abstractFactory->renderClear();
+    renderClear();
 
     for (Bullet *bullet:bullets) {
         if (!bullet->getEated()) {
@@ -176,7 +176,7 @@ void Game::gameloop() {
             killInt++;
             std::cout << killInt << std::endl;
         } else {
-            abstractFactory->stop();
+            stopAll();
         }
     }
 
@@ -192,7 +192,7 @@ void Game::gameloop() {
         wall->render();
     }
 
-    abstractFactory->renderPresent();
+    renderPresent();
 
 }
 

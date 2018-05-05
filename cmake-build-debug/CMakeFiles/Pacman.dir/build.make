@@ -585,6 +585,54 @@ CMakeFiles/Pacman.dir/SDLScore.cpp.o.provides: CMakeFiles/Pacman.dir/SDLScore.cp
 CMakeFiles/Pacman.dir/SDLScore.cpp.o.provides.build: CMakeFiles/Pacman.dir/SDLScore.cpp.o
 
 
+CMakeFiles/Pacman.dir/SDLGame.cpp.o: CMakeFiles/Pacman.dir/flags.make
+CMakeFiles/Pacman.dir/SDLGame.cpp.o: ../SDLGame.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/Pacman.dir/SDLGame.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pacman.dir/SDLGame.cpp.o -c "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLGame.cpp"
+
+CMakeFiles/Pacman.dir/SDLGame.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pacman.dir/SDLGame.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLGame.cpp" > CMakeFiles/Pacman.dir/SDLGame.cpp.i
+
+CMakeFiles/Pacman.dir/SDLGame.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pacman.dir/SDLGame.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLGame.cpp" -o CMakeFiles/Pacman.dir/SDLGame.cpp.s
+
+CMakeFiles/Pacman.dir/SDLGame.cpp.o.requires:
+
+.PHONY : CMakeFiles/Pacman.dir/SDLGame.cpp.o.requires
+
+CMakeFiles/Pacman.dir/SDLGame.cpp.o.provides: CMakeFiles/Pacman.dir/SDLGame.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLGame.cpp.o.provides.build
+.PHONY : CMakeFiles/Pacman.dir/SDLGame.cpp.o.provides
+
+CMakeFiles/Pacman.dir/SDLGame.cpp.o.provides.build: CMakeFiles/Pacman.dir/SDLGame.cpp.o
+
+
+CMakeFiles/Pacman.dir/SDLInitiator.cpp.o: CMakeFiles/Pacman.dir/flags.make
+CMakeFiles/Pacman.dir/SDLInitiator.cpp.o: ../SDLInitiator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/Pacman.dir/SDLInitiator.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pacman.dir/SDLInitiator.cpp.o -c "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLInitiator.cpp"
+
+CMakeFiles/Pacman.dir/SDLInitiator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pacman.dir/SDLInitiator.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLInitiator.cpp" > CMakeFiles/Pacman.dir/SDLInitiator.cpp.i
+
+CMakeFiles/Pacman.dir/SDLInitiator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pacman.dir/SDLInitiator.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/SDLInitiator.cpp" -o CMakeFiles/Pacman.dir/SDLInitiator.cpp.s
+
+CMakeFiles/Pacman.dir/SDLInitiator.cpp.o.requires:
+
+.PHONY : CMakeFiles/Pacman.dir/SDLInitiator.cpp.o.requires
+
+CMakeFiles/Pacman.dir/SDLInitiator.cpp.o.provides: CMakeFiles/Pacman.dir/SDLInitiator.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLInitiator.cpp.o.provides.build
+.PHONY : CMakeFiles/Pacman.dir/SDLInitiator.cpp.o.provides
+
+CMakeFiles/Pacman.dir/SDLInitiator.cpp.o.provides.build: CMakeFiles/Pacman.dir/SDLInitiator.cpp.o
+
+
 # Object files for target Pacman
 Pacman_OBJECTS = \
 "CMakeFiles/Pacman.dir/main.cpp.o" \
@@ -608,7 +656,9 @@ Pacman_OBJECTS = \
 "CMakeFiles/Pacman.dir/SDLBonus.cpp.o" \
 "CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.o" \
 "CMakeFiles/Pacman.dir/Score.cpp.o" \
-"CMakeFiles/Pacman.dir/SDLScore.cpp.o"
+"CMakeFiles/Pacman.dir/SDLScore.cpp.o" \
+"CMakeFiles/Pacman.dir/SDLGame.cpp.o" \
+"CMakeFiles/Pacman.dir/SDLInitiator.cpp.o"
 
 # External object files for target Pacman
 Pacman_EXTERNAL_OBJECTS =
@@ -635,9 +685,11 @@ Pacman: CMakeFiles/Pacman.dir/SDLBonus.cpp.o
 Pacman: CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.o
 Pacman: CMakeFiles/Pacman.dir/Score.cpp.o
 Pacman: CMakeFiles/Pacman.dir/SDLScore.cpp.o
+Pacman: CMakeFiles/Pacman.dir/SDLGame.cpp.o
+Pacman: CMakeFiles/Pacman.dir/SDLInitiator.cpp.o
 Pacman: CMakeFiles/Pacman.dir/build.make
 Pacman: CMakeFiles/Pacman.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable Pacman"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/jonathancazaerck/Google Drive/Universiteit/6-Geavanceerde programmeertechnieken/Projecten/Pacman/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX executable Pacman"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Pacman.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -667,6 +719,8 @@ CMakeFiles/Pacman.dir/requires: CMakeFiles/Pacman.dir/SDLBonus.cpp.o.requires
 CMakeFiles/Pacman.dir/requires: CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.o.requires
 CMakeFiles/Pacman.dir/requires: CMakeFiles/Pacman.dir/Score.cpp.o.requires
 CMakeFiles/Pacman.dir/requires: CMakeFiles/Pacman.dir/SDLScore.cpp.o.requires
+CMakeFiles/Pacman.dir/requires: CMakeFiles/Pacman.dir/SDLGame.cpp.o.requires
+CMakeFiles/Pacman.dir/requires: CMakeFiles/Pacman.dir/SDLInitiator.cpp.o.requires
 
 .PHONY : CMakeFiles/Pacman.dir/requires
 

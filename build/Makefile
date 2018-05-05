@@ -393,6 +393,60 @@ Player.cpp.s:
 	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Player.cpp.s
 .PHONY : Player.cpp.s
 
+SDLBonus.o: SDLBonus.cpp.o
+
+.PHONY : SDLBonus.o
+
+# target to build an object file
+SDLBonus.cpp.o:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLBonus.cpp.o
+.PHONY : SDLBonus.cpp.o
+
+SDLBonus.i: SDLBonus.cpp.i
+
+.PHONY : SDLBonus.i
+
+# target to preprocess a source file
+SDLBonus.cpp.i:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLBonus.cpp.i
+.PHONY : SDLBonus.cpp.i
+
+SDLBonus.s: SDLBonus.cpp.s
+
+.PHONY : SDLBonus.s
+
+# target to generate assembly for a file
+SDLBonus.cpp.s:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLBonus.cpp.s
+.PHONY : SDLBonus.cpp.s
+
+SDLBullet.o: SDLBullet.cpp.o
+
+.PHONY : SDLBullet.o
+
+# target to build an object file
+SDLBullet.cpp.o:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLBullet.cpp.o
+.PHONY : SDLBullet.cpp.o
+
+SDLBullet.i: SDLBullet.cpp.i
+
+.PHONY : SDLBullet.i
+
+# target to preprocess a source file
+SDLBullet.cpp.i:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLBullet.cpp.i
+.PHONY : SDLBullet.cpp.i
+
+SDLBullet.s: SDLBullet.cpp.s
+
+.PHONY : SDLBullet.s
+
+# target to generate assembly for a file
+SDLBullet.cpp.s:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLBullet.cpp.s
+.PHONY : SDLBullet.cpp.s
+
 SDLFactory.o: SDLFactory.cpp.o
 
 .PHONY : SDLFactory.o
@@ -419,6 +473,195 @@ SDLFactory.s: SDLFactory.cpp.s
 SDLFactory.cpp.s:
 	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLFactory.cpp.s
 .PHONY : SDLFactory.cpp.s
+
+SDLGhost.o: SDLGhost.cpp.o
+
+.PHONY : SDLGhost.o
+
+# target to build an object file
+SDLGhost.cpp.o:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLGhost.cpp.o
+.PHONY : SDLGhost.cpp.o
+
+SDLGhost.i: SDLGhost.cpp.i
+
+.PHONY : SDLGhost.i
+
+# target to preprocess a source file
+SDLGhost.cpp.i:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLGhost.cpp.i
+.PHONY : SDLGhost.cpp.i
+
+SDLGhost.s: SDLGhost.cpp.s
+
+.PHONY : SDLGhost.s
+
+# target to generate assembly for a file
+SDLGhost.cpp.s:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLGhost.cpp.s
+.PHONY : SDLGhost.cpp.s
+
+SDLKeyboardController.o: SDLKeyboardController.cpp.o
+
+.PHONY : SDLKeyboardController.o
+
+# target to build an object file
+SDLKeyboardController.cpp.o:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.o
+.PHONY : SDLKeyboardController.cpp.o
+
+SDLKeyboardController.i: SDLKeyboardController.cpp.i
+
+.PHONY : SDLKeyboardController.i
+
+# target to preprocess a source file
+SDLKeyboardController.cpp.i:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.i
+.PHONY : SDLKeyboardController.cpp.i
+
+SDLKeyboardController.s: SDLKeyboardController.cpp.s
+
+.PHONY : SDLKeyboardController.s
+
+# target to generate assembly for a file
+SDLKeyboardController.cpp.s:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.s
+.PHONY : SDLKeyboardController.cpp.s
+
+SDLPacman.o: SDLPacman.cpp.o
+
+.PHONY : SDLPacman.o
+
+# target to build an object file
+SDLPacman.cpp.o:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLPacman.cpp.o
+.PHONY : SDLPacman.cpp.o
+
+SDLPacman.i: SDLPacman.cpp.i
+
+.PHONY : SDLPacman.i
+
+# target to preprocess a source file
+SDLPacman.cpp.i:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLPacman.cpp.i
+.PHONY : SDLPacman.cpp.i
+
+SDLPacman.s: SDLPacman.cpp.s
+
+.PHONY : SDLPacman.s
+
+# target to generate assembly for a file
+SDLPacman.cpp.s:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLPacman.cpp.s
+.PHONY : SDLPacman.cpp.s
+
+SDLScore.o: SDLScore.cpp.o
+
+.PHONY : SDLScore.o
+
+# target to build an object file
+SDLScore.cpp.o:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLScore.cpp.o
+.PHONY : SDLScore.cpp.o
+
+SDLScore.i: SDLScore.cpp.i
+
+.PHONY : SDLScore.i
+
+# target to preprocess a source file
+SDLScore.cpp.i:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLScore.cpp.i
+.PHONY : SDLScore.cpp.i
+
+SDLScore.s: SDLScore.cpp.s
+
+.PHONY : SDLScore.s
+
+# target to generate assembly for a file
+SDLScore.cpp.s:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLScore.cpp.s
+.PHONY : SDLScore.cpp.s
+
+SDLTextureManager.o: SDLTextureManager.cpp.o
+
+.PHONY : SDLTextureManager.o
+
+# target to build an object file
+SDLTextureManager.cpp.o:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLTextureManager.cpp.o
+.PHONY : SDLTextureManager.cpp.o
+
+SDLTextureManager.i: SDLTextureManager.cpp.i
+
+.PHONY : SDLTextureManager.i
+
+# target to preprocess a source file
+SDLTextureManager.cpp.i:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLTextureManager.cpp.i
+.PHONY : SDLTextureManager.cpp.i
+
+SDLTextureManager.s: SDLTextureManager.cpp.s
+
+.PHONY : SDLTextureManager.s
+
+# target to generate assembly for a file
+SDLTextureManager.cpp.s:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLTextureManager.cpp.s
+.PHONY : SDLTextureManager.cpp.s
+
+SDLWall.o: SDLWall.cpp.o
+
+.PHONY : SDLWall.o
+
+# target to build an object file
+SDLWall.cpp.o:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLWall.cpp.o
+.PHONY : SDLWall.cpp.o
+
+SDLWall.i: SDLWall.cpp.i
+
+.PHONY : SDLWall.i
+
+# target to preprocess a source file
+SDLWall.cpp.i:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLWall.cpp.i
+.PHONY : SDLWall.cpp.i
+
+SDLWall.s: SDLWall.cpp.s
+
+.PHONY : SDLWall.s
+
+# target to generate assembly for a file
+SDLWall.cpp.s:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLWall.cpp.s
+.PHONY : SDLWall.cpp.s
+
+Score.o: Score.cpp.o
+
+.PHONY : Score.o
+
+# target to build an object file
+Score.cpp.o:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Score.cpp.o
+.PHONY : Score.cpp.o
+
+Score.i: Score.cpp.i
+
+.PHONY : Score.i
+
+# target to preprocess a source file
+Score.cpp.i:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Score.cpp.i
+.PHONY : Score.cpp.i
+
+Score.s: Score.cpp.s
+
+.PHONY : Score.s
+
+# target to generate assembly for a file
+Score.cpp.s:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/Score.cpp.s
+.PHONY : Score.cpp.s
 
 Wall.o: Wall.cpp.o
 
@@ -513,9 +756,36 @@ help:
 	@echo "... Player.o"
 	@echo "... Player.i"
 	@echo "... Player.s"
+	@echo "... SDLBonus.o"
+	@echo "... SDLBonus.i"
+	@echo "... SDLBonus.s"
+	@echo "... SDLBullet.o"
+	@echo "... SDLBullet.i"
+	@echo "... SDLBullet.s"
 	@echo "... SDLFactory.o"
 	@echo "... SDLFactory.i"
 	@echo "... SDLFactory.s"
+	@echo "... SDLGhost.o"
+	@echo "... SDLGhost.i"
+	@echo "... SDLGhost.s"
+	@echo "... SDLKeyboardController.o"
+	@echo "... SDLKeyboardController.i"
+	@echo "... SDLKeyboardController.s"
+	@echo "... SDLPacman.o"
+	@echo "... SDLPacman.i"
+	@echo "... SDLPacman.s"
+	@echo "... SDLScore.o"
+	@echo "... SDLScore.i"
+	@echo "... SDLScore.s"
+	@echo "... SDLTextureManager.o"
+	@echo "... SDLTextureManager.i"
+	@echo "... SDLTextureManager.s"
+	@echo "... SDLWall.o"
+	@echo "... SDLWall.i"
+	@echo "... SDLWall.s"
+	@echo "... Score.o"
+	@echo "... Score.i"
+	@echo "... Score.s"
 	@echo "... Wall.o"
 	@echo "... Wall.i"
 	@echo "... Wall.s"

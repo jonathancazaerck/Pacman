@@ -3,14 +3,15 @@
 //
 
 #include "SDLKeyboardController.h"
+#include "SDLGame.h"
 
 SDLKeyboardController::SDLKeyboardController(Pacman* pacman) {
     this->pacman = pacman;
 }
 
 void SDLKeyboardController::update() {
-    if (SDLFactory::event.type == SDL_KEYDOWN) {
-        switch (SDLFactory::event.key.keysym.sym) {
+    if (SDLGame::event.type == SDL_KEYDOWN) {
+        switch (SDLGame::event.key.keysym.sym) {
             case SDLK_DOWN:
                 pacman->moveUp();
                 break;

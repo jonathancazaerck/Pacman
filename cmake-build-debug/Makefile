@@ -474,6 +474,33 @@ SDLFactory.cpp.s:
 	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLFactory.cpp.s
 .PHONY : SDLFactory.cpp.s
 
+SDLGame.o: SDLGame.cpp.o
+
+.PHONY : SDLGame.o
+
+# target to build an object file
+SDLGame.cpp.o:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLGame.cpp.o
+.PHONY : SDLGame.cpp.o
+
+SDLGame.i: SDLGame.cpp.i
+
+.PHONY : SDLGame.i
+
+# target to preprocess a source file
+SDLGame.cpp.i:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLGame.cpp.i
+.PHONY : SDLGame.cpp.i
+
+SDLGame.s: SDLGame.cpp.s
+
+.PHONY : SDLGame.s
+
+# target to generate assembly for a file
+SDLGame.cpp.s:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLGame.cpp.s
+.PHONY : SDLGame.cpp.s
+
 SDLGhost.o: SDLGhost.cpp.o
 
 .PHONY : SDLGhost.o
@@ -500,6 +527,33 @@ SDLGhost.s: SDLGhost.cpp.s
 SDLGhost.cpp.s:
 	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLGhost.cpp.s
 .PHONY : SDLGhost.cpp.s
+
+SDLInitiator.o: SDLInitiator.cpp.o
+
+.PHONY : SDLInitiator.o
+
+# target to build an object file
+SDLInitiator.cpp.o:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLInitiator.cpp.o
+.PHONY : SDLInitiator.cpp.o
+
+SDLInitiator.i: SDLInitiator.cpp.i
+
+.PHONY : SDLInitiator.i
+
+# target to preprocess a source file
+SDLInitiator.cpp.i:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLInitiator.cpp.i
+.PHONY : SDLInitiator.cpp.i
+
+SDLInitiator.s: SDLInitiator.cpp.s
+
+.PHONY : SDLInitiator.s
+
+# target to generate assembly for a file
+SDLInitiator.cpp.s:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/SDLInitiator.cpp.s
+.PHONY : SDLInitiator.cpp.s
 
 SDLKeyboardController.o: SDLKeyboardController.cpp.o
 
@@ -765,9 +819,15 @@ help:
 	@echo "... SDLFactory.o"
 	@echo "... SDLFactory.i"
 	@echo "... SDLFactory.s"
+	@echo "... SDLGame.o"
+	@echo "... SDLGame.i"
+	@echo "... SDLGame.s"
 	@echo "... SDLGhost.o"
 	@echo "... SDLGhost.i"
 	@echo "... SDLGhost.s"
+	@echo "... SDLInitiator.o"
+	@echo "... SDLInitiator.i"
+	@echo "... SDLInitiator.s"
 	@echo "... SDLKeyboardController.o"
 	@echo "... SDLKeyboardController.i"
 	@echo "... SDLKeyboardController.s"
