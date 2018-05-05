@@ -13,5 +13,5 @@ int main() {
     Game *game = new Game(abstractFactory);
     game->run();
 
-    return 0;
+   return 0;
 }

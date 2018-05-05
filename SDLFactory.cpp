@@ -50,7 +50,6 @@ void SDLFactory::init(const char* title, int xPos, int yPos, int width, int heig
 
 Uint32 timerCallback(Uint32 interval, void *param)
 {
-    std::cout<<"TICK"<<std::endl;
     SDL_Event event;
     SDL_UserEvent userEvent;
 
@@ -62,6 +61,8 @@ Uint32 timerCallback(Uint32 interval, void *param)
     event.type = SDL_USEREVENT;
     event.user = userEvent;
 
+    // ensure that all currently queued events are removed, so that the new event can be handled without delay
+    SDL_FlushEvent(SDL_USEREVENT);
     SDL_PushEvent(&event);
     return(interval);
 }

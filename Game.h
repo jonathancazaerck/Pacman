@@ -7,6 +7,7 @@
 
 
 #include <vector>
+#include <iostream>
 #include "Pacman.h"
 #include "Ghost.h"
 #include "Bullet.h"
@@ -33,6 +34,8 @@ public:
     void run();
     void initObjects();
     void gameloop();
+
+
 };
 
 

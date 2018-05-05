@@ -126,7 +126,7 @@ void Game::run() {
     }
 
     while(abstractFactory->running()){
-        if(!abstractFactory->timerTicking()){
+        if(abstractFactory->timerTicking()){
             gameloop();
             abstractFactory->timerTicked();
         }
@@ -142,6 +142,8 @@ void Game::run() {
 }
 
 void Game::gameloop() {
+
+//        std::cout << "Gameloop" << std::endl;
 
     if (!pacman->isKilled)
         tick();

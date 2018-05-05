@@ -4,7 +4,7 @@
 
 #include <fstream>
 #include <iostream>
-#include <nlohmann/json.hpp>
+#include <json.hpp>
 #include "Game.h"
 #include "Coordinate.h"
 #include "Constants.h"

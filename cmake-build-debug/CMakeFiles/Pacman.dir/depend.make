@@ -33,6 +33,7 @@ CMakeFiles/Pacman.dir/Entity.cpp.o: ../Constants.h
 CMakeFiles/Pacman.dir/Entity.cpp.o: ../Entity.cpp
 CMakeFiles/Pacman.dir/Entity.cpp.o: ../Entity.h
 
+CMakeFiles/Pacman.dir/Game.cpp.o: ../nlohmann/json.hpp
 CMakeFiles/Pacman.dir/Game.cpp.o: ../AbstractFactory.h
 CMakeFiles/Pacman.dir/Game.cpp.o: ../Bonus.h
 CMakeFiles/Pacman.dir/Game.cpp.o: ../Bullet.h
@@ -54,6 +55,7 @@ CMakeFiles/Pacman.dir/Ghost.cpp.o: ../Ghost.cpp
 CMakeFiles/Pacman.dir/Ghost.cpp.o: ../Ghost.h
 CMakeFiles/Pacman.dir/Ghost.cpp.o: ../Player.h
 
+CMakeFiles/Pacman.dir/JsonReader.cpp.o: ../nlohmann/json.hpp
 CMakeFiles/Pacman.dir/JsonReader.cpp.o: ../AbstractFactory.h
 CMakeFiles/Pacman.dir/JsonReader.cpp.o: ../Bullet.h
 CMakeFiles/Pacman.dir/JsonReader.cpp.o: ../Constants.h
@@ -271,6 +273,7 @@ CMakeFiles/Pacman.dir/Wall.cpp.o: ../Entity.h
 CMakeFiles/Pacman.dir/Wall.cpp.o: ../Wall.cpp
 CMakeFiles/Pacman.dir/Wall.cpp.o: ../Wall.h
 
+CMakeFiles/Pacman.dir/main.cpp.o: ../nlohmann/json.hpp
 CMakeFiles/Pacman.dir/main.cpp.o: ../AbstractFactory.h
 CMakeFiles/Pacman.dir/main.cpp.o: ../Bullet.h
 CMakeFiles/Pacman.dir/main.cpp.o: ../Constants.h
