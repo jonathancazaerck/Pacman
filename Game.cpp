@@ -174,7 +174,6 @@ void Game::gameloop() {
         if (killInt < 17) {
             pacman->kill(killInt);
             killInt++;
-            std::cout << killInt << std::endl;
         } else {
             stopAll();
         }

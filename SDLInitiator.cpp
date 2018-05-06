@@ -11,7 +11,6 @@ bool SDLInitiator::init(const char* title, int xPos, int yPos, int width, int he
         flags = SDL_WINDOW_FULLSCREEN;
 
     if((SDL_Init(SDL_INIT_EVERYTHING)) == 0) {
-        SDL_InitSubSystem(SDL_INIT_TIMER);
         std::cout << "Subsystems initialised" << std::endl;
         window = SDL_CreateWindow(title, xPos, yPos, width, height, flags);
 
