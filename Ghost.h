@@ -7,30 +7,42 @@
 
 
 #include "Player.h"
+namespace PAC {
+    class Wall;
 
-class Wall;
+    class Ghost : public Player {
+    protected:
+        bool enemy;
+    private:
+        int noEnemyLifetime;
+        bool bonusGetted;
+        int defaultX, defaultY;
+    public:
+        Ghost(int x, int y, Game *game);
 
-class Ghost : public Player{
-protected:
-    bool enemy;
-private:
-    int noEnemyLifetime;
-    bool bonusGetted;
-    int defaultX, defaultY;
-public:
-    Ghost(int x, int y, Game* game);
-    void update();
-    void onCollisionWith(Wall* wall);
-    //void onCollisionWith(Ghost* ghost);
-    bool getEnemy();
-    void setNotEnemy();
-    void setBonusGetted();
-    bool getBonusGetted();
-    void timetick();
-    virtual void visualize(){};
-    virtual void render(){};
-    void resetPosition();
-};
+        void update();
 
+        void onCollisionWith(Wall *wall);
+
+        //void onCollisionWith(Ghost* ghost);
+        bool getEnemy();
+
+        void setNotEnemy();
+
+        void setBonusGetted();
+
+        bool getBonusGetted();
+
+        void timetick();
+
+        virtual void visualize() {};
+
+        virtual void render() {};
+
+        void resetPosition();
+
+        virtual ~Ghost();
+    };
+}
 
 #endif //PACMAN_GHOST_H

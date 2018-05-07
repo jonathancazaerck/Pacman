@@ -8,18 +8,21 @@
 
 #include "Bonus.h"
 #include "SDLFactory.h"
+namespace SDLPAC {
+    class SDLBonus : public PAC::Bonus {
+    public:
+        SDLBonus(int x, int y, SDL_Texture *objTexture, SDL_Renderer *renderer);
 
-class SDLBonus : public Bonus {
-public:
-    SDLBonus(int x, int y, SDL_Texture* objTexture, SDL_Renderer* renderer);
-    void visualize();
-    void render();
+        void visualize();
 
-private:
-    SDL_Texture* objTexture;
-    SDL_Rect srcRect, destRect;
-    SDL_Renderer* renderer;
-};
+        void render();
+
+    private:
+        SDL_Texture *objTexture;
+        SDL_Rect srcRect, destRect;
+        SDL_Renderer *renderer;
+    };
+}
 
 
 #endif //PACMAN_SDLBONUS_H

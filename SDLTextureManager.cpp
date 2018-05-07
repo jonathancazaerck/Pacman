@@ -3,10 +3,11 @@
 //
 
 #include "SDLTextureManager.h"
-
-SDL_Texture* SDLTextureManager::LoadTexture(const char *fileName, SDL_Renderer *renderer) {
-    SDL_Surface* tempSurface = IMG_Load(fileName);
-    SDL_Texture* texture = SDL_CreateTextureFromSurface(renderer,tempSurface);
-    SDL_FreeSurface(tempSurface);
-    return texture;
+namespace SDLPAC {
+    SDL_Texture *SDLTextureManager::LoadTexture(const char *fileName, SDL_Renderer *renderer) {
+        SDL_Surface *tempSurface = IMG_Load(fileName);
+        SDL_Texture *texture = SDL_CreateTextureFromSurface(renderer, tempSurface);
+        SDL_FreeSurface(tempSurface);
+        return texture;
+    }
 }

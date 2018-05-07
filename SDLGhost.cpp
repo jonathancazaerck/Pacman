@@ -4,31 +4,32 @@
 
 #include "SDLGhost.h"
 #include "SDLTextureManager.h"
-
-SDLGhost::SDLGhost(int x, int y, Game* game, SDL_Texture* objTexture, SDL_Renderer *renderer) : Ghost(x,y,game) {
-    this->renderer = renderer;
-    this->objTexture = objTexture;
-}
-
-void SDLGhost::visualize(){
-    if(!enemy) {
-        srcRect.h = 14;
-        srcRect.w = 14;
-        srcRect.x = 585;
-        srcRect.y = 65;
-    } else{
-        srcRect.h = 14;
-        srcRect.w = 14;
-        srcRect.x = 457;
-        srcRect.y = 65;
+namespace SDLPAC {
+    SDLGhost::SDLGhost(int x, int y, PAC::Game *game, SDL_Texture *objTexture, SDL_Renderer *renderer) : PAC::Ghost(x, y, game) {
+        this->renderer = renderer;
+        this->objTexture = objTexture;
     }
 
-    destRect.h = height;
-    destRect.w = width;
-    destRect.x = x;
-    destRect.y = y;
-}
+    void SDLGhost::visualize() {
+        if (!enemy) {
+            srcRect.h = 14;
+            srcRect.w = 14;
+            srcRect.x = 585;
+            srcRect.y = 65;
+        } else {
+            srcRect.h = 14;
+            srcRect.w = 14;
+            srcRect.x = 457;
+            srcRect.y = 65;
+        }
 
-void SDLGhost::render() {
-    SDL_RenderCopy(renderer, objTexture, &srcRect, &destRect);
+        destRect.h = height;
+        destRect.w = width;
+        destRect.x = x;
+        destRect.y = y;
+    }
+
+    void SDLGhost::render() {
+        SDL_RenderCopy(renderer, objTexture, &srcRect, &destRect);
+    }
 }

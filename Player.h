@@ -8,35 +8,44 @@
 
 #include "Constants.h"
 #include "Entity.h"
+namespace PAC {
+    class Game;
 
-class Game;
+    class Player : public Entity {
+    protected:
+        directions direction;
+    public:
+        directions getDirection();
 
-class Player : public Entity {
-protected:
-    directions direction;
-public:
-    directions getDirection();
-
-public:
-    Player(int x, int y, Game* game):Entity(x,y){
+    public:
+        Player(int x, int y, Game *game) : Entity(x, y) {
             this->game = game;
-            width = 18;
-            height = 18;
+            width = playerWidth;
+            height = playerHeight;
+        };
+
+        virtual ~Player() {};
+
+        bool moveUp();
+
+        bool moveDown();
+
+        bool moveLeft();
+
+        bool moveRight();
+
+        bool changeToUp();
+
+        bool changeToDown();
+
+        bool changeToLeft();
+
+        bool changeToRight();
+
+        virtual void update() {};
+    private:
+        Game *game;
     };
-    virtual ~Player(){};
-    bool moveUp();
-    bool moveDown();
-    bool moveLeft();
-    bool moveRight();
-
-    bool changeToUp();
-    bool changeToDown();
-    bool changeToLeft();
-    bool changeToRight();
-    virtual void update(){};
-private:
-    Game* game;
-};
-
+}
 
 #endif //PACMAN_PLAYER_H

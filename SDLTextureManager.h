@@ -7,11 +7,12 @@
 
 #include "SDLFactory.h"
 
-
-class SDLTextureManager {
-public:
-    static SDL_Texture* LoadTexture(const char* fileName, SDL_Renderer* renderer);
-};
+namespace SDLPAC {
+    class SDLTextureManager {
+    public:
+        static SDL_Texture *LoadTexture(const char *fileName, SDL_Renderer *renderer);
+    };
+}
 
 
 #endif //PACMAN_SDLTEXTUREMANAGER_H

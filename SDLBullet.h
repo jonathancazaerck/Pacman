@@ -7,18 +7,21 @@
 
 #include "SDLFactory.h"
 #include "Bullet.h"
+namespace SDLPAC {
+    class SDLBullet : public PAC::Bullet {
+    public:
+        SDLBullet(int x, int y, SDL_Texture *objTexture, SDL_Renderer *renderer);
 
-class SDLBullet : public Bullet {
-public:
-    SDLBullet(int x, int y, SDL_Texture* objTexture, SDL_Renderer* renderer);
-    void visualize();
-    void render();
+        void visualize();
 
-private:
-    SDL_Texture* objTexture;
-    SDL_Rect srcRect, destRect;
-    SDL_Renderer* renderer;
-};
+        void render();
+
+    private:
+        SDL_Texture *objTexture;
+        SDL_Rect srcRect, destRect;
+        SDL_Renderer *renderer;
+    };
+}
 
 
 #endif //PACMAN_SDLBULLET_H

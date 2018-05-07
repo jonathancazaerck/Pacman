@@ -8,21 +8,28 @@
 #include <SDL2/SDL.h>
 #include <iostream>
 
+namespace SDLPAC {
+    class SDLInitiator {
+    public:
+        bool init(const char *title, int xPos, int yPos, int width, int height, bool fullscreen);
 
-class SDLInitiator {
-public:
-    bool init(const char* title, int xPos, int yPos, int width, int height, bool fullscreen);
-    SDL_Renderer* getRenderer();
-    SDL_Texture* getObjTexture();
-    SDL_Texture* getWallTexture();
-    SDL_Window* getWindow();
+        SDL_Renderer *getRenderer();
 
-private:
-    SDL_Window *window;
-    SDL_Renderer *renderer;
-    SDL_Texture *objTexture;
-    SDL_Texture *wallTexture;
-};
+        SDL_Texture *getObjTexture();
+
+        SDL_Texture *getWallTexture();
+
+        SDL_Window *getWindow();
+
+        virtual ~SDLInitiator();
+
+    private:
+        SDL_Window *window;
+        SDL_Renderer *renderer;
+        SDL_Texture *objTexture;
+        SDL_Texture *wallTexture;
+    };
+}
 
 
 #endif //PACMAN_SDLINITIATIOR_H

@@ -7,13 +7,15 @@
 
 
 #include "Entity.h"
+namespace PAC {
+    class Wall : public Entity {
+    public:
+        Wall(int x, int y);
 
-class Wall : public Entity {
-public:
-    Wall(int x, int y);
-    virtual void visualize(){};
-    virtual void render(){};
-};
+        virtual void visualize() {};
 
+        virtual void render() {};
+    };
+}
 
 #endif //PACMAN_WALL_H

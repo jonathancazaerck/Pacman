@@ -3,3 +3,11 @@
 //
 
 #include "AbstractFactory.h"
+
+namespace PAC {
+
+    AbstractFactory::~AbstractFactory() {
+
+    }
+
+}

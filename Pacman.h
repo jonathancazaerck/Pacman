@@ -7,20 +7,26 @@
 
 
 #include "Player.h"
+namespace PAC {
+    class Pacman : public Player {
+    public:
+        Pacman(int x, int y, Game *game);
 
-class Pacman: public Player {
-public:
-    Pacman(int x, int y, Game* game);
-    void update();
-    void onCollisionWith(Wall *wall);
-    virtual void visualize(){};
-    virtual void render(){};
-    virtual void kill(int i);
-    bool isKilled = false;
+        void update();
 
-private:
-    void stopMoving();
-};
+        void onCollisionWith(Wall *wall);
 
+        virtual void visualize() {};
 
+        virtual void render() {};
+
+        virtual void kill(int i);
+
+        bool isKilled = false;
+
+    private:
+        void stopMoving();
+    };
+
+}
 #endif //PACMAN_PACMAN_H

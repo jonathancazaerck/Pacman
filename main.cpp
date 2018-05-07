@@ -9,9 +9,12 @@ int main() {
 //      jsonReader->read();
 //      jsonReader->getAllCoordinates();
 
-    AbstractFactory *abstractFactory = new SDLFactory("Jonathan Cazaerck", 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, false);
-    Game *game = abstractFactory->createGame(abstractFactory);
+    PAC::AbstractFactory *abstractFactory = new SDLPAC::SDLFactory("Jonathan Cazaerck", 0, 0, PAC::SCREEN_WIDTH, PAC::SCREEN_HEIGHT, false);
+    PAC::Game *game = abstractFactory->createGame(abstractFactory);
     game->run();
-
+    std::cout<<"Delete game"<<std::endl;
+    delete game;
+    std::cout<<"Delete abstractFactory"<<std::endl;
+    delete abstractFactory;
    return 0;
 }

@@ -7,17 +7,21 @@
 
 
 #include "Ghost.h"
+namespace PAC {
+    class Score {
+    public:
+        Score();
 
-class Score {
-public:
-    Score();
-    void add(Ghost*);
-    void add(Bullet*);
-    virtual void visualize(){};
-    virtual void render(){};
-protected:
-    int score;
-};
+        void add(Ghost *);
 
+        void add(Bullet *);
+
+        virtual void visualize() {};
+
+        virtual void render() {};
+    protected:
+        int score;
+    };
+}
 
 #endif //PACMAN_SCORE_H

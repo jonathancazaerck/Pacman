@@ -4,31 +4,42 @@
 
 #include <iostream>
 #include "Pacman.h"
+namespace PAC {
+    Pacman::Pacman(int x, int y, Game *game) : Player(x, y, game) {
+        direction = stop;
+    };
 
-Pacman::Pacman(int x, int y, Game* game) :Player(x,y, game) {
-    direction = stop;
-};
-
-void Pacman::update() {
-    switch(direction){
-        case up: moveUp(); break;
-        case down: moveDown(); break;
-        case left: moveLeft(); break;
-        case right: moveRight(); break;
-        case stop: stopMoving(); break;
+    void Pacman::update() {
+        switch (direction) {
+            case up:
+                moveUp();
+                break;
+            case down:
+                moveDown();
+                break;
+            case left:
+                moveLeft();
+                break;
+            case right:
+                moveRight();
+                break;
+            case stop:
+                stopMoving();
+                break;
+        }
     }
-}
 
-void Pacman::stopMoving(){
-    direction = stop;
-    //don't do anything
-}
+    void Pacman::stopMoving() {
+        direction = stop;
+        //don't do anything
+    }
 
-void Pacman::onCollisionWith(Wall *wall) {
+    void Pacman::onCollisionWith(Wall *wall) {
 //    std::cout<< "On collision with wall/pacman" << std::endl;
-    stopMoving();
-}
+        stopMoving();
+    }
 
-void Pacman::kill(int i){
+    void Pacman::kill(int i) {
 //    Animation from GUI will be played.
+    }
 }

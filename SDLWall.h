@@ -8,19 +8,22 @@
 
 #include <SDL_render.h>
 #include "Wall.h"
+namespace SDLPAC {
+    class SDLWall : public PAC::Wall {
 
-class SDLWall : public Wall{
+    public:
+        SDLWall(int x, int y, SDL_Texture *objTexture, SDL_Renderer *renderer);
 
-public:
-    SDLWall(int x, int y, SDL_Texture* objTexture, SDL_Renderer *renderer);
-    void visualize();
-    void render();
+        void visualize();
 
-private:
-    SDL_Texture* objTexture;
-    SDL_Rect srcRect, destRect;
-    SDL_Renderer* renderer;
-};
+        void render();
+
+    private:
+        SDL_Texture *objTexture;
+        SDL_Rect srcRect, destRect;
+        SDL_Renderer *renderer;
+    };
+}
 
 
 #endif //PACMAN_SDLWALL_H

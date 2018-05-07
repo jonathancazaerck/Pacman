@@ -6,72 +6,73 @@
 #include "Player.h"
 #include "Game.h"
 
-
-bool Player::moveUp() {
-    if (!changeToUp()) {
-        return false;
+namespace PAC {
+    bool Player::moveUp() {
+        if (!changeToUp()) {
+            return false;
+        }
+        y++;
+        return true;
     }
-    y++;
-    return true;
-}
 
-bool Player::moveDown() {
-    if (!changeToDown()) {
-        return false;
+    bool Player::moveDown() {
+        if (!changeToDown()) {
+            return false;
+        }
+        y--;
+        return true;
     }
-    y--;
-    return true;
-}
 
-bool Player::moveLeft() {
-    if (!changeToLeft()) {
-        return false;
+    bool Player::moveLeft() {
+        if (!changeToLeft()) {
+            return false;
+        }
+        x--;
+        return true;
     }
-    x--;
-    return true;
-}
 
-bool Player::moveRight() {
-    if (!changeToRight()) {
-        return false;
+    bool Player::moveRight() {
+        if (!changeToRight()) {
+            return false;
+        }
+        x++;
+        return true;
     }
-    x++;
-    return true;
-}
 
-bool Player::changeToUp() {
-    if (game->checkOccupiedByWall(this, up)) {
-        return false;
+    bool Player::changeToUp() {
+        if (game->checkOccupiedByWall(this, up)) {
+            return false;
+        }
+        direction = up;
+        return true;
     }
-    direction = up;
-    return true;
-}
 
-bool Player::changeToDown() {
-    if (game->checkOccupiedByWall(this, down)) {
-        return false;
+    bool Player::changeToDown() {
+        if (game->checkOccupiedByWall(this, down)) {
+            return false;
+        }
+        direction = down;
+        return true;
     }
-    direction = down;
-    return true;
-}
 
-bool Player::changeToLeft() {
-    if (game->checkOccupiedByWall(this, left)) {
-        return false;
+    bool Player::changeToLeft() {
+        if (game->checkOccupiedByWall(this, left)) {
+            return false;
+        }
+        direction = left;
+        return true;
     }
-    direction = left;
-    return true;
-}
 
-bool Player::changeToRight() {
+    bool Player::changeToRight() {
 //    std::cout << x << "\t" << y << std::endl;
-    if (game->checkOccupiedByWall(this, right)) {
-        return false;
+        if (game->checkOccupiedByWall(this, right)) {
+            return false;
+        }
+        direction = right;
+        return true;
     }
-    direction = right;
-    return true;
-}
 
-directions Player::getDirection() {
-    return direction;
+    directions Player::getDirection() {
+        return direction;
+    }
 }

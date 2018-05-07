@@ -10,30 +10,42 @@
 #include "Game.h"
 #include "SDLKeyboardController.h"
 #include <SDL2/SDL.h>
+namespace SDLPAC {
+    class SDLGame : public PAC::Game {
+    public:
+        SDLGame(PAC::AbstractFactory *abstractFactory, SDL_Renderer *renderer, SDL_Window *window);
 
-class SDLGame : public Game {
-public:
-    SDLGame(AbstractFactory* abstractFactory, SDL_Renderer* renderer, SDL_Window* window);
-    static SDL_Event event;
+        virtual ~SDLGame();
 
-protected:
-    void delay(Uint32 ms);
-    Uint32 getTimestamp();
-    void initKeyboardController(Pacman* pacman);
-    void handleEvents();
-    void renderClear();
-    void renderPresent();
-    void clean();
-    bool getIsRunning();
-    void stopAll();
-    void showDialog(const char* title, const char* message);
+        static SDL_Event event;
 
-private:
-    bool isRunning;
-    SDLKeyboardController* sdlKeyboardController;
-    SDL_Renderer* renderer;
-    SDL_Window* window;
-};
+    protected:
+        void delay(Uint32 ms);
 
+        Uint32 getTimestamp();
+
+        void initKeyboardController(PAC::Pacman *pacman);
+
+        void handleEvents();
+
+        void renderClear();
+
+        void renderPresent();
+
+        void clean();
+
+        bool getIsRunning();
+
+        void stopAll();
+
+        void showDialog(const char *title, const char *message);
+
+    private:
+        bool isRunning;
+        SDLKeyboardController *sdlKeyboardController;
+        SDL_Renderer *renderer;
+        SDL_Window *window;
+    };
+}
 
 #endif //PACMAN_SDLGAME_H

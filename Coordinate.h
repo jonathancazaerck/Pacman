@@ -8,20 +8,24 @@
 
 #include <string>
 #include "Constants.h"
+namespace PAC {
+    class Coordinate {
+    private:
+        int x;
+        int y;
+        directions direction;
 
-class Coordinate {
-private:
-    int x;
-    int y;
-    directions direction;
+    public:
+        Coordinate(int, int);
 
-public:
-    Coordinate(int, int);
-    int getX();
-    int getY();
-    void setDirection(directions);
-    directions getDirection();
-};
+        int getX();
 
+        int getY();
+
+        void setDirection(directions);
+
+        directions getDirection();
+    };
+}
 
 #endif //PACMAN_COORDINATE_H

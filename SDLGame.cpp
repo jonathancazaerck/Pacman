@@ -3,67 +3,74 @@
 //
 
 #include "SDLGame.h"
+namespace SDLPAC {
+    SDL_Event SDLGame::event;
 
-SDL_Event SDLGame::event;
-
-SDLGame::SDLGame(AbstractFactory *abstractFactory, SDL_Renderer* renderer, SDL_Window* window) : Game::Game(abstractFactory) {
-    this->isRunning = true;
-    this->renderer = renderer;
-    this->window = window;
-}
-
-void SDLGame::delay(Uint32 ms){
-    SDL_Delay(ms);
-}
-
-Uint32 SDLGame::getTimestamp() {
-    return SDL_GetTicks();
-}
-
-void SDLGame::initKeyboardController(Pacman *pacman) {
-    sdlKeyboardController = new SDLKeyboardController(pacman);
-}
-
-void SDLGame::handleEvents() {
-    SDL_PollEvent(&event);
-    switch (event.type){
-        case SDL_QUIT:
-            isRunning = false;
-            break;
-
-        default:
-            break;
+    SDLGame::SDLGame(PAC::AbstractFactory *abstractFactory, SDL_Renderer *renderer, SDL_Window *window) : PAC::Game::Game(
+            abstractFactory) {
+        this->isRunning = true;
+        this->renderer = renderer;
+        this->window = window;
     }
 
-    sdlKeyboardController->update();
-}
+    void SDLGame::delay(Uint32 ms) {
+        SDL_Delay(ms);
+    }
 
-void SDLGame::renderClear() {
-    SDL_RenderClear(renderer);
-}
+    Uint32 SDLGame::getTimestamp() {
+        return SDL_GetTicks();
+    }
 
-void SDLGame::renderPresent(){
-    SDL_RenderPresent(renderer);
-}
+    void SDLGame::initKeyboardController(PAC::Pacman *pacman) {
+        sdlKeyboardController = new SDLKeyboardController(pacman);
+    }
 
-void SDLGame::clean() {
-    SDL_DestroyWindow(window);
-    SDL_DestroyRenderer(renderer);
-    SDL_QUIT;
-    std::cout << "Game cleaned" << std::endl;
-}
+    void SDLGame::handleEvents() {
+        SDL_PollEvent(&event);
+        switch (event.type) {
+            case SDL_QUIT:
+                isRunning = false;
+                break;
 
-bool SDLGame::getIsRunning(){
-    return isRunning;
-}
+            default:
+                break;
+        }
 
-void SDLGame::stopAll(){
-    isRunning = false;
-}
+        sdlKeyboardController->update();
+    }
 
-void SDLGame::showDialog(const char* title, const char* message) {
-    SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_INFORMATION,
-                             title,
-                             message,
-                             NULL);
+    void SDLGame::renderClear() {
+        SDL_RenderClear(renderer);
+    }
+
+    void SDLGame::renderPresent() {
+        SDL_RenderPresent(renderer);
+    }
+
+    void SDLGame::clean() {
+        SDL_DestroyWindow(window);
+        SDL_DestroyRenderer(renderer);
+        SDL_QUIT;
+        std::cout << "Game cleaned" << std::endl;
+    }
+
+    bool SDLGame::getIsRunning() {
+        return isRunning;
+    }
+
+    void SDLGame::stopAll() {
+        isRunning = false;
+    }
+
+    void SDLGame::showDialog(const char *title, const char *message) {
+        SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_INFORMATION,
+                                 title,
+                                 message,
+                                 NULL);
+    }
+
+    SDLGame::~SDLGame() {
+        std::cout << "Delete sdlgame:sdlkeyboardcontroller" << std::endl;
+        delete sdlKeyboardController;
+    }
 }

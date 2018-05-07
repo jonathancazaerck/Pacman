@@ -4,16 +4,14 @@
 
 #include "Bullet.h"
 
-Bullet::Bullet(int x, int y) :Entity(x,y) {
-    eated = 0;
-    width = 10;
-    height = 10;
-};
+namespace PAC {
 
-void Bullet::onCollisionWith(Pacman *pacman) {
-    eated = 1;
-}
+    Bullet::Bullet(int x, int y) : Entity(x, y) {
+        width = 10;
+        height = 10;
+    };
 
-bool Bullet::getEated(){
-    return eated;
+    void Bullet::onCollisionWith(Pacman *pacman) {
+        //
+    }
 }

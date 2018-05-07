@@ -3,9 +3,10 @@
 //
 
 #include "Wall.h"
+namespace PAC {
+    Wall::Wall(int x, int y) : Entity(x, y) {
+            width = 10;
+            height = 10;
 
-Wall::Wall(int x, int y) : Entity(x,y){
-        width = 10;
-        height = 10;
-
-}; //Constructor van Entity aanroepen.
+    }; //Constructor van Entity aanroepen.
+}

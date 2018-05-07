@@ -10,17 +10,28 @@
 #include "Pacman.h"
 #include "Score.h"
 
-class AbstractFactory {
-public:
-    //Create the game objects
-    virtual Pacman* createPacman(int x, int y, Game* game) = 0;
-    virtual Wall* createWall(int x, int y) = 0;
-    virtual Ghost* createGhost(int x, int y, Game* game) = 0;
-    virtual Bonus* createBonus(int x, int y) = 0;
-    virtual Bullet* createBullet(int x, int y) = 0;
-    virtual Score* createScore() = 0;
-    virtual Game* createGame(AbstractFactory*) = 0;
-};
+namespace PAC {
+
+    class AbstractFactory {
+    public:
+        //Create the game objects
+        virtual Pacman *createPacman(int x, int y, Game *game) = 0;
+
+        virtual Wall *createWall(int x, int y) = 0;
+
+        virtual Ghost *createGhost(int x, int y, Game *game) = 0;
+
+        virtual Bonus *createBonus(int x, int y) = 0;
+
+        virtual Bullet *createBullet(int x, int y) = 0;
+
+        virtual Score *createScore() = 0;
+
+        virtual Game *createGame(AbstractFactory *) = 0;
+
+        virtual ~AbstractFactory();
+    };
+}
 
 
 #endif //PACMAN_ABSTRACTFACTORY_H

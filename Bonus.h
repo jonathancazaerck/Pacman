@@ -7,24 +7,26 @@
 
 
 #include "Bullet.h"
+namespace PAC {
+    class Bonus : public Bullet {
+    private:
+        bool active;
+    public:
+        Bonus(int x, int y);
 
-class Bonus : public Bullet{
-public:
-    Bonus(int x, int y);
-    void onCollisionWith(Pacman *pacman);
+        void onCollisionWith(Pacman *pacman);
 
-private:
-    bool active;
-public:
-    bool isActive() const;
+        bool isActive() const;
 
-    bool isActive();
+        bool isActive();
 
-    void setDeactive();
+        void setDeactive();
 
-    virtual void visualize(){};
-    virtual void render(){};
-};
+        virtual void visualize() {};
+
+        virtual void render() {};
+    };
+}
 
 
 #endif //PACMAN_BONUS_H

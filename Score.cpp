@@ -4,15 +4,16 @@
 
 #include "Score.h"
 
+namespace PAC {
+    Score::Score() {
+        score = 0;
+    }
 
-Score::Score() {
-    score = 0;
-}
+    void Score::add(Ghost *) {
+        score = score + 10;
+    }
 
-void Score::add(Ghost*) {
-    score = score+10;
-}
-
-void Score::add(Bullet*) {
-    score = score + 1;
+    void Score::add(Bullet *) {
+        score = score + 1;
+    }
 }

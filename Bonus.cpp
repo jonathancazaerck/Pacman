@@ -4,22 +4,22 @@
 
 #include "Bonus.h"
 
+namespace PAC {
+    Bonus::Bonus(int x, int y) : Bullet(x, y) {
+        active = false;
+        width = 8;
+        height = 8;
+    };
 
-Bonus::Bonus(int x, int y) : Bullet(x, y) {
-    active = false;
-    width = 8;
-    height = 8;
-};
+    void Bonus::onCollisionWith(Pacman *pacman) {
+        active = true;
+    }
 
-void Bonus::onCollisionWith(Pacman *pacman) {
-    eated = true;
-    active = true;
-}
+    bool Bonus::isActive() {
+        return active;
+    }
 
-bool Bonus::isActive() {
-    return active;
-}
-
-void Bonus::setDeactive() {
-    active = false;
+    void Bonus::setDeactive() {
+        active = false;
+    }
 }

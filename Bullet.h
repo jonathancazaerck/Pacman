@@ -8,16 +8,18 @@
 
 #include "Pacman.h"
 
-class Bullet : public Entity {
-protected:
-    bool eated;
-public:
-    Bullet(int x, int y);
-    void onCollisionWith(Pacman* pacman);
-    bool getEated();
-    virtual void visualize(){};
-    virtual void render(){};
-};
+namespace PAC {
 
+    class Bullet : public Entity {
+    public:
+        Bullet(int x, int y);
 
+        void onCollisionWith(Pacman *pacman);
+
+        virtual void visualize() {};
+
+        virtual void render() {};
+    };
+
+}
 #endif //PACMAN_BULLET_H

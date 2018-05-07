@@ -7,13 +7,16 @@
 
 
 #include "SDLPacman.h"
+namespace SDLPAC {
+    class SDLKeyboardController {
+    public:
+        PAC::Pacman *pacman;
 
-class SDLKeyboardController {
-public:
-    Pacman* pacman;
-    SDLKeyboardController(Pacman* pacman);
-    void update();
-};
+        SDLKeyboardController(PAC::Pacman *pacman);
+
+        void update();
+    };
+}
 
 
 #endif //PACMAN_SDLKEYBOARDCONTROLLER_H

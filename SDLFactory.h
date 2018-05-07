@@ -14,27 +14,35 @@
 #include "SDLInitiator.h"
 #include <iostream>
 #include <stdint.h>
+namespace SDLPAC {
+    class SDLKeyboardController;
 
-class SDLKeyboardController;
+    class SDLFactory : public PAC::AbstractFactory {
+    public:
+        SDLFactory(const char *title, int xPos, int yPos, int width, int height, bool fullscreen);
 
-class SDLFactory : public AbstractFactory {
-public:
-    SDLFactory(const char* title, int xPos, int yPos, int width, int height, bool fullscreen);
+        PAC::Pacman *createPacman(int x, int y, PAC::Game *game);
 
-    Pacman* createPacman(int x, int y, Game* game);
-    Wall* createWall(int x, int y);
-    Ghost* createGhost(int x, int y, Game* game);
-    Bonus* createBonus(int x, int y);
-    Bullet* createBullet(int x, int y);
-    Score* createScore();
-    Game* createGame(AbstractFactory* abstractFactory);
+        PAC::Wall *createWall(int x, int y);
 
-private:
-    Game* game;
-    SDLKeyboardController *sdlKeyboardController;
-    SDLInitiator* sdlInitiator;
-    static int event;
-};
+        PAC::Ghost *createGhost(int x, int y, PAC::Game *game);
 
+        PAC::Bonus *createBonus(int x, int y);
+
+        PAC::Bullet *createBullet(int x, int y);
+
+        PAC::Score *createScore();
+
+        PAC::Game *createGame(AbstractFactory *abstractFactory);
+
+        virtual ~SDLFactory();
+
+    private:
+        PAC::Game *game;
+        SDLKeyboardController *sdlKeyboardController;
+        SDLInitiator *sdlInitiator;
+        static int event;
+    };
+}
 
 #endif //PACMAN_SDLFACTORY_H
