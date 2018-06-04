@@ -5,10 +5,9 @@
 #ifndef PACMAN_GAME_H
 #define PACMAN_GAME_H
 
-
+#include <stdint.h>
 #include <vector>
 #include <iostream>
-#include <tiff.h>
 #include "Pacman.h"
 #include "Ghost.h"
 #include "Bullet.h"
@@ -31,13 +30,13 @@ namespace PAC {
         AbstractFactory *abstractFactory;
         Score *score;
         int killInt;
-        uint32 frameStart;
+        uint32_t frameStart;
         int frameTime;
 
     protected:
-        virtual uint32 getTimestamp()=0;
+        virtual uint32_t getTimestamp()=0;
 
-        virtual void delay(uint32 ms)=0;
+        virtual void delay(uint32_t ms)=0;
 
         virtual void initKeyboardController(Pacman *)=0;
 

@@ -5,7 +5,7 @@
 #include "JsonReader.h"
 namespace PAC {
     void JsonReader::read() {
-        std::ifstream i("../levels/level1.json");
+        std::ifstream i("levels/level1.json");
         i >> j;
     }
 

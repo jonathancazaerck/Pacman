@@ -6,7 +6,7 @@
 #define PACMAN_SDLWALL_H
 
 
-#include <SDL_render.h>
+#include <SDL2/SDL_render.h>
 #include "Wall.h"
 namespace SDLPAC {
     class SDLWall : public PAC::Wall {

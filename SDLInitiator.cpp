@@ -23,8 +23,8 @@ namespace SDLPAC {
                 std::cout << "Renderer created" << std::endl;
             }
 
-            objTexture = SDLTextureManager::LoadTexture("../assets/Sprite.png", renderer);
-            wallTexture = SDLTextureManager::LoadTexture("../assets/blueWall.png", renderer);
+            objTexture = SDLTextureManager::LoadTexture("assets/Sprite.png", renderer);
+            wallTexture = SDLTextureManager::LoadTexture("assets/blueWall.png", renderer);
 
             return true;
         } else { return false; }
