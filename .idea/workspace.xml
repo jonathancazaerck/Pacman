@@ -11,75 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54a6874b-2c3b-41c3-85d1-6f3978331e64" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/AbstractFactory.cpp" afterPath="$PROJECT_DIR$/AbstractFactory.cpp" />
-      <change beforePath="$PROJECT_DIR$/AbstractFactory.h" afterPath="$PROJECT_DIR$/AbstractFactory.h" />
-      <change beforePath="$PROJECT_DIR$/Bonus.cpp" afterPath="$PROJECT_DIR$/Bonus.cpp" />
-      <change beforePath="$PROJECT_DIR$/Bonus.h" afterPath="$PROJECT_DIR$/Bonus.h" />
-      <change beforePath="$PROJECT_DIR$/Bullet.cpp" afterPath="$PROJECT_DIR$/Bullet.cpp" />
-      <change beforePath="$PROJECT_DIR$/Bullet.h" afterPath="$PROJECT_DIR$/Bullet.h" />
-      <change beforePath="$PROJECT_DIR$/Constants.h" afterPath="$PROJECT_DIR$/Constants.h" />
-      <change beforePath="$PROJECT_DIR$/Coordinate.cpp" afterPath="$PROJECT_DIR$/Coordinate.cpp" />
-      <change beforePath="$PROJECT_DIR$/Coordinate.h" afterPath="$PROJECT_DIR$/Coordinate.h" />
-      <change beforePath="$PROJECT_DIR$/Entity.cpp" afterPath="$PROJECT_DIR$/Entity.cpp" />
-      <change beforePath="$PROJECT_DIR$/Entity.h" afterPath="$PROJECT_DIR$/Entity.h" />
-      <change beforePath="$PROJECT_DIR$/Game.cpp" afterPath="$PROJECT_DIR$/Game.cpp" />
-      <change beforePath="$PROJECT_DIR$/Game.h" afterPath="$PROJECT_DIR$/Game.h" />
-      <change beforePath="$PROJECT_DIR$/Ghost.cpp" afterPath="$PROJECT_DIR$/Ghost.cpp" />
-      <change beforePath="$PROJECT_DIR$/Ghost.h" afterPath="$PROJECT_DIR$/Ghost.h" />
-      <change beforePath="$PROJECT_DIR$/JsonReader.cpp" afterPath="$PROJECT_DIR$/JsonReader.cpp" />
-      <change beforePath="$PROJECT_DIR$/JsonReader.h" afterPath="$PROJECT_DIR$/JsonReader.h" />
-      <change beforePath="$PROJECT_DIR$/Pacman.cpp" afterPath="$PROJECT_DIR$/Pacman.cpp" />
-      <change beforePath="$PROJECT_DIR$/Pacman.h" afterPath="$PROJECT_DIR$/Pacman.h" />
-      <change beforePath="$PROJECT_DIR$/Player.cpp" afterPath="$PROJECT_DIR$/Player.cpp" />
-      <change beforePath="$PROJECT_DIR$/Player.h" afterPath="$PROJECT_DIR$/Player.h" />
-      <change beforePath="$PROJECT_DIR$/SDLBonus.cpp" afterPath="$PROJECT_DIR$/SDLBonus.cpp" />
-      <change beforePath="$PROJECT_DIR$/SDLBonus.h" afterPath="$PROJECT_DIR$/SDLBonus.h" />
-      <change beforePath="$PROJECT_DIR$/SDLBullet.cpp" afterPath="$PROJECT_DIR$/SDLBullet.cpp" />
-      <change beforePath="$PROJECT_DIR$/SDLBullet.h" afterPath="$PROJECT_DIR$/SDLBullet.h" />
-      <change beforePath="$PROJECT_DIR$/SDLFactory.cpp" afterPath="$PROJECT_DIR$/SDLFactory.cpp" />
-      <change beforePath="$PROJECT_DIR$/SDLFactory.h" afterPath="$PROJECT_DIR$/SDLFactory.h" />
-      <change beforePath="$PROJECT_DIR$/SDLGame.cpp" afterPath="$PROJECT_DIR$/SDLGame.cpp" />
-      <change beforePath="$PROJECT_DIR$/SDLGame.h" afterPath="$PROJECT_DIR$/SDLGame.h" />
-      <change beforePath="$PROJECT_DIR$/SDLGhost.cpp" afterPath="$PROJECT_DIR$/SDLGhost.cpp" />
-      <change beforePath="$PROJECT_DIR$/SDLGhost.h" afterPath="$PROJECT_DIR$/SDLGhost.h" />
-      <change beforePath="$PROJECT_DIR$/SDLInitiator.cpp" afterPath="$PROJECT_DIR$/SDLInitiator.cpp" />
-      <change beforePath="$PROJECT_DIR$/SDLInitiator.h" afterPath="$PROJECT_DIR$/SDLInitiator.h" />
-      <change beforePath="$PROJECT_DIR$/SDLKeyboardController.cpp" afterPath="$PROJECT_DIR$/SDLKeyboardController.cpp" />
-      <change beforePath="$PROJECT_DIR$/SDLKeyboardController.h" afterPath="$PROJECT_DIR$/SDLKeyboardController.h" />
-      <change beforePath="$PROJECT_DIR$/SDLPacman.cpp" afterPath="$PROJECT_DIR$/SDLPacman.cpp" />
-      <change beforePath="$PROJECT_DIR$/SDLPacman.h" afterPath="$PROJECT_DIR$/SDLPacman.h" />
-      <change beforePath="$PROJECT_DIR$/SDLScore.cpp" afterPath="$PROJECT_DIR$/SDLScore.cpp" />
-      <change beforePath="$PROJECT_DIR$/SDLScore.h" afterPath="$PROJECT_DIR$/SDLScore.h" />
-      <change beforePath="$PROJECT_DIR$/SDLTextureManager.cpp" afterPath="$PROJECT_DIR$/SDLTextureManager.cpp" />
-      <change beforePath="$PROJECT_DIR$/SDLTextureManager.h" afterPath="$PROJECT_DIR$/SDLTextureManager.h" />
-      <change beforePath="$PROJECT_DIR$/SDLWall.cpp" afterPath="$PROJECT_DIR$/SDLWall.cpp" />
-      <change beforePath="$PROJECT_DIR$/SDLWall.h" afterPath="$PROJECT_DIR$/SDLWall.h" />
-      <change beforePath="$PROJECT_DIR$/Score.cpp" afterPath="$PROJECT_DIR$/Score.cpp" />
-      <change beforePath="$PROJECT_DIR$/Score.h" afterPath="$PROJECT_DIR$/Score.h" />
-      <change beforePath="$PROJECT_DIR$/Wall.cpp" afterPath="$PROJECT_DIR$/Wall.cpp" />
-      <change beforePath="$PROJECT_DIR$/Wall.h" afterPath="$PROJECT_DIR$/Wall.h" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/Game.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/Ghost.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/JsonReader.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/Player.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/SDLBonus.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/SDLBullet.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/SDLFactory.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/SDLGame.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/SDLGhost.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/SDLInitiator.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/SDLKeyboardController.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/SDLPacman.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/SDLScore.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/SDLWall.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/Score.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pacman.dir/main.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Pacman" afterPath="$PROJECT_DIR$/cmake-build-debug/Pacman" />
-      <change beforePath="$PROJECT_DIR$/levels/level1.json" afterPath="$PROJECT_DIR$/levels/level1.json" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
-    </list>
+    <list default="true" id="54a6874b-2c3b-41c3-85d1-6f3978331e64" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -177,7 +109,7 @@
         <entry file="file://$PROJECT_DIR$/SDLFactory.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="341">
-              <caret line="48" column="27" lean-forward="true" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+              <caret line="48" column="27" lean-forward="false" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -432,12 +364,12 @@
       <workItem from="1525601708392" duration="258000" />
       <workItem from="1525602177230" duration="806000" />
       <workItem from="1525609408037" duration="242000" />
-      <workItem from="1525675094687" duration="12924000" />
+      <workItem from="1525675094687" duration="13566000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160809000" />
+    <option name="totallyTimeSpent" value="161451000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -450,7 +382,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="705" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.49722" order="6" side_tool="false" content_ui="tabs" />
@@ -458,10 +389,10 @@
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.50277996" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19344263" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19344263" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -480,7 +411,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -882,7 +813,7 @@
     <entry file="file://$PROJECT_DIR$/SDLFactory.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="341">
-          <caret line="48" column="27" lean-forward="true" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+          <caret line="48" column="27" lean-forward="false" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
           <folding />
         </state>
       </provider>
