@@ -2,6 +2,8 @@
 // Created by Jonathan Cazaerck on 10/04/18.
 //
 
+//The texture manager is for loading the right image file
+
 #include "SDLTextureManager.h"
 namespace SDLPAC {
     SDL_Texture *SDLTextureManager::LoadTexture(const char *fileName, SDL_Renderer *renderer) {

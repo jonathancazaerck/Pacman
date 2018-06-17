@@ -8,22 +8,24 @@ namespace PAC {
     Entity::Entity(int x, int y) {
         this->x = x;
         this->y = y;
-
-//    std::cout << x << '\t' << y << std::endl;
     };
 
+    //Method to check if there is a collision
     bool Entity::checkCollision(Entity *entity, bool eat, bool bothMoving, directions thisDirection) {
 
         bool collision;
 
-
+        //If this object is allowed to eat the other object
         if (eat) {
             collision = x < entity->getX() + entity->getWidth() &&
                         x + width > entity->getX() &&
                         y < entity->getY() + entity->getHeight() &&
                         y + height > entity->getY();
 
-        } else if (!eat && !bothMoving) {
+        }
+
+        //If this object is not allowed to eat the other object and both objects are not moving
+        else if (!eat && !bothMoving) {
             int xCheck = x;
             int yCheck = y;
 
@@ -42,20 +44,21 @@ namespace PAC {
                     break;
             }
 
-
+            //Check if there will be a collision in any of the four directions
             bool fullCollision = xCheck < entity->getX() + entity->getWidth() &&
                                  xCheck + width > entity->getX() &&
                                  yCheck < entity->getY() + entity->getHeight() &&
                                  yCheck + height > entity->getY();
 
 
+            //If no collision in any of the four direction -> return false
             if (!fullCollision) {
                 return false;
             } else {
-//            std::cout << "Full collision" << x << y << std::endl;
+            	//
             }
 
-            // there is a collision -> check if collision in correct direction
+            //There is a collision in any of the four directions. Check if collision in correct direction
             switch (thisDirection) {
                 case up:
                     collision = y < entity->getY();
@@ -76,7 +79,7 @@ namespace PAC {
 
             }
             if (collision) {
-//            std::cout << "collision in directionn" << std::endl;
+            	//
             }
         } else {
             collision = (x == entity->getX() && y == entity->getY());

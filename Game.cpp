@@ -17,6 +17,7 @@ namespace PAC {
         //Constructor
         this->abstractFactory = abstractFactory;
 
+////This is code for testing purposes only if JSON doesn't work and to create some entities
 //    pacman = new Pacman(50, 50, this);
 //    pacman->moveRight();
 //
@@ -45,7 +46,7 @@ namespace PAC {
 //    }
     }
 
-//// VANAF HIER JSON
+//// From here JSON
 
     void Game::initObjects() {
 
@@ -112,7 +113,7 @@ namespace PAC {
 
     void Game::run() {
 
-////HIER SDL
+////From here SDL
 
         initObjects();
         initKeyboardController(pacman);
@@ -122,6 +123,7 @@ namespace PAC {
             wall->render();
         }
 
+        //Set to correct FPS (Frames per second)
         while (getIsRunning()) {
             frameStart = getTimestamp();
 
@@ -163,10 +165,12 @@ namespace PAC {
         score->visualize();
         score->render();
 
+        //Check if Pacman isn't killed
         if (!pacman->isKilled) {
             pacman->update();
             pacman->visualize();
         } else {
+        	//If killed -> run animation by invoking the method kill
             if (killInt < 17) {
                 pacman->kill(killInt);
                 killInt++;
@@ -191,7 +195,7 @@ namespace PAC {
 
     }
 
-////HIER TEXT MODE
+////From here text mode. This is code for testing purposes only to run the game without GUI
 //    while (true) {
 //        std::cout << std::string(10, '\n');
 //        print();
@@ -199,72 +203,58 @@ namespace PAC {
 //        std::this_thread::sleep_for(std::chrono::milliseconds(100));
 //    }
 //}
-
-    void Game::print() {
-        std::array<std::array<std::string, maxY + 1>, maxX + 1> grid;
-
-        for (Wall *wall : walls) {
-            int x = wall->getX();
-            int y = wall->getY();
-            grid[x][y] = "+";
-        }
-
-        for (Bullet *bullet : bullets) {
-            int x = bullet->getX();
-            int y = bullet->getY();
-            grid[x][y] = "*";
-        }
-
-        for (Bonus *bonus : bonuses) {
-            int x = bonus->getX();
-            int y = bonus->getY();
-            grid[x][y] = "B";
-        }
-
-        for (Ghost *ghost: ghosts) {
-            std::cout << ghost->getX() << '\t' << ghost->getY() << std::endl;
-            grid[ghost->getX() + 1][ghost->getY() + 1] = "G";
-        }
-
-        if (pacman->getX() >= minX && pacman->getX() <= maxX
-            && pacman->getY() >= minY && pacman->getY() <= maxY) {
-            grid[pacman->getX() + 1][pacman->getY() + 1] = "P";
-        } else {
-            std::cout << "Pacman out of range" << std::endl;
-        }
-
-        for (int y = 0; y <= maxY; y++) {
-            std::cout << y << "\t";
-            for (int x = 0; x <= maxX; x++) {
-                std::string str = grid[x][y];
-                if (str.empty()) {
-                    std::cout << " ";
-                } else {
-                    std::cout << str;
-                }
-            }
-            std::cout << std::endl;
-        }
-    }
-
-    void Game::tick() {
-//    std::cout << "Tick " << std::endl;
-
-//DELETED: COLLISION BETWEEN TWO GHOSTS = NOT NECESSARY
-//    for (Ghost *ghost1 : ghosts) {
-//        for (Ghost *ghost2 : ghosts) {
-////            std::cout << "collision check" << std::endl;
-////        Ghost* ghost1 = ghosts[1];
-////        Ghost* ghost2 = ghosts[2];
 //
-//            if (ghost1->checkCollision(ghost2, false, true)) {
-//                ghost1->onCollisionWith(ghost2);
-//                ghost2->onCollisionWith(ghost1);
-//                //std::cout << "collision" << std::endl;
+//    void Game::print() {
+//        std::array<std::array<std::string, maxY + 1>, maxX + 1> grid;
+//
+//        for (Wall *wall : walls) {
+//            int x = wall->getX();
+//            int y = wall->getY();
+//            grid[x][y] = "+";
+//        }
+//
+//        for (Bullet *bullet : bullets) {
+//            int x = bullet->getX();
+//            int y = bullet->getY();
+//            grid[x][y] = "*";
+//        }
+//
+//        for (Bonus *bonus : bonuses) {
+//            int x = bonus->getX();
+//            int y = bonus->getY();
+//            grid[x][y] = "B";
+//        }
+//
+//        for (Ghost *ghost: ghosts) {
+//            std::cout << ghost->getX() << '\t' << ghost->getY() << std::endl;
+//            grid[ghost->getX() + 1][ghost->getY() + 1] = "G";
+//        }
+//
+//        if (pacman->getX() >= minX && pacman->getX() <= maxX
+//            && pacman->getY() >= minY && pacman->getY() <= maxY) {
+//            grid[pacman->getX() + 1][pacman->getY() + 1] = "P";
+//        } else {
+//            std::cout << "Pacman out of range" << std::endl;
+//        }
+//
+//        for (int y = 0; y <= maxY; y++) {
+//            std::cout << y << "\t";
+//            for (int x = 0; x <= maxX; x++) {
+//                std::string str = grid[x][y];
+//                if (str.empty()) {
+//                    std::cout << " ";
+//                } else {
+//                    std::cout << str;
+//                }
 //            }
+//            std::cout << std::endl;
 //        }
 //    }
 
+    //Time tick for game loop
+    //Collision detection, algorithm see presentation
+    //Delete the unneeded objects
+    void Game::tick() {
         for (Ghost *ghost : ghosts) {
             for (Wall *wall : walls) {
                 if (ghost->checkCollision(wall, false, false, ghost->getDirection())) {
@@ -275,7 +265,7 @@ namespace PAC {
             }
         }
 
-        //VECTOR TO DELETE BULLETS
+        //Vector to delete bullets
         std::vector<Bullet *> toDeleteBullets;
 
         for (Bullet *bullet : bullets) {
@@ -300,7 +290,7 @@ namespace PAC {
             }
         }
 
-        //VECTOR TO DELETE BULLETS
+        //Vector to delete bonuses
         std::vector<Bonus *> toDeleteBonuses;
 
         for (Bonus *bonus : bonuses) {
@@ -320,6 +310,7 @@ namespace PAC {
             }
         }
 
+        //Delete the objects which are stored in the temporary vectors to delete
         for (auto item:toDeleteBonuses) {
             bonuses.erase(std::remove(bonuses.begin(), bonuses.end(), item), bonuses.end());
             delete item;
@@ -329,12 +320,10 @@ namespace PAC {
         for (Ghost *ghost : ghosts) {
             if (pacman->checkCollision(ghost, true, true, stop)) {
                 if (ghost->getEnemy()) {
-                    //als de ghost de vijand is
-                    std::cout << "DOOD!!!!" << std::endl;
+                    //If the ghost is an enemy
                     pacman->isKilled = true;
                 } else {
-                    //ghost is de vijand niet
-                    //std::cout << "BONUS" << std::endl;
+                    //If the ghost is not an enemy
                     if (!ghost->getBonusGetted()) {
                         score->add(ghost);
                         ghost->setBonusGetted();
@@ -351,6 +340,7 @@ namespace PAC {
 
     }
 
+    //When changing direction of a ghost or Pacman, predict if there aren't any walls when changing to that new direction
     bool Game::checkOccupiedByWall(Player *player, directions newDirection) const {
 
         for (Wall *wall : walls) {

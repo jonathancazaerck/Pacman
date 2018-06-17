@@ -11,6 +11,7 @@ namespace PAC {
         height = 8;
     };
 
+    //Method to run when there is a collision
     void Bonus::onCollisionWith(Pacman *pacman) {
         active = true;
     }

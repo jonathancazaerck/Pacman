@@ -12,6 +12,8 @@ namespace SDLPAC {
         cnt = 0;
     }
 
+    //Visualize pacman and run the Pacman bite animation based on a timer (counter)
+    //Rectangles are used to take a part of the sprite sheet
     void SDLPacman::visualize() {
         srcRect.h = 13;
         srcRect.w = 13;
@@ -78,6 +80,8 @@ namespace SDLPAC {
         SDL_RenderCopy(renderer, objTexture, &srcRect, &destRect);
     }
 
+    //Take the correct parts of the sprite sheet to make the animation
+    //With a counter we change the selection in the sprite sheet every time tick
     void SDLPacman::kill(int i) {
         destRect.h = height;
         destRect.w = width;

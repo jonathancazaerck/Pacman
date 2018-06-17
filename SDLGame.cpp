@@ -21,10 +21,12 @@ namespace SDLPAC {
         return SDL_GetTicks();
     }
 
+    //Initialize keyboard controller to control the game
     void SDLGame::initKeyboardController(PAC::Pacman *pacman) {
         sdlKeyboardController = new SDLKeyboardController(pacman);
     }
 
+    //Handle events e.g. quit the game or do an action when a key is pressed
     void SDLGame::handleEvents() {
         SDL_PollEvent(&event);
         switch (event.type) {
@@ -36,6 +38,7 @@ namespace SDLPAC {
                 break;
         }
 
+        //invoke update method from keyboardController to translate a key to an action
         sdlKeyboardController->update();
     }
 
@@ -62,6 +65,7 @@ namespace SDLPAC {
         isRunning = false;
     }
 
+    //Show dialog box
     void SDLGame::showDialog(const char *title, const char *message) {
         SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_INFORMATION,
                                  title,

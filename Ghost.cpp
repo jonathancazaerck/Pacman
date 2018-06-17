@@ -14,19 +14,17 @@ namespace PAC {
         defaultY = y;
     };
 
+    //Ghost time count down if not an enemy when lifetime = 0 he will be back an enemy
+    //Ghost change direction update
     void Ghost::update() {
         if (!enemy) {
             noEnemyLifetime--;
-//        std::cout << noEnemyLifetime << std::endl;
         }
 
         if (noEnemyLifetime < 0) {
             enemy = true;
             bonusGetted = false;
-//        std::cout << "Time's up!" << std::endl;
         }
-
-//    std::cout << "dir " << direction << std::endl;
 
         switch (direction) {
             case up:
@@ -44,9 +42,9 @@ namespace PAC {
         }
     }
 
+    //Method to run when there is a collision
     void Ghost::onCollisionWith(Wall *wall) {
-        //Clockwise if there is a collision between the ghost and the walls
-//    std::cout << "collision" << std::endl;
+        //Clockwise choosing direction if there is a collision between the ghost and the walls
         directions randomDirection = static_cast<directions>(rand() % right);
         switch (randomDirection) {
             case up:
@@ -63,16 +61,12 @@ namespace PAC {
                 }
             case right:
                 if (changeToUp()) {
-                    //std::cout << "change up " << direction << std::endl;
                     break;
                 } else if (changeToDown()) {
-                    //std::cout << "change down " << std::endl;
                     break;
                 } else if (changeToRight()) {
-                    //std::cout << "change right" << std::endl;
                     break;
                 } else if (changeToLeft()) {
-                    //std::cout << "change left" << std::endl;
                     break;
                 }
         }
@@ -83,7 +77,6 @@ namespace PAC {
     }
 
     void Ghost::setNotEnemy() {
-        //std::cout << "Set not enemy" << std::endl;
         this->enemy = false;
         noEnemyLifetime = 1000;
     }

@@ -21,6 +21,10 @@ namespace PAC {
     const int FPS = 60;
     const int frameDelay = 1000 / FPS;
 
+    static constexpr const char* windowTitle = "Jonathan Cazaerck";
+    const int windowXPos = 200;
+    const int windowYPos = 200;
+
     enum directions {
         up, down, left, right, stop
     };

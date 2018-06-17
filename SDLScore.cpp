@@ -12,30 +12,32 @@ namespace SDLPAC {
 
     void SDLScore::visualize() {
 
-
-        //std::cout<<score<<std::endl;
-
+    	//Seperate thousands from hundards from tens and units
         srcThousandsRect = calcRect(score / 1000);
         srcHundardsRect = calcRect((score / 100) % 10);
         srcTensRect = calcRect((score / 10) % 10);
         srcUnitRect = calcRect(score % 10);
 
 
+        //Define the place for the thousands in the GUI
         destThousandsRect.h = height;
         destThousandsRect.w = width;
         destThousandsRect.x = xThousands;
         destThousandsRect.y = y;
 
+        //Define the place for the hundards in the GUI
         destHundardsRect.h = height;
         destHundardsRect.w = width;
         destHundardsRect.x = xHundards;
         destHundardsRect.y = y;
 
+        //Define the place for the tens in the GUI
         destTensRect.h = height;
         destTensRect.w = width;
         destTensRect.x = xTens;
         destTensRect.y = y;
 
+        //Define the place for the units in the GUI
         destUnitRect.h = height;
         destUnitRect.w = width;
         destUnitRect.x = xUnits;
@@ -49,8 +51,8 @@ namespace SDLPAC {
         SDL_RenderCopy(renderer, objTexture, &srcUnitRect, &destUnitRect);
     }
 
+    //Calculate the rectangle to take the right piece of the sprite sheet
     SDL_Rect SDLScore::calcRect(int digit) {
-        //std::cout << "input SDLScore, digit is: " << digit << std::endl;
         SDL_Rect srcRect;
         srcRect.w = width;
         srcRect.h = height;

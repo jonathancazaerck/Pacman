@@ -12,6 +12,8 @@
 #include "SDLGame.h"
 
 namespace SDLPAC {
+
+//Constructor + initiating SDL
     SDLFactory::SDLFactory(const char *title, int xPos, int yPos, int width, int height, bool fullscreen) {
         sdlInitiator = new SDLInitiator();
         if (!sdlInitiator->init(title, xPos, yPos, width, height, fullscreen)) {
